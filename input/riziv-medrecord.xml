@@ -71,6 +71,26 @@
       <groupingId value="medicationrecord"/>
     </resource>
 
+    <resource>
+      <reference>
+        <reference value="ValueSet/be-vs-medication-summary-types"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="ValueSet - Medication Summary Types"/>
+      <description value="The different types of Medication Summary"/>
+      <groupingId value="medicationrecord"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="CodeSystem/be-cs-medication-summary-types"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - Medication Summary Types"/>
+      <description value="The different types of Medication Summary"/>
+      <groupingId value="medicationrecord"/>
+    </resource>
+
 
 
 
@@ -94,6 +114,21 @@
   			<title value="The Medication Record"/>
 	  		<generation value="markdown"/>
         <page>
+          <nameUrl value="medicationrecord-definitions.html"/>
+          <title value="Definitions - Medication Record"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="functional-description.html"/>
+          <title value="Functional Description"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="medicationrecord-data-model.html"/>
+          <title value="Medication Record - Data Model"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
           <nameUrl value="medicationrecord-scenarios.html"/>
           <title value="Medication Record Scenarios"/>
           <generation value="markdown"/>
@@ -108,11 +143,7 @@
             <generation value="markdown"/>
           </page>
         </page>
-        <page>
-          <nameUrl value="medicationrecord-definitions.html"/>
-          <title value="Definitions - Medication Record"/>
-          <generation value="markdown"/>
-        </page>
+
         <page>
           <nameUrl value="medicationrecord-requirements.html"/>
           <title value="Requirements - Medication Record"/>
@@ -139,51 +170,31 @@
           </page>
   		  </page>
 		  </page>
+      <page>
+        <nameUrl value="medication-record-transaction-types.html"/>
+        <title value="Medication Record - Types of transactions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifact Index"/>
+        <generation value="html"/>
+      </page>
 		  <page>
   			<nameUrl value="downloads.html"/>
   			<title value="Downloads"/>
 	  		<generation value="html"/>
 		  </page>
-    </page>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <page>
-      <!-- The root will always be toc.html - the template will force it if you don't do it -->
-      <nameUrl value="toc.html"/>
-      <title value="Table of Contents"/>
-      <generation value="html"/>
-      <page>
-        <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Useful Downloads"/>
-        <generation value="html"/>
-      </page>
-    <!-- change history page -->
       <page>
         <nameUrl value="changes.html"/>
         <title value="IG Change History"/>
         <generation value="html"/>
       </page>
     </page>
+
+
+
+
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>
