@@ -3,7 +3,7 @@ The Medication Record needs to contain several data objects that are in the Modu
 
 A brief walkthrough of the data objects that are part of the Medication Record:
 
-![Patient Modular](./patrecord-medrecord.png "Patient Record and Medication Record")
+<img src="./patrecord-medrecord.png" alt="Patient Record and Medication Record" width="100%"/>
 <br clear="all" />
 
 * The Patient record contains a lot more information about the patient, we only focus on those related to the medication
