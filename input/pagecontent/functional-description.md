@@ -4,6 +4,8 @@ The Medication Record is a collection of these different atomic data elements, a
 <br/>
 
 See the [Medication Record data model overview](./medicationrecord-data-model.html) for a more detailed explanation of the different components of the medication record.
+<br/>
+<br/>
 
 
 
@@ -54,3 +56,6 @@ When a receiving system receives a summary, it is important to know which data i
 
 These requirements are mentioned in the [Medication Record requirements](./medicationrecord-requirements.html)
 
+<br/>
+<br/>
+<br/>

@@ -20,6 +20,8 @@ A brief walkthrough of the data objects that are part of the Medication Record:
   * A series of summaries of those events, organized / compiled according to several criteria
 
 
+<br/>
+<br/>
 
 
 ### Structure of the medication record
@@ -31,7 +33,6 @@ The medication record shall therefore indicate some metadata (data about the rec
   - authorship
   - Time of preparation
 
-
 * Medication Data
   * Prescriptions
   * Changes in treatment not documented in a prescription
@@ -42,8 +43,10 @@ The medication record shall therefore indicate some metadata (data about the rec
   * Summarized data
 
 
-
-
+This data will be structured according to the different scenarios. The Medication Record specification defines a superset of the information that can be in the different types of record.
+<br/>
+<br/>
+<br/>
 
 
 

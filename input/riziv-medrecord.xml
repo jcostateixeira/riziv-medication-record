@@ -111,7 +111,7 @@
 		  </page>
 		  <page>
   			<nameUrl value="medicationrecord.html"/>
-  			<title value="The Medication Record"/>
+  			<title value="Medication Record Functionality "/>
 	  		<generation value="markdown"/>
         <page>
           <nameUrl value="medicationrecord-definitions.html"/>
@@ -120,7 +120,7 @@
         </page>
         <page>
           <nameUrl value="functional-description.html"/>
-          <title value="Functional Description"/>
+          <title value="Functional Overview"/>
           <generation value="markdown"/>
         </page>
         <page>
@@ -143,54 +143,71 @@
             <generation value="markdown"/>
           </page>
         </page>
+		  </page>
 
+      <page>
+        <nameUrl value="medicationrecord-requirements.html"/>
+        <title value="Requirements - Medication Record"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="medicationrecord-patterns.html"/>
+        <title value="Architectural patterns - Medication Record"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="medicationrecord-pattern-1.html"/>
+          <title value="Pattern 1 - Consult a patient's medication record"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="medicationrecord-pattern-2.html"/>
+          <title value="Pattern 2 - update a patient's medication record"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="medicationrecord-pattern-3.html"/>
+          <title value="Pattern 3 - Compile a medication record"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+
+		  <page>
+  			<nameUrl value="medicationrecord-implementation.html"/>
+  			<title value="Medication Record Implementation "/>
+	  		<generation value="markdown"/>
         <page>
           <nameUrl value="medicationrecord-requirements.html"/>
           <title value="Requirements - Medication Record"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <nameUrl value="medicationrecord-patterns.html"/>
-          <title value="Architectural patterns - Medication Record"/>
+          <nameUrl value="medicationrecord-fhir-resources.html"/>
+          <title value="Requirements - Medication Record"/>
           <generation value="markdown"/>
-          <page>
-            <nameUrl value="medicationrecord-pattern-1.html"/>
-            <title value="Pattern 1 - Consult a patient's medication record"/>
-            <generation value="markdown"/>
-          </page>
-          <page>
-            <nameUrl value="medicationrecord-pattern-2.html"/>
-            <title value="Pattern 2 - update a patient's medication record"/>
-            <generation value="markdown"/>
-          </page>
-          <page>
-            <nameUrl value="medicationrecord-pattern-3.html"/>
-            <title value="Pattern 3 - Compile a medication record"/>
-            <generation value="markdown"/>
-          </page>
-  		  </page>
-		  </page>
-      <page>
-        <nameUrl value="medicationrecord-transaction-types.html"/>
-        <title value="Medication Record - Types of transactions"/>
-        <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="medicationrecord-transaction-types.html"/>
+          <title value="Medication Record - Types of transactions"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="artifacts.html"/>
+          <title value="Artifact Index"/>
+          <generation value="html"/>
+        </page>
+    </page>
+
+        <page>
+          <nameUrl value="downloads.html"/>
+          <title value="Downloads"/>
+          <generation value="html"/>
+        </page>
       </page>
-      <page>
-        <nameUrl value="artifacts.html"/>
-        <title value="Artifact Index"/>
-        <generation value="html"/>
-      </page>
-		  <page>
-  			<nameUrl value="downloads.html"/>
-  			<title value="Downloads"/>
-	  		<generation value="html"/>
-		  </page>
       <page>
         <nameUrl value="changes.html"/>
         <title value="IG Change History"/>
         <generation value="html"/>
       </page>
-    </page>
 
 
 

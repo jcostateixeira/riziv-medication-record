@@ -3,6 +3,7 @@
 	<p>
     This is the HL7 Belgium FHIR Implementation Guide for the Medication workgroup.
    </p>
+
 	<blockquote class="stu-note">
 	<strong>This documentation and set of artefacts are still undergoing development.</strong>
 	The working groups of HL7 and the different interested parties are working on this specification. This publication is a development version that has not yet been validated by HL7 nor by the users and implementers.
@@ -10,9 +11,9 @@
 	<p> </p>
   <a name="content"> </a>
   <h3>Content</h3>
-	<p/>
+  <p> </p>
 
-<p>This publication contains the specifications related to the medication areas and is structured in the following content sections:</p>
+<p>This is the Implementation Guide for the Medication Record.</p>
 <p></p>
 <p><strong>Background:</strong> Information about the specifications, or what you should know to be able to best navigate and use these specifications. Contains a general introduction to the publication structure and content, the artefact types, common privacy and security specifications and the official HL7 FHIR release that this specification is based upon.</p>
 <p></p>
