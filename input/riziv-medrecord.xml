@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
-<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
+<ImplementationGuide xmlns="http://hl7.org/fhir"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
   <id value="hl7.fhir.be.riziv-medicationrecord"/>
-<!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
+  <!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
     <valueString value="resources-spreadsheet.xml"/>
   </extension>-->
   <url value="http://hl7belgium.org/fhir/riziv-medicationrecord/ImplementationGuide/riziv-medicationrecord"/>
@@ -92,8 +93,6 @@
     </resource>
 
 
-
-
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -104,15 +103,15 @@
         <title value="Home Page"/>
         <generation value="html"/>
       </page>
-		  <page>
-		  	<nameUrl value="howto.html"/>
-	  		<title value="How to read this document"/>
-	  		<generation value="html"/>
-		  </page>
-		  <page>
-  			<nameUrl value="medicationrecord.html"/>
-  			<title value="Medication Record Functionality "/>
-	  		<generation value="markdown"/>
+      <page>
+        <nameUrl value="howto.html"/>
+        <title value="How to read this document"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="medicationrecord.html"/>
+        <title value="Medication Record Functionality "/>
+        <generation value="markdown"/>
         <page>
           <nameUrl value="medicationrecord-definitions.html"/>
           <title value="Definitions - Medication Record"/>
@@ -143,7 +142,7 @@
             <generation value="markdown"/>
           </page>
         </page>
-		  </page>
+      </page>
 
       <page>
         <nameUrl value="medicationrecord-requirements.html"/>
@@ -171,18 +170,13 @@
         </page>
       </page>
 
-		  <page>
-  			<nameUrl value="medicationrecord-implementation.html"/>
-  			<title value="Medication Record Implementation "/>
-	  		<generation value="markdown"/>
-        <page>
-          <nameUrl value="medicationrecord-requirements.html"/>
-          <title value="Requirements - Medication Record"/>
-          <generation value="markdown"/>
-        </page>
+      <page>
+        <nameUrl value="medicationrecord-implementation.html"/>
+        <title value="Medication Record Implementation "/>
+        <generation value="markdown"/>
         <page>
           <nameUrl value="medicationrecord-fhir-resources.html"/>
-          <title value="Requirements - Medication Record"/>
+          <title value="Medication Record - FHIR resources"/>
           <generation value="markdown"/>
         </page>
         <page>
@@ -195,19 +189,18 @@
           <title value="Artifact Index"/>
           <generation value="html"/>
         </page>
-    </page>
-
-        <page>
-          <nameUrl value="downloads.html"/>
-          <title value="Downloads"/>
-          <generation value="html"/>
-        </page>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="changes.html"/>
         <title value="IG Change History"/>
         <generation value="html"/>
       </page>
+    </page>
 
 
 
@@ -215,7 +208,7 @@
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>
-      <value value="2019+"/>
+      <value value="2021+"/>
     </parameter>
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>
@@ -242,7 +235,7 @@
       <code value="path-liquid"/>
       <value value="templates\liquid"/>
     </parameter>
-<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
+    <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
     <parameter>
       <code value="excludexml"/>
       <value value="true"/>
