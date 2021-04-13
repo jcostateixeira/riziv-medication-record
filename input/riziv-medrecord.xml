@@ -2,14 +2,14 @@
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
-  <id value="hl7.fhir.be.riziv-medicationrecord"/>
+  <id value="riziv-medicationrecord"/>
   <!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
     <valueString value="resources-spreadsheet.xml"/>
   </extension>-->
   <url value="http://hl7belgium.org/fhir/riziv-medicationrecord/ImplementationGuide/riziv-medicationrecord"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.1.0-test"/>
-  <name value="RIZIV-MedicationRecord"/>
+  <name value="RIZIVMedicationRecord"/>
   <title value="RIZIV / INAMI MedicationRecord"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -22,12 +22,12 @@
     </telecom>
   </contact>
   <description value="RIZIV/INAMI Medication Record"/>
-  <jurisdiction>
+  <jurisdiction>     
     <!-- This will drive SNOMED release used -->
     <coding>
       <!-- This is the code for universal -->
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
       <!-- Change to this if the IG is country-specific
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
       <code value="001"/>
@@ -42,19 +42,6 @@
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <grouping id="medicationrecord">
       <name value="Medication Record"/>
@@ -110,7 +97,7 @@
       </page>
       <page>
         <nameUrl value="medicationrecord.html"/>
-        <title value="Medication Record Functionality "/>
+        <title value="Medication Record Functionality"/>
         <generation value="markdown"/>
         <page>
           <nameUrl value="medicationrecord-definitions.html"/>
@@ -235,6 +222,10 @@
       <code value="path-liquid"/>
       <value value="templates\liquid"/>
     </parameter>
+    <parameter>
+      <code value="apply-jurisdiction"/>
+      <value value="true"/>
+    </parameter>    
     <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
     <parameter>
       <code value="excludexml"/>
