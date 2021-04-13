@@ -34,7 +34,7 @@ Description:    "A document Bundle.
 //* entry MS
 * entry contains 
     Overview 1..1 and
-    Summary 0..* and
+    Summary 1..* and
     Dispenses 0..* and
     Administrations 0..* and
     AdverseEvents 0..* and
@@ -47,7 +47,7 @@ Description:    "A document Bundle.
     MedRecordComposition
 
 * entry[Summary].resource only
-    MedicationStatement
+    MedicationTreatmentSummary
 
 * entry[Dispenses].resource only
     MedicationDispense
@@ -73,3 +73,15 @@ Description:    "A document Bundle.
 * entry[Prescriptions].resource only
     MedicationRequest
 
+
+
+Profile:        MedicationTreatmentSummary
+Parent:         CarePlan
+Id:             medication-treatment-summary
+Title:          "Medication Treatment Summary"
+Description:    "The CarePlan capturing the Medication Record summary lines"
+* meta.profile 1..*
+* subject 1..1
+
+* activity.detail.reasonReference MS
+* activity.reference MS

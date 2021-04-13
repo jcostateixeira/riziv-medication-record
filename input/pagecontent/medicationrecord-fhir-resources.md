@@ -17,18 +17,18 @@ For example the <a href="http://hl7.org/fhir/medicationstatement.html">Medicatio
 The Medication Summary is a authored, consistent compiled representation of a patient's medication. But the medication record may be exchanged independently of such compilation. In some cases the systems want to receive a collection of uncompiled data, for example for analytics or for creating such compilation themselves.  
 
 Whether as a document or as a collection, the Medication Record can contain any of the following resources:
-  * Known Medication allergies and relevant intolerances are represented using [AllergyIntolerance](http://hl7.org/fhir/allergyintolerance.html) resource instances
-  * The known medication adverse events are captured in [AdverseEvent](https://www.hl7.org/fhir/adverseeevnt.html) resource instances. The adverse events can be associated with an allergy reaction, or just a standalone adverse event.
-  * When one or more medications are associated with a given disease (indication), the **indication** can be captured via an instance of the [Condition](http://hl7.org/fhir/condition.html) resource
-  * A medication record describes a set of **Medication Treatments**. The medication treatment is a grouping artifact and a [CarePlan]((http://hl7.org/fhir/careplan.html) can be used. 
-  * A **Medication Summary** describes an interpreted aggregation of Medication Treatment Lines. The medication summary is also a grouping artifact and a [CarePlan](http://hl7.org/fhir/careplan.html) can be used. 
-  * Each **Medication Treatment Line** represents a single line of treatment (see the [functional description](functional-description.html) page) and is implemented as a MedicationStatement resource instance
-  * When a medication treatment 
-  * Medication Treatment Line can be associated with information from different origins: 
-    * **Prescriptions**, or any known change to a treatment, with the [MedicationRequest](http://hl7.org/fhir/medicationrequest.html) resource 
-    * **Dispenses**, with the [MedicationDispense](http://hl7.org/fhir/medicationdispense.html) resource 
-    * **Administrations**, ttypically informed by the patient or by a nurse or other care giver, with the [MedicationAdministration](http://hl7.org/fhir/medicationadministration.html) resource 
-    * In some cases, a medication information can be obtained by a statement given by a patient (or related person) about the usage of the medication. This is done with the [MedicationStatement](http://hl7.org/fhir/medicatiostatement.html) resource 
+* Known Medication allergies and relevant intolerances are represented using [AllergyIntolerance](http://hl7.org/fhir/allergyintolerance.html) resource instances
+* The known medication adverse events are captured in [AdverseEvent](https://www.hl7.org/fhir/adverseeevnt.html) resource instances. The adverse events can be associated with an allergy reaction, or just a standalone adverse event.
+* When one or more medications are associated with a given disease (indication), the **indication** can be captured via an instance of the [Condition](http://hl7.org/fhir/condition.html) resource
+* A medication record describes a set of **Medication Treatments**. The medication treatment is a grouping artifact and a [CarePlan]((http://hl7.org/fhir/careplan.html) can be used. 
+* A **Medication Summary** describes an interpreted aggregation of Medication Treatment Lines. The medication summary is also a grouping artifact and a [CarePlan](http://hl7.org/fhir/careplan.html) can be used. 
+* Each **Medication Treatment Line** represents a single line of treatment (see the [functional description](functional-description.html) page) and is implemented as a MedicationStatement resource instance
+* When a medication treatment 
+* Medication Treatment Line can be associated with information from different origins: 
+  * **Prescriptions**, or any known change to a treatment, with the [MedicationRequest](http://hl7.org/fhir/medicationrequest.html) resource 
+  * **Dispenses**, with the [MedicationDispense](http://hl7.org/fhir/medicationdispense.html) resource 
+  * **Administrations**, ttypically informed by the patient or by a nurse or other care giver, with the [MedicationAdministration](http://hl7.org/fhir/medicationadministration.html) resource 
+  * In some cases, a medication information can be obtained by a statement given by a patient (or related person) about the usage of the medication. This is done with the [MedicationStatement](http://hl7.org/fhir/medicatiostatement.html) resource 
 
 * A set of examples is provided in this document to show the combinations of these elements in realistic scenarios.
 

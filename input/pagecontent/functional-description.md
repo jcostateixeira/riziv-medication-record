@@ -19,11 +19,11 @@ See the [Medication Record data model overview](./medicationrecord-data-model.ht
 #### Types of content  
 Depending on the purposes, the Medication Record may have different types of content in 3 dimensions:
 #####  Different types of content about the usage of the medication  
-The medication record may express only summary information about the usage, or may also express a detailed view of the medication given, for example lot numbers of dispensed products, or administration times when known. When describing summary information, that information may have been summarized according to different criteria and using different source data
-    * Emergency summaries may need a small summarized data set
-    * A medication record of the patient's medication during a hospital stay may contain more details such as the administration of the medication
-    * Medication treatment adherence or other studies may require more or less details, depending on the use case at hand
-    * Transfer of care may require more or less detail, depending on the use case
+The medication record may express only summary information about the usage, or may also express a detailed view of the medication given, for example lot numbers of dispensed products, or administration times when known. When describing summary information, that information may have been summarized according to different criteria and using different source data  
+* Emergency summaries may need a small summarized data set  
+* A medication record of the patient's medication during a hospital stay may contain more details such as the administration of the medication  
+* Medication treatment adherence or other studies may require more or less details, depending on the use case at hand  
+* Transfer of care may require more or less detail, depending on the use case  
   <br/>
   <br/>
 
