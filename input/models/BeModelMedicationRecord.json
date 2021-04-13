@@ -1,7 +1,7 @@
 {
     "resourceType": "StructureDefinition",
     "id": "be-model-medication-record",
-    "url": "http://hl7belgium.org/fhir/be-model-medication-record",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-model-medication-record",
     "version": "version",
     "name": "BeModelMedicationRecord",
     "status": "draft",
@@ -22,8 +22,8 @@
         {
             "coding": [
                 {
-                    "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-                    "code": "056"
+                    "system": "urn:iso:std:iso:3166",
+                    "code": "BE"
                 }
             ]
         }
@@ -41,7 +41,7 @@
                 "path": "BeMedicationRecord.patient",
                 "short": "The patient that has the medication",
                 "definition": "The patient that has the medication",
-                "min": "1",
+                "min": 1,
                 "max": "1",
                 "type": [
                     {
@@ -54,7 +54,7 @@
                 "path": "BeMedicationRecord.patient.name",
                 "short": "The name of the patient",
                 "definition": "The name of the patient",
-                "min": "0",
+                "min": 0,
                 "max": "1",
                 "type": [
                     {
@@ -67,11 +67,11 @@
                 "path": "BeMedicationRecord.patient.identifier",
                 "short": "An identifier or reference to the patient defined elsewhere",
                 "definition": "An identifier or reference to the patient defined elsewhere",
-                "min": "0",
+                "min": 0,
                 "max": "1",
                 "type": [
                     {
-                        "code": "CodeableReference"
+                        "code": "Identifier"
                     }
                 ]
             },
@@ -80,7 +80,7 @@
                 "path": "BeMedicationRecord.recordIdentifier",
                 "short": "An identifier of the medication record when it needs to be exchanged or tracked",
                 "definition": "An identifier of the medication record when it needs to be exchanged or tracked",
-                "min": "0",
+                "min": 0,
                 "max": "*",
                 "type": [
                     {
@@ -93,7 +93,7 @@
                 "path": "BeMedicationRecord.summary",
                 "short": "Summary section(s)",
                 "definition": "An overview (possibly aggregated) of the medication",
-                "min": "0",
+                "min": 0,
                 "max": "*",
                 "type": [
                     {
@@ -106,7 +106,7 @@
                 "path": "BeMedicationRecord.summary.identifier",
                 "short": "Unique business identifier for this summary",
                 "definition": "Unique business identifier for this summary",
-                "min": "0",
+                "min": 0,
                 "max": "*",
                 "type": [
                     {
@@ -119,7 +119,7 @@
                 "path": "BeMedicationRecord.summary.recordDate",
                 "short": "The date the summary was created",
                 "definition": "The date the summary was created",
-                "min": "0",
+                "min": 0,
                 "max": "1",
                 "type": [
                     {
@@ -132,7 +132,7 @@
                 "path": "BeMedicationRecord.summary.lastUpdated",
                 "short": "The date the summary was last updated",
                 "definition": "The date the summary was last updated",
-                "min": "0",
+                "min": 0,
                 "max": "1",
                 "type": [
                     {
@@ -145,7 +145,7 @@
                 "path": "BeMedicationRecord.summary.author",
                 "short": "The author of the summary",
                 "definition": "The author of the summary",
-                "min": "1",
+                "min": 1,
                 "max": "1",
                 "type": [
                     {
@@ -158,7 +158,7 @@
                 "path": "BeMedicationRecord.summary.type",
                 "short": "The type of summary",
                 "definition": "The type of summary, which determines the rules for the creation of this summary",
-                "min": "1",
+                "min": 1,
                 "max": "1",
                 "type": [
                     {
@@ -167,7 +167,7 @@
                 ],
                 "binding": {
                     "strength": "required",
-                    "valueSet": "be-vs-medication-summary-types"
+                    "valueSet": "http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/be-vs-medication-summary-types"
                 }
             },
             {
@@ -175,7 +175,7 @@
                 "path": "BeMedicationRecord.summary.basedOn",
                 "short": "The information that this summary is basedOn",
                 "definition": "The information that this summary is basedOn, e.g. Provenance, MedicationRequest, MedicationDispense..",
-                "min": "0",
+                "min": 0,
                 "max": "*",
                 "type": [
                     {
@@ -188,7 +188,7 @@
                 "path": "BeMedicationRecord.summary.criteria",
                 "short": "A description of the criteria for this summary",
                 "definition": "A description of the criteria for this summary",
-                "min": "0",
+                "min": 0,
                 "max": "1",
                 "type": [
                     {
@@ -201,7 +201,7 @@
                 "path": "BeMedicationRecord.summary.period",
                 "short": "The period covered by this summary",
                 "definition": "The period to which the summary refers",
-                "min": "0",
+                "min": 0,
                 "max": "1",
                 "type": [
                     {
@@ -214,7 +214,7 @@
                 "path": "BeMedicationRecord.treatmentLine",
                 "short": "Each line in the summary",
                 "definition": "Each line in the summary - different types of summary may have different criteria for what constitutes a unique line",
-                "min": "0",
+                "min": 0,
                 "max": "*",
                 "type": [
                     {
@@ -227,7 +227,7 @@
                 "path": "BeMedicationRecord.treatmentLine.identifier",
                 "short": "Unique business identifier for this treatment line",
                 "definition": "Unique business identifier for this treatment line",
-                "min": "0",
+                "min": 0,
                 "max": "*",
                 "type": [
                     {
@@ -240,7 +240,7 @@
                 "path": "BeMedicationRecord.treatmentLine.dosage",
                 "short": "The medication dosage",
                 "definition": "The medication dosage",
-                "min": "0",
+                "min": 0,
                 "max": "1",
                 "type": [
                     {
@@ -253,7 +253,7 @@
                 "path": "BeMedicationRecord.treatmentLine.status",
                 "short": "The medication status",
                 "definition": "The medication status",
-                "min": "1",
+                "min": 1,
                 "max": "1",
                 "type": [
                     {
@@ -266,7 +266,7 @@
                 "path": "BeMedicationRecord.treatmentLine.type",
                 "short": "The type of medication - OTC, hospital, or other",
                 "definition": "The type of medication - OTC, hospital, or other",
-                "min": "0",
+                "min": 0,
                 "max": "1",
                 "type": [
                     {
@@ -275,15 +275,19 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.treatmentLine.indication",
-                "path": "BeMedicationRecord.treatmentLine.indication",
+                "id": "BeMedicationRecord.treatmentLine.indication[x]",
+                "path": "BeMedicationRecord.treatmentLine.indication[x]",
                 "short": "The indication(s) for which this medication is taken",
                 "definition": "The indication(s) for which this medication is taken",
-                "min": "0",
+                "min": 0,
                 "max": "*",
                 "type": [
                     {
-                        "code": "CodeableReference"
+                        "code": "CodeableConcept"
+                    },
+                    {
+                        "code": "Reference",
+                        "targetProfile": ["http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/medication-indication"]
                     }
                 ]
             },
@@ -292,7 +296,7 @@
                 "path": "BeMedicationRecord.treatmentLine.medication",
                 "short": "The medication that is planned or taken",
                 "definition": "The medication that is planned or taken",
-                "min": "1",
+                "min": 1,
                 "max": "*",
                 "type": [
                     {
@@ -305,7 +309,7 @@
                 "path": "BeMedicationRecord.treatmentLine.medication.reference",
                 "short": "A reference to a medication description",
                 "definition": "A reference to a medication description",
-                "min": "0",
+                "min": 0,
                 "max": "1",
                 "type": [
                     {
@@ -318,7 +322,7 @@
                 "path": "BeMedicationRecord.treatmentLine.medication.code",
                 "short": "The code of the medication",
                 "definition": "The code of the medication",
-                "min": "0",
+                "min": 0,
                 "max": "1",
                 "type": [
                     {
@@ -331,7 +335,7 @@
                 "path": "BeMedicationRecord.treatmentLine.medication.class",
                 "short": "The class of the medication e.g. ATC",
                 "definition": "The class of the medication e.g. ATC",
-                "min": "0",
+                "min": 0,
                 "max": "*",
                 "type": [
                     {
@@ -344,7 +348,7 @@
                 "path": "BeMedicationRecord.historyDetails",
                 "short": "The details about the medication history",
                 "definition": "The details about the medication history",
-                "min": "0",
+                "min": 0,
                 "max": "1",
                 "type": [
                     {
@@ -357,7 +361,7 @@
                 "path": "BeMedicationRecord.historyDetails.orders",
                 "short": "History of orders and order changes for the medication",
                 "definition": "History of orders and order changes for the medication",
-                "min": "0",
+                "min": 0,
                 "max": "*",
                 "type": [
                     {
@@ -370,7 +374,7 @@
                 "path": "BeMedicationRecord.historyDetails.dispenses",
                 "short": "History of dispenses of the medication",
                 "definition": "History of dispenses of the medication",
-                "min": "0",
+                "min": 0,
                 "max": "*",
                 "type": [
                     {
@@ -383,7 +387,7 @@
                 "path": "BeMedicationRecord.historyDetails.administrations",
                 "short": "History of administrations of the medication",
                 "definition": "History of administrations of the medication",
-                "min": "0",
+                "min": 0,
                 "max": "*",
                 "type": [
                     {
@@ -396,7 +400,7 @@
                 "path": "BeMedicationRecord.historyDetails.adverseEvents",
                 "short": "History of adverse events",
                 "definition": "History of adverse events",
-                "min": "0",
+                "min": 0,
                 "max": "*",
                 "type": [
                     {
@@ -409,7 +413,7 @@
                 "path": "BeMedicationRecord.medicationAllergyIntolerance",
                 "short": "Known Allergies to medication",
                 "definition": "Known Allergies to medication",
-                "min": "0",
+                "min": 0,
                 "max": "*",
                 "type": [
                     {
