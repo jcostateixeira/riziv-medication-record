@@ -37,7 +37,7 @@
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="specification_overview.html">Technical overview</a>
+				<a href="implementation.html">Technical overview</a>
 			</li>
 			<li>
 				<a href="artifacts.html">Artifacts</a>

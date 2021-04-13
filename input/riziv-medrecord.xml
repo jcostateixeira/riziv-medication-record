@@ -158,8 +158,8 @@
       </page>
 
       <page>
-        <nameUrl value="medicationrecord-implementation.html"/>
-        <title value="Medication Record Implementation "/>
+        <nameUrl value="implementation.html"/>
+        <title value="Medication Record Implementation"/>
         <generation value="markdown"/>
         <page>
           <nameUrl value="medicationrecord-fhir-resources.html"/>
