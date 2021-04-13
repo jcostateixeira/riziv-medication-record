@@ -4,9 +4,9 @@ The Medication Record needs to contain several data objects that are in the Modu
 For detailed information about the different possibilities of exchange FHIR content, the [HL7 Da Vinci Health Record Exchange (HRex) Implementation Guide](https://build.fhir.org/ig/HL7/davinci-ehrx/exchanging.html) provides a good reference.
 
 We consider 3 types of exchange:
-1. Exchange of a curated overview of a patient's medication, typically with summary information and eventually some details.
-2. Exchange of 'raw' data for example between EHR systems to provide input for additional processing, or simply between a hospital EHR and the patient's PHR.
-3. Analytics on the data
+1. Exchange of a curated overview of a patient's medication, typically with summary information and eventually some details.  
+2. Exchange of 'raw' data for example between EHR systems to provide input for additional processing, or simply between a hospital EHR and the patient's PHR.  
+3. Analytics on the data  
 
 
 
