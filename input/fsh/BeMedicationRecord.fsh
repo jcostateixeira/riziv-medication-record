@@ -5,7 +5,12 @@ Title:          "Medication Record List"
 Description:    "The Composition aggregating the Medication Record"
 * meta.profile 1..*
 * subject 1..1
+* insert jurisdiction-be
 //* section.entry only Reference (MedicationDispense or MedicationRequest or MedicationStatement)
+
+
+RuleSet: jurisdiction-be
+* ^jurisdiction = urn:iso:std:iso:3166#BE
 
 
 
@@ -16,6 +21,7 @@ Title:          "Medication Record Batch"
 Description:    "A document Bundle.
 * lorem ipsum
 "
+* insert jurisdiction-be
 
 
 Profile:        MedicationRecordDocument
@@ -26,6 +32,7 @@ Description:    "A document Bundle.
 * lorem ipsum
 "
 * meta.profile 1..*
+* insert jurisdiction-be
 * type = #document
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
@@ -82,6 +89,21 @@ Title:          "Medication Treatment Summary"
 Description:    "The CarePlan capturing the Medication Record summary lines"
 * meta.profile 1..*
 * subject 1..1
+* insert jurisdiction-be
 
 * activity.detail.reasonReference MS
 * activity.reference MS
+
+
+
+
+Profile:        MedRecordIndication
+Parent:         Condition
+Id:             medication-indication
+Title:          "Indication"
+Description:    "The Indication for which the medication is given"
+* meta.profile 1..*
+* subject 1..1
+* insert jurisdiction-be
+//* section.entry only Reference (MedicationDispense or MedicationRequest or MedicationStatement)
+
