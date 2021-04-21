@@ -47,10 +47,17 @@ Patient
     }
 
     class " **Medication Treatment**  " as MT #DFD {
+        --
+        |_ identifier
+        |_ type
+        |_ period
+        |_ indication
+        |_ recorder
+        |_ record_date
+        |_ last_updated
+        --
+        CarePlan
     }
-
-'      class " Medication Treatment Line  " as MTL #DEF {
-'      }
 
 
 

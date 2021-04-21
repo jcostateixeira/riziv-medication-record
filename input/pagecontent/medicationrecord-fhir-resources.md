@@ -1,8 +1,6 @@
 The Medication Record uses several Medication-related FHIR resources.
 The FHIR version used for this specification is the [FHIR Release 4](http://hl7.org/fhir/R4).
 
-> 
-
 <blockquote class="stu-note">
 <strong>Note that upcoming versions of FHIR are expected to introduce some meanignful changes to the resources used. </strong> <br/>
 For example the <a href="http://hl7.org/fhir/medicationstatement.html">MedicationStatement</a> resource is expected to be renamed to MedicationUsage. 
@@ -28,7 +26,7 @@ Whether as a document or as a collection, the Medication Record can contain any 
   * **Prescriptions**, or any known change to a treatment, with the [MedicationRequest](http://hl7.org/fhir/medicationrequest.html) resource 
   * **Dispenses**, with the [MedicationDispense](http://hl7.org/fhir/medicationdispense.html) resource 
   * **Administrations**, ttypically informed by the patient or by a nurse or other care giver, with the [MedicationAdministration](http://hl7.org/fhir/medicationadministration.html) resource 
-  * In some cases, a medication information can be obtained by a statement given by a patient (or related person) about the usage of the medication. This is done with the [MedicationStatement](http://hl7.org/fhir/medicatiostatement.html) resource 
+  * In some cases, a medication information can be obtained by a statement given by a patient (or related person) about the usage of the medication. This is done with the [MedicationStatement](http://hl7.org/fhir/medicationstatement.html) resource 
 
 * A set of examples is provided in this document to show the combinations of these elements in realistic scenarios.
 

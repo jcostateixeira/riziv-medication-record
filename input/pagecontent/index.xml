@@ -12,7 +12,9 @@
   <h3>Content</h3>
 	<p/>
 
-<p>This publication contains the specifications related to the medication areas and is structured in the following content sections:</p>
+<p>This publication contains the specifications related to the Medication Schema v2, the FHIR implementation of a patient's medication overview.</p>
+<p>This is organised in diferent sections, which provide the necessary narrative background and functional overview, as well as the functional description and requirements, 
+and the actual technical specifications for designers, implementers and testers.</p>
 <p></p>
 <p><strong>Background:</strong> Information about the specifications, or what you should know to be able to best navigate and use these specifications. Contains a general introduction to the publication structure and content, the artefact types, common privacy and security specifications and the official HL7 FHIR release that this specification is based upon.</p>
 <p></p>
