@@ -9,8 +9,8 @@
   <url value="http://hl7belgium.org/fhir/riziv-medicationrecord/ImplementationGuide/riziv-medicationrecord"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.1.0-test"/>
-  <name value="RIZIVMedicationRecord"/>
-  <title value="RIZIV / INAMI MedicationRecord"/>
+  <name value="MedicationRecord"/>
+  <title value="MedicationRecord"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 Belgium"/>
@@ -21,7 +21,7 @@
       <value value="http://hl7belgium.org"/>
     </telecom>
   </contact>
-  <description value="RIZIV/INAMI Medication Record"/>
+  <description value="Medication Record"/>
   <jurisdiction>     
     <!-- This will drive SNOMED release used -->
     <coding>
