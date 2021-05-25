@@ -25,28 +25,29 @@ A brief walkthrough of the data objects that are part of the Medication Record:
 
 
 ### Structure of the medication record
-For meeting the structure above, 
-The medication record shall therefore indicate some metadata (data about the record itself), and, depending on the type of record, may contain structured medication data that is relevant about the medication, such as:
+For meeting the structure above, the medication record shall contain some metadata (data about the record itself), 
 
-- Metadata
+- Metadata:
   - time window
   - authorship
   - Time of preparation
 
-* Medication Data
+and, depending on the type of record, will contain structured medication data that is relevant about the medication, such as:
+
+* Medication Data:
   * Prescriptions
   * Changes in treatment not documented in a prescription
   * History of medication adverse events
   * Known medication allergies
   * Dispenses
   * Administrations
-  * Summarized data
-
+  * Summarized / reported data
 
 This data will be structured according to the different scenarios. The Medication Record specification defines a superset of the information that can be in the different types of record.
 <br/>
 <br/>
 <br/>
 
-
+<img src="./medrecord-schema.png" alt="Patient Record and Medication Record" width="100%"/>
+<br clear="all" />
 
