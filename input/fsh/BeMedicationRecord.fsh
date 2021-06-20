@@ -41,6 +41,8 @@ Description:    "A document Bundle.
 //* entry MS
 * entry contains 
     Overview 1..1 and
+    Treatment 1..* and
+    TreatmentLine 1..* and
     Summary 1..* and
     Dispenses 0..* and
     Administrations 0..* and
@@ -53,8 +55,14 @@ Description:    "A document Bundle.
 * entry[Overview].resource only
     MedRecordComposition
 
+* entry[Treatment].resource only
+    MedicationTreatment
+
+* entry[TreatmentLine].resource only
+    MedicationTreatmentLine
+
 * entry[Summary].resource only
-    MedicationTreatmentSummary
+    MedicationSummary
 
 * entry[Dispenses].resource only
     MedicationDispense
@@ -96,6 +104,28 @@ Description:    "The CarePlan capturing the a summary view consisting of Medicat
 
 
 
+Profile:        MedicationTreatment
+Parent:         CarePlan
+Id:             medication-treatment
+Title:          "Medication Treatment"
+Description:    "The medication treatment is a collection of medication treatment lines. This line contains the information about the treatment as indicated by the prescriber, or as actually taken by the patient."
+* meta.profile 1..*
+* subject 1..1
+* insert jurisdiction-be
+
+
+
+Profile:        MedicationTreatmentLine
+Parent:         MedicationStatement
+Id:             medication-treatment-line
+Title:          "Medication Treatment Line"
+Description:    "A medication treatment line - a single entry in a list of medication treatments. This line can be as requested by the prescriber, or as actually happening in the dispense or treatment. It can be an aggregation or detail of treatment lines"
+* meta.profile 1..*
+* subject 1..1
+* insert jurisdiction-be
+
+
+
 Profile:        MedRecordIndication
 Parent:         Condition
 Id:             medication-indication
@@ -105,13 +135,3 @@ Description:    "The Indication for which the medication is given"
 * subject 1..1
 * insert jurisdiction-be
 //* section.entry only Reference (MedicationDispense or MedicationRequest or MedicationStatement)
-
-Profile:        MedicationTreatmentLine
-Parent:         MedicationStatement
-Id:             medication-treatment-line
-Title:          "Indication"
-Description:    "The Indication for which the medication is given"
-* meta.profile 1..*
-* subject 1..1
-* insert jurisdiction-be
-
