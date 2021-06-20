@@ -2,7 +2,7 @@
 hide stereotype
 hide circle
 skinparam linetype polyline
-'!pragma graphviz_dot smetana
+!pragma graphviz_dot smetana
 
 package "Patient Record" as PR {
 
