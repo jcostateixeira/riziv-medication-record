@@ -82,18 +82,17 @@ Description:    "A document Bundle.
 
 
 
-Profile:        MedicationTreatmentSummary
+Profile:        MedicationSummary
 Parent:         CarePlan
-Id:             medication-treatment-summary
-Title:          "Medication Treatment Summary"
-Description:    "The CarePlan capturing the Medication Record summary lines"
+Id:             medication-summary
+Title:          "Medication Summary"
+Description:    "The CarePlan capturing the a summary view consisting of Medication treatment lines. A summary view can be detailed, decomposed, aggregated, etc."
 * meta.profile 1..*
 * subject 1..1
 * insert jurisdiction-be
 
 * activity.detail.reasonReference MS
 * activity.reference MS
-
 
 
 
@@ -106,4 +105,13 @@ Description:    "The Indication for which the medication is given"
 * subject 1..1
 * insert jurisdiction-be
 //* section.entry only Reference (MedicationDispense or MedicationRequest or MedicationStatement)
+
+Profile:        MedicationTreatmentLine
+Parent:         MedicationStatement
+Id:             medication-treatment-line
+Title:          "Indication"
+Description:    "The Indication for which the medication is given"
+* meta.profile 1..*
+* subject 1..1
+* insert jurisdiction-be
 
