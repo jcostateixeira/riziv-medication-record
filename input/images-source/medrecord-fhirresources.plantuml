@@ -2,7 +2,7 @@
 hide stereotype
 hide circle
 skinparam linetype polyline
-!pragma graphviz_dot smetana
+'!pragma graphviz_dot smetana
 
 package "Patient Record" as PR {
 
@@ -14,7 +14,7 @@ package "Patient Record" as PR {
 --
 Patient  
         }
-    class " **Medication Summary** " as MS #DEF {
+    class " **Medication View** " as MS #DEF {
         --
         |_ identifier
         |_ type
@@ -29,7 +29,7 @@ Patient
     }
 
 
-    class " **Medication Treatment Line ** " as MTL #DDF {
+    class " **Medication** \n **Treatment Line ** " as MTL #DDF {
         --
         |_ identifier
         |_ dosage
@@ -84,7 +84,26 @@ class " **Medication** \n  **Allergy/Intolerance**  " as MAL #FED {
 BeAllergyIntolerance
 }
 
-class " **Prescription**  " as PRE #FFD {
+class " **Prescription Group**  " as PRE #FFD {
+--
+|_ identifier
+|_ status
+--
+RequestGroup
+}
+
+class " **Prescription Line**  " as PREL #FFD {
+--
+|_ identifier
+|_ status
+|_ medication
+|_ dosage
+--
+RequestGroup
+}
+
+
+class " **Schedule**  " as SCH #FFD {
 --
 |_ identifier
 |_ status
@@ -97,6 +116,7 @@ class " **Dispense**  " as DIS #DDE {
 --
 |_ identifier
 |_ status
+|_ dosage
 |_ medication
 --
 MedicationDispense
@@ -106,6 +126,7 @@ class " **Administration**  " as ADM #DFE {
 --
 |_ identifier
 |_ status
+|_ dosage
 |_ medication
 --
 MedicationAdministration
@@ -149,28 +170,31 @@ Condition
 }
 
 
-MS -r-* MTL
-p -r- MT : "         "
-MT -d-o MTL
+p -d- MS
+MS *-r- MTL: "         "
+MT *-d- MTL: "         "
+p -r- MT : "        "
 MT -r- MP : "     "
 
-p -d- MS
-MP -d[hidden]- MTL
-
 p -u- MAL
-MT -u[hidden]- MAL
-MS -u[hidden]- MAL
 MAL -r- ADE : "       "
-
-
-MTL -d- DIS
-MTL -d- PRE
-MTL -d- ADM
-MTL -r- USE : "   "
 ADE -r[hidden]- IND : "          "
 
-PRE -r[hidden]- DIS : "           "
-DIS -r[hidden]- ADM : "         "
+
+PRE *-r- PREL
+
+MTL -r- PRE
+MTL - PREL
+MTL - USE
+MTL -d- DIS
+MTL - ADM
+MS *-d- SCH
+MTL - SCH
+
+'MS -d[hidden]- USE
+SCH -r[hidden]- USE
+USE -r[hidden]- DIS
+DIS -r[hidden]- ADM
 
 
 
