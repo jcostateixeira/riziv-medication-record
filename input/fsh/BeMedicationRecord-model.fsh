@@ -18,8 +18,9 @@ Title: "Medication Record Dispense logical model"
 * note 0..* Annotation "Additional information about the dispensed item" ""
 * substitutionReason 0..1 CodeableConcept "Why was substitution made" ""
 * type 0..1 CodeableConcept "Trial fill, partial fill, emergency fill, etc." ""
-* location 0..1 Reference(location) "" ""
+* location 0..1 Reference(location) "Where the dispense was made" "Where the dispense was made"
 * treatment 0..1 Reference "" ""
+
 
 Logical: BeModelMedicationRecordOrder
 Title: "Medication Record Prescription logical model"
@@ -57,7 +58,7 @@ Title: "Medication Record Usage logical model"
 * adherence 0..1 BackboneElement "Indicates if the medication is being consumed or administered as instructed" ""
   * code 1..1 CodeableConcept "Type of adherence MedicationUsage Adherence Codes (Example)" ""
   * reason 0..1 CodeableConcept "Details of the reason for the current use of the medication SNOMED CT Drug Therapy Status codes (Example)" ""
-* treatment 0..1 Reference "" ""
+* treatment 0..1 Reference "The treatment that this medication usage report belongs to" ""
 
 
 Logical: BeModelMedicationRecordAdministration
