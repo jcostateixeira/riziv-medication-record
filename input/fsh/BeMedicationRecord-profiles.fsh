@@ -1,3 +1,12 @@
+Extension: TreatmentPlan
+Id: treatmentPlan
+Title: "Based On"
+Description: "The Medication Treatment that this resource belongs to or is based on"
+* value[x] 1..
+* value[x] only Reference (MedRecordTreatment)
+
+
+
 //based on R4
 Profile: MedRecordDispense
 Title: "Medication Record - Dispense profile"
@@ -18,8 +27,8 @@ Parent: MedicationDispense
 * dosageInstruction MS
 * substitution.reason MS
 * type MS
-* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
-* extension[treatmentPlan].valueReference only Reference(CarePlan)
+* extension contains treatmentPlan named treatmentPlan 0..1 MS
+//* extension[treatmentPlan].valueReference only Reference(CarePlan)
 
 
 Profile: MedRecordOrder
@@ -41,8 +50,8 @@ Parent: MedicationRequest
 * dosageInstruction MS
 * note MS
 * authoredOn MS
-* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
-* extension[treatmentPlan].valueReference only Reference(CarePlan) 
+* extension contains treatmentPlan named treatmentPlan 0..1 MS
+//* extension[treatmentPlan].valueReference only Reference(CarePlan) 
 
 
 Profile: MedRecordUsage
@@ -63,8 +72,8 @@ Parent: MedicationStatement
 * reasonCode MS
 * reasonReference MS
 * dosage MS
-* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
-* extension[treatmentPlan].valueReference only Reference(CarePlan) 
+* extension contains treatmentPlan named treatmentPlan 0..1 MS
+//* extension[treatmentPlan].valueReference only Reference(CarePlan) 
 
 Profile: MedRecordAdministration
 Title: "Medication Record - Administration profile"
@@ -88,8 +97,8 @@ Parent: MedicationAdministration
 * device MS
 * note MS 
 * dosage MS
-* extension contains http://hl7.org/fhir/StructureDefinition/event-basedOn named treatmentPlan 0..1 MS
-* extension[treatmentPlan].valueReference only Reference(CarePlan) 
+* extension contains treatmentPlan named treatmentPlan 0..1 MS
+//* extension[treatmentPlan].valueReference only Reference(CarePlan) 
 
 
 //based on R4
