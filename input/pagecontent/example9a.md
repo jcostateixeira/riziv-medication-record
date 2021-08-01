@@ -1,4 +1,4 @@
-## The recording of anesthetic, contrast and similar medications in the medication scheme
+## Example 9a. The recording of anesthetic, contrast and similar medications in the medication scheme
 
 This example shows a medication reconciliation scheme that check a possible interaction before a surgery
 

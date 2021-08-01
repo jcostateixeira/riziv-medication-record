@@ -1,4 +1,4 @@
-## Prescribed medication is changed by another medication from a different VOS-cluster
+## Example 2b. Prescribed medication is changed by another medication from a different VOS-cluster
 
 ### b) different package size  
 
