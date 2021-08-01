@@ -78,6 +78,3 @@ Id: be-vs-medication-summary-types
 Title: "Medication Summary types"
 Description:  "Valueset -  Medication Summary types"
 * include codes from system BeCSMedicationSummaryTypes
-
-// *************
-
