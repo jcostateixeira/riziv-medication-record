@@ -34,5 +34,10 @@ Scenario 11 - Different views and/or filters
 - 11d: [Specialist](./scenario11d.html)
 - 11e: [Patient](./scenario11e.html)
 
-[Scenario 12](./scenario12.html) - The patient is admitted to hospital and there the medication is changed to better help the patient  
+[Scenario 12](./scenario12.html) - The patient is admitted to hospital and there the medication is changed to better help the patient.  
 
+
+future scenarios: 
+- offline issues
+- multi patient prescriptions e.g. nursing homes.
+- dispense for wrong prescription
