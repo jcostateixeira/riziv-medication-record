@@ -42,22 +42,19 @@
 
 
 
-    <grouping id="medicationdispense">
-      <name value="Medication Dispense"/>
-      <description value="Medication Dispense"/>
+    <grouping id="medicationrecord-schema">
+      <name value="Medication Record - schema"/>
+      <description value="Conformance artifactsfor Medication Record, to meet the scope of the Medication Schema"/>
     </grouping>
 
-    <grouping id="medicationrecord">
-      <name value="Medication Record - conformance"/>
-      <description value="Medication Record"/>
-    </grouping>
     <grouping id="medicationrecord-models">
       <name value="Medication Record - models"/>
       <description value="Medication Record Models"/>
     </grouping>
-    <grouping id="medicationrecord-schema">
-      <name value="Medication Record - schema"/>
-      <description value="Medication Record artefacts - Medication Schema"/>
+
+    <grouping id="medicationrecord">
+      <name value="Medication Record - future conformance"/>
+      <description value="Medication Record - artifacts that are related to the more advanced features and scope of the Medication Record, beyond the Medication Schema"/>
     </grouping>
 
     <grouping id="medicationrecord-validatingexamples">
@@ -72,6 +69,11 @@
 
 
 
+
+    <grouping id="medicationdispense">
+      <name value="Medication Dispense"/>
+      <description value="Medication Dispense"/>
+    </grouping>
 
 
 
@@ -174,7 +176,6 @@
   MedicationDispense-example-dispense-communitypharmacy-1med
   MedicationDispense-example-minimal-dispense
   MedicationDispense-medication-dispense-hospital
--->
 
 
 
@@ -188,6 +189,111 @@
       <description value="Medication Record - summary or detailed information about the usage of medication by a patient"/>
       <groupingId value="medicationrecord-models"/>
     </resource>
+-->
+
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/KMEHRv58"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="KMEHR Medication Schema v5.8 Logical Model"/>
+      <description value="KMEHR Medication Schema v5.8 Logical Model (for reference)"/>
+      <groupingId value="medicationrecord-models"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BeModelMedicationRecord"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Record Logical Model"/>
+      <description value="Medication Record Logical Model"/>
+      <groupingId value="medicationrecord-models"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BeModelMedicationRecordAdministration"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Record Logical Model - Administration detail"/>
+      <description value="Medication Record Logical Model - Administration detail Logical Model"/>
+      <groupingId value="medicationrecord-models"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BeModelMedicationRecordDispense"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Record Logical Model - Dispense detail"/>
+      <description value="Medication Record Logical Model - Dispense detail Logical Model"/>
+      <groupingId value="medicationrecord-models"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BeModelMedicationRecordOrder"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Record Logical Model - Prescription detail"/>
+      <description value="Medication Record Logical Model - Prescription detail Logical Model"/>
+      <groupingId value="medicationrecord-models"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BeModelMedicationRecordSummaryView"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Record Logical Model - Medication Summary View detail"/>
+      <description value="Medication Record Logical Model - Medication Summary View detail Logical Model"/>
+      <groupingId value="medicationrecord-models"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BeModelMedicationRecordTreatment"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Record Logical Model - Medication Treatment detail"/>
+      <description value="Medication Record Logical Model - Medication Treatment detail Logical Model"/>
+      <groupingId value="medicationrecord-models"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BeModelMedicationRecordTreatmentLine"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Record Logical Model - Medication Treatment Line detail"/>
+      <description value="Medication Record Logical Model - Medication Treatment Line detail Logical Model"/>
+      <groupingId value="medicationrecord-models"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BeModelMedicationRecordUsage"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Record Logical Model - Usage Report detail"/>
+      <description value="Medication Record Logical Model - Usage Report detail Logical Model"/>
+      <groupingId value="medicationrecord-models"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/BeModelMedicationScheduledAdministration"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Record Logical Model - Scheduled Administration detail"/>
+      <description value="Medication Record Logical Model - Scheduled Administration detail Logical Model"/>
+      <groupingId value="medicationrecord-models"/>
+    </resource>
+
+
+
+
+
+
+
+
+
+
+
+
 
     <resource>
       <reference>
@@ -270,8 +376,8 @@
         <reference value="StructureDefinition/MedRecordMedicationSummaryView"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Medication Record Administration profile"/>
-      <description value="Medication Record Administration profile"/>
+      <name value="Medication Record Summary View profile"/>
+      <description value="Medication Record Summary View profile"/>
       <groupingId value="medicationrecord"/>
     </resource>
 
@@ -282,8 +388,8 @@
         <reference value="StructureDefinition/MedRecordOrder"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Medication Record Administration profile"/>
-      <description value="Medication Record Administration profile"/>
+      <name value="Medication Record Prescription profile"/>
+      <description value="Medication Record Prescription profile"/>
       <groupingId value="medicationrecord"/>
     </resource>
 
@@ -304,11 +410,12 @@
         <reference value="StructureDefinition/related-tl"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Medication Record"/>
-      <description value="Medication Record Composition profile"/>
+      <name value="Extension - Related Treatment Line"/>
+      <description value="Extension - Related Treatment Line"/>
       <groupingId value="medicationrecord"/>
     </resource>
 
+<!--
     <resource>
       <reference>
         <reference value="StructureDefinition/ValueSet-be-vs-medication-summary-types"/>
@@ -319,13 +426,12 @@
       <groupingId value="medicationrecord"/>
     </resource>
 
-
     <resource>
       <reference>
         <reference value="ValueSet/medication-substitution-dispense-v1"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Medication Record"/>
+      <name value="ValueSet - "/>
       <description value="Medication Record Composition profile"/>
       <groupingId value="medicationrecord"/>
     </resource>
@@ -338,6 +444,7 @@
       <description value="Medication Record Composition profile"/>
       <groupingId value="medicationrecord"/>
     </resource>
+-->
     <resource>
       <reference>
         <reference value="MedicationStatement/13-treatmentLine-2"/>
@@ -345,7 +452,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Medication Record"/>
       <description value="Medication Record Composition profile"/>
-      <groupingId value="medicationrecord"/>
+      <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
     <resource>
       <reference>
@@ -354,10 +461,9 @@
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Medication Record"/>
       <description value="Medication Record Composition profile"/>
-      <groupingId value="medicationrecord"/>
+      <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
 
-<!--
 
     <resource>
       <reference>
@@ -706,8 +812,6 @@
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
 
-
-
     <resource>
       <reference>
         <reference value="ExampleScenario/example-7-scenario" />
@@ -991,6 +1095,9 @@
       <description value="Medication summary" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
+
+<!--
+
 -->
     <resource>
       <reference>
