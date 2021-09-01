@@ -3,7 +3,7 @@ InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
 Title:    "Dispense entry Example - Community Pharmacy dispense, from prescription"
-* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+//* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
 * language = #fr-BE
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
@@ -71,7 +71,7 @@ InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
 Title:    "Dispense entry Example - Community Pharmacy dispense, from prescription, with contained org."
-* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+//* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
 * contained[0] = apotheek-onder-de-toren
 * language = #nl-BE
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
@@ -120,7 +120,7 @@ Title: "A dispense from a hospital pharmacy"
 //Created from the concept on http://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/StructureDefinition-be-medicationdispense.html
 //* id = 
 * meta.versionId = "1"
-* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+//* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
 //* implicitRules = 
 * language = #nl-BE
 //* text = 
@@ -189,7 +189,7 @@ InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
 Title:    "Dispense Example - Minimal amount of information"
-* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+//* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 * status = #completed
