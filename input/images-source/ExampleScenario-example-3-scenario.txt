@@ -1,0 +1,55 @@
+@startuml
+
+
+Title Dispense of medication before a existing prescription
+
+actor "Pia Peters" as PATIENT
+actor "Dr. Durant" as GP
+participant "Vault" as VAULT
+actor "Pharmacist" as PHARM
+
+    
+    
+    
+    
+    
+group Initial Contact
+
+PATIENT -> GP : Goes to appointment\n
+GP -> VAULT : Get Patient's Medication\n[[ExampleScenario-example-3-scenario-resources.html#EB Empty Bundle]]
+GP -> VAULT : Create new prescription\n[[ExampleScenario-example-3-scenario-resources.html#3-prescription Original Prescription]]
+end
+    
+group Treatment resources Creation
+
+VAULT -> VAULT : Create new treatment\n[[ExampleScenario-example-3-scenario-resources.html#3-treatment New Treatment]]
+VAULT -> VAULT : Create new treatment Line\n[[ExampleScenario-example-3-scenario-resources.html#3-treatmentLine New Treatment Line]]
+end
+    
+group Dispense
+
+PHARM -> VAULT : Get patient's Prescriptions\n[[ExampleScenario-example-3-scenario-resources.html#EB Empty Bundle]]
+PHARM -> VAULT : Dispense original dispense\n[[ExampleScenario-example-3-scenario-resources.html#3-dispense Dispense of product prescribed]]
+PHARM -> VAULT : Dispense ancilliary product\n[[ExampleScenario-example-3-scenario-resources.html#3-2-dispense Ancilliary Dispense of a product]]
+end
+    
+group Treatment Resources Update
+
+VAULT -> VAULT : Create new treatment\n[[ExampleScenario-example-3-scenario-resources.html#3-treatment New Treatment]]
+VAULT -> VAULT : Create new treatment Line\n[[ExampleScenario-example-3-scenario-resources.html#3-treatmentLine New Treatment Line]]
+end
+    
+group group 5
+
+PHARM -> GP : Report of situation\n
+GP -> VAULT : Create new prescription\n[[ExampleScenario-example-3-scenario-resources.html#3-2-prescription New Prescription]]
+end
+    
+group group 6
+
+VAULT -> VAULT : Create new treatment\n[[ExampleScenario-example-3-scenario-resources.html#3-treatment New Treatment]]
+VAULT -> VAULT : Create new treatment Line\n[[ExampleScenario-example-3-scenario-resources.html#3-treatmentLine New Treatment Line]]
+end
+  
+
+@enduml
