@@ -133,7 +133,7 @@ class " **Prescription Line**  " as PREL #FFD {
 |_ location 
 |_ treatment 
 --
-RequestGroup
+MedicationRequest
 }
 
 
