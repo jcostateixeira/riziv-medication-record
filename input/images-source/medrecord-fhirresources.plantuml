@@ -58,6 +58,34 @@ Patient
         MedicationStatement
     }
 
+    class " **Medication** \n **View Line ** " as MVL #DDF {
+        --
+        |_ identifier 
+        |_ basedOn 
+        |_ subject 
+        |_ recorder 
+        |_ recordDate 
+        |_ startMedicationDate   
+        |_ endMedicationDate 
+        |_ originType 
+        |_ reaction 
+        |_ product
+          |_ code
+          |_ reference
+          |_ class
+        |_ medicationType 
+        |_ instructionForUse 
+        |_ dosageAmount 
+        |_ periodicity 
+        |_ route 
+        |_ dayPeriod 
+        |_ lifecycleStatus 
+        |_ statusReason 
+        |_ indication
+        --
+        MedicationStatement
+    }
+
     class " **Medication Treatment**  " as MT #DFD {
         --
         |_ identifier
@@ -260,7 +288,9 @@ Condition
 
 
 p -d- MS
+MS *-r- MVL: "         "
 MS *-r- MTL: "         "
+MVL -r- MTL: "         "
 MT *-d- MTL: "         "
 p -r- MT : "        "
 MT -r- MP : "     "
@@ -270,20 +300,30 @@ MAL -r- ADE : "       "
 ADE -r[hidden]- IND : "          "
 
 
-PRE *-r- PREL
+'PRE *-r- PREL
 
-MTL -r- PRE
-MTL - PREL
+'MTL -r- PRE
+MTL -r- PREL:"         "
 MTL - USE
 MTL -d- DIS
 MTL - ADM
 MS *-d- SCH
 MTL - SCH
 
+
+
+
+MVL - PREL
+MVL - USE
+MVL - DIS
+MVL - ADM
+MVL - SCH
+
+
 'MS -d[hidden]- USE
-SCH -r[hidden]- USE
-USE -r[hidden]- DIS
-DIS -r[hidden]- ADM
+SCH -r[hidden]- USE : "      "
+USE -r[hidden]- DIS: "      "
+DIS -r[hidden]- ADM: "       "
 
 
 
