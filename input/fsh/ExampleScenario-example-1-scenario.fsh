@@ -98,8 +98,8 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
       * step[+]
         * operation.name = "Get patient's Prescriptions"
         * operation.number = "6"
-        * operation.initiator = "PHARM"
-        * operation.receiver = "VAULT"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "PHARM"
         * operation.request.resourceId = "EB"
       * step[+]
         * operation.name = "Create new dispense"
@@ -110,16 +110,11 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 
   * step[+]
     * process[+]
-      * title = "Treatment Resources Update"
+      * title = "Treatment Resources Update?"
+
       * step[+]
-        * operation.name = "Create new treatment"
+        * operation.name = "Update treatment Line"
         * operation.number = "8"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
-        * operation.request.resourceId = "1-treatment"
-      * step[+]
-        * operation.name = "Create new treatment Line"
-        * operation.number = "9"
-        * operation.initiator = "VAULT"
-        * operation.receiver = "VAULT"
-        * operation.request.resourceId = "1-treatmentLine"
+        * operation.request.resourceId = "1-1-treatmentLine"

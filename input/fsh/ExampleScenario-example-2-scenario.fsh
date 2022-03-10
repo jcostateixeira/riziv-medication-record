@@ -97,8 +97,8 @@ Title: "Prescribed medication is changed by another medication from a different 
       * step[+]
         * operation.name = "Get patient's Prescriptions"
         * operation.number = "6"
-        * operation.initiator = "PHARM"
-        * operation.receiver = "VAULT"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "PHARM"
         * operation.request.resourceId = "EB"
       * step[+]
         * operation.name = "Create new dispense"
@@ -110,15 +110,10 @@ Title: "Prescribed medication is changed by another medication from a different 
   * step[+]
     * process[+]
       * title = "Treatment Resources Update"
+
       * step[+]
-        * operation.name = "Create new treatment"
+        * operation.name = "update new treatment Line?"
         * operation.number = "8"
-        * operation.initiator = "VAULT"
-        * operation.receiver = "VAULT"
-        * operation.request.resourceId = "2a-treatment"
-      * step[+]
-        * operation.name = "Create new treatment Line"
-        * operation.number = "9"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "2a-treatmentLine"

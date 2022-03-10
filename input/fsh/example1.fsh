@@ -74,7 +74,26 @@ Description: "This example shows a prescription that is made by brand name and t
 Instance: 1-treatmentLine 
 InstanceOf: MedRecordTreatmentLine
 Usage: #example
-Description: ""
+Description: "Original Treatment Line, created with a prescription"
+Title:    ""
+
+* identifier[0].system = "http://treatmentLines-identifiers.com"
+* identifier[0].value = "581998d0-8630-4ec0-8233-1cf5807fca41"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+* medicationCodeableConcept = https://cnk.apb.be/codings/cnk_product_codes#2399640  "Amlodipin Sandoz tabl. (deelb.) Besilaat 100x 5mg"
+
+* status = #active
+
+* extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
+* extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
+
+Instance: 1-1-treatmentLine 
+InstanceOf: MedRecordTreatmentLine
+Usage: #example
+Description: "updated Treatment Line, created with a prescription"
 Title:    ""
 
 * identifier[0].system = "http://treatmentLines-identifiers.com"

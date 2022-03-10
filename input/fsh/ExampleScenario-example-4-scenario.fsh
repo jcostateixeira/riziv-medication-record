@@ -80,8 +80,8 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 
         * operation.name = "Get Patient's Medication"
         * operation.number = "2"
-        * operation.initiator = "GP"
-        * operation.receiver = "VAULT"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "GP"
         * operation.response.resourceId = "EB"
       * step[+]
         * operation.name = "Create new prescription"
@@ -111,8 +111,8 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
       * step[+]
         * operation.name = "Get patient's Prescriptions"
         * operation.number = "6"
-        * operation.initiator = "PHARM"
-        * operation.receiver = "VAULT"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "GP"
         * operation.response.resourceId = "EB"
       * step[+]
         * operation.name = "Dispense new product"
