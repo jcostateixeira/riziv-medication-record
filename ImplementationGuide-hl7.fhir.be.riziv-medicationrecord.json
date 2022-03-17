@@ -11,7 +11,7 @@
   "title": "MedicationRecord",
   "status": "draft",
   "experimental": false,
-  "date": "2022-03-17T16:39:50+00:00",
+  "date": "2022-03-17T17:34:21+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -520,7 +520,7 @@
           }
         ],
         "reference": {
-          "reference": "MedicationDispense/13-dispense"
+          "reference": "MedicationDispense/13-1-dispense"
         },
         "fhirVersion": [
           "4.0.1"
@@ -538,7 +538,7 @@
           }
         ],
         "reference": {
-          "reference": "MedicationDispense/13-dispense-2"
+          "reference": "MedicationDispense/13-2-dispense"
         },
         "fhirVersion": [
           "4.0.1"
@@ -556,13 +556,31 @@
           }
         ],
         "reference": {
-          "reference": "MedicationDispense/13-dispense-3"
+          "reference": "MedicationDispense/13-3-dispense"
         },
         "fhirVersion": [
           "4.0.1"
         ],
         "name": "Medication Dispense Example 2",
         "description": "Medication Dispense Example 2 - a simple example of a dispensation in a pharmacy - with a geolocation",
+        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense",
+        "groupingId": "medicationdispense"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/13-treatment"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Treatment Example 13",
+        "description": "Treatment 13 - a treatment for OTCs",
         "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense",
         "groupingId": "medicationdispense"
       },
@@ -931,7 +949,7 @@
           }
         ],
         "reference": {
-          "reference": "MedicationStatement/13-treatmentLine-2"
+          "reference": "MedicationStatement/13-2-treatmentLine"
         },
         "fhirVersion": [
           "4.0.1"
@@ -949,7 +967,7 @@
           }
         ],
         "reference": {
-          "reference": "MedicationStatement/13-treatmentLine"
+          "reference": "MedicationStatement/13-1-treatmentLine"
         },
         "fhirVersion": [
           "4.0.1"
@@ -2233,6 +2251,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/13-2-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Bundle"
           }
         ],
@@ -2290,19 +2319,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/13-treatment"
-        },
-        "name": "Headache",
-        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
           }
         ],
@@ -2332,6 +2348,17 @@
         ],
         "reference": {
           "reference": "MedicationStatement/Dafalgan500mgmix"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/13-3-provenance"
         }
       },
       {
@@ -2568,6 +2595,17 @@
         ],
         "reference": {
           "reference": "MedicationStatement/Paracetamol500mg1xCV"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/13-1-provenance"
         }
       },
       {

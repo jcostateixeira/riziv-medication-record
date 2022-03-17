@@ -1,13 +1,13 @@
 ﻿MedicationRecord : Validation Results
 =========================================
 
-err = 142, warn = 196, info = 92
+err = 143, warn = 196, info = 92
 IG Publisher Version: 1.1.112
-Generated Thu Mar 17 16:43:17 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv-medicationrecord#0.1.0-test (canonical = http://hl7belgium.org/fhir/riziv-medicationrecord)
- Build Errors : 960 / 26 / 1
+Generated Thu Mar 17 17:38:14 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv-medicationrecord#0.1.0-test (canonical = http://hl7belgium.org/fhir/riziv-medicationrecord)
+ Build Errors : 979 / 25 / 1
  /github/workspace/fsh-generated/resources/Bundle-EB : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-1-treatment : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CarePlan-13-treatment : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CarePlan-13-treatment : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-15-treatment : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CarePlan-15-treatment-2 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CarePlan-2a-treatment : 0 / 0 / 1
@@ -30,7 +30,7 @@ Generated Thu Mar 17 16:43:17 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv
  /github/workspace/fsh-generated/resources/Condition-reflux-condition : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-toothache-condition : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ExampleScenario-example-1-scenario : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ExampleScenario-example-13-scenario : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ExampleScenario-example-13-scenario : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ExampleScenario-example-2-scenario : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ExampleScenario-example-3-scenario : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ExampleScenario-example-4-scenario : 0 / 0 / 1
@@ -43,9 +43,9 @@ Generated Thu Mar 17 16:43:17 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv
  /github/workspace/fsh-generated/resources/MedicationDispense-10-1-dispense : 0 / 2 / 3
  /github/workspace/fsh-generated/resources/MedicationDispense-10-2-dispense : 0 / 2 / 3
  /github/workspace/fsh-generated/resources/MedicationDispense-10-3-dispense : 0 / 2 / 3
- /github/workspace/fsh-generated/resources/MedicationDispense-13-dispense : 5 / 2 / 5
- /github/workspace/fsh-generated/resources/MedicationDispense-13-dispense-2 : 5 / 2 / 5
- /github/workspace/fsh-generated/resources/MedicationDispense-13-dispense-3 : 5 / 2 / 5
+ /github/workspace/fsh-generated/resources/MedicationDispense-13-1-dispense : 5 / 2 / 5
+ /github/workspace/fsh-generated/resources/MedicationDispense-13-2-dispense : 5 / 2 / 5
+ /github/workspace/fsh-generated/resources/MedicationDispense-13-3-dispense : 5 / 2 / 5
  /github/workspace/fsh-generated/resources/MedicationDispense-2a-dispense : 4 / 2 / 4
  /github/workspace/fsh-generated/resources/MedicationDispense-3-2-dispense : 1 / 2 / 3
  /github/workspace/fsh-generated/resources/MedicationDispense-3-dispense : 1 / 2 / 3
@@ -76,8 +76,8 @@ Generated Thu Mar 17 16:43:17 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv
  /github/workspace/fsh-generated/resources/MedicationRequest-7-prescription : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationRequest-8-prescription : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationStatement-1-treatmentLine : 1 / 0 / 2
- /github/workspace/fsh-generated/resources/MedicationStatement-13-treatmentLine : 1 / 0 / 2
- /github/workspace/fsh-generated/resources/MedicationStatement-13-treatmentLine-2 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/MedicationStatement-13-1-treatmentLine : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/MedicationStatement-13-2-treatmentLine : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationStatement-15-treatmentLine : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationStatement-15-treatmentLine-2 : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationStatement-2a-treatmentLine : 1 / 0 / 2
@@ -101,6 +101,9 @@ Generated Thu Mar 17 16:43:17 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv
  /github/workspace/fsh-generated/resources/NamingSystem-be-ns-prescription-ids : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-package-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Provenance-1-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-13-1-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-13-2-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-13-3-provenance : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Provenance-2-provenance : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Provenance-3-2-provenance : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Provenance-3-provenance : 0 / 1 / 1
@@ -173,7 +176,6 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/toothache-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationDispense/medication-dispense-hospital.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/medication-dispense-hospital.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/13-treatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationStatement/Dafalgan500mgmix.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/Dafalgan500mgmix.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/be-ns-cnk-codes.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
@@ -356,6 +358,9 @@ ERROR: /github/workspace/output/ExampleScenario-example-13-scenario-description.
 ERROR: /github/workspace/output/ExampleScenario-example-13-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 292, column 24: The link '#6' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, examplescenario-medicationotc-description, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-13-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 293, column 24: The link '#7' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, examplescenario-medicationotc-description, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-13-scenario-resources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-example-13-scenario-resources.html#/html/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 274, column 33: The link './CarePlan-13-1-provenance.html' for "New Provenance based on first dispense" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-example-13-scenario-resources.html#/html/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 279, column 33: The link './CarePlan-13-2-provenance.html' for "New Provenance based on second dispense" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-example-13-scenario-resources.html#/html/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 284, column 33: The link './CarePlan-13-3-provenance.html' for "New Provenance based on third dispense" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-13-scenario.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-13-scenario.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 220, column 8: The link 'ExampleScenario-example-13-scenario.xml.html' for "XML" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-13-scenario.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 227, column 8: The link 'ExampleScenario-example-13-scenario.json.html' for "JSON" cannot be resolved
@@ -458,6 +463,7 @@ ERROR: /github/workspace/output/ExampleScenario-example-8-scenario-description.h
 ERROR: /github/workspace/output/ExampleScenario-example-8-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 293, column 24: The link '#2' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, examplescenario-medicationstopped-description, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-8-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 294, column 24: The link '#3' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, examplescenario-medicationstopped-description, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-8-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 295, column 24: The link '#4' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, examplescenario-medicationstopped-description, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
+ERROR: /github/workspace/output/ExampleScenario-example-8-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 296, column 24: The link '#5' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, examplescenario-medicationstopped-description, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-8-scenario-resources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-8-scenario.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-8-scenario.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 220, column 8: The link 'ExampleScenario-example-8-scenario.xml.html' for "XML" cannot be resolved
@@ -488,21 +494,21 @@ ERROR: /github/workspace/output/MedicationDispense-10-3-dispense.html#/html/body
 ERROR: /github/workspace/output/MedicationDispense-10-3-dispense.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-10-3-dispense.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-10-3-dispense.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense-2.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense-2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense-2.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense-2.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense-2.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense-3.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense-3.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense-3.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense-3.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense-3.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-13-dispense.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-1-dispense.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-1-dispense.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-1-dispense.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-1-dispense.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-1-dispense.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-2-dispense.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-2-dispense.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-2-dispense.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-2-dispense.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-2-dispense.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-3-dispense.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-3-dispense.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-3-dispense.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-3-dispense.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationDispense-13-3-dispense.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-2a-dispense.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-2a-dispense.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-2a-dispense.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
@@ -661,16 +667,16 @@ ERROR: /github/workspace/output/MedicationStatement-1-treatmentLine.html#/html/b
 ERROR: /github/workspace/output/MedicationStatement-1-treatmentLine.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationStatement-1-treatmentLine.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationStatement-1-treatmentLine.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine-2.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine-2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine-2.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine-2.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine-2.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationStatement-13-treatmentLine.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationStatement-13-1-treatmentLine.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationStatement-13-1-treatmentLine.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationStatement-13-1-treatmentLine.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationStatement-13-1-treatmentLine.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationStatement-13-1-treatmentLine.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationStatement-13-2-treatmentLine.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationStatement-13-2-treatmentLine.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationStatement-13-2-treatmentLine.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationStatement-13-2-treatmentLine.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationStatement-13-2-treatmentLine.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationStatement-15-treatmentLine-2.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationStatement-15-treatmentLine-2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationStatement-15-treatmentLine-2.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
@@ -805,6 +811,21 @@ ERROR: /github/workspace/output/Provenance-1-provenance.html#/html/body/div/div/
 ERROR: /github/workspace/output/Provenance-1-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Provenance-1-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Provenance-1-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-1-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-1-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-1-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-1-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-1-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-2-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-2-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-2-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-2-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-2-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-3-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-3-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-3-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-3-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-13-3-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Provenance-2-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Provenance-2-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Provenance-2-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
@@ -1103,7 +1124,7 @@ ERROR: /github/workspace/output/ValueSet-medication-substitution-dispense-v1.jso
 ERROR: /github/workspace/output/ValueSet-medication-substitution-dispense-v1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-medication-substitution-dispense-v1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/a at Line 536, column 20: The link '' for "Example 1 - provenance 1" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/a at Line 533, column 20: The link '' for "Example 1 - provenance 1" cannot be resolved
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/example1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/example10.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
@@ -1143,6 +1164,7 @@ ERROR: /github/workspace/output/usecases-dispense.html#/html/body/div/div/nav/di
 == fsh-generated/resources/Bundle-EB.json ==
 == fsh-generated/resources/CarePlan-1-treatment.json ==
 == fsh-generated/resources/CarePlan-13-treatment.json ==
+ERROR: CarePlan/13-treatment: CarePlan: Specified profile type was 'MedicationDispense' in profile 'http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense', but found type 'CarePlan'
 == fsh-generated/resources/CarePlan-15-treatment.json ==
 INFORMATION: CarePlan/15-treatment: CarePlan.activity[0].detail.product.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
 == fsh-generated/resources/CarePlan-15-treatment-2.json ==
@@ -1185,8 +1207,6 @@ INFORMATION: Condition/reflux-condition: Condition.code.coding[0]: Code System U
 INFORMATION: Condition/toothache-condition: Condition.code.coding[0]: Code System URI 'http://snomed.ct' is unknown so the code cannot be validated
 == fsh-generated/resources/ExampleScenario-example-1-scenario.json ==
 == fsh-generated/resources/ExampleScenario-example-13-scenario.json ==
-WARNING: ExampleScenario/example-13-scenario: ExampleScenario.instance[4].name: value should not start or finish with whitespace ' Dispense...2'
-WARNING: ExampleScenario/example-13-scenario: ExampleScenario.instance[5].name: value should not start or finish with whitespace ' Dispense...3'
 == fsh-generated/resources/ExampleScenario-example-2-scenario.json ==
 == fsh-generated/resources/ExampleScenario-example-3-scenario.json ==
 == fsh-generated/resources/ExampleScenario-example-4-scenario.json ==
@@ -1219,36 +1239,36 @@ INFORMATION: MedicationDispense/10-3-dispense: MedicationDispense.medication.ofT
 WARNING: MedicationDispense/10-3-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: MedicationDispense/10-3-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: MedicationDispense/10-3-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
-== fsh-generated/resources/MedicationDispense-13-dispense.json ==
-ERROR: MedicationDispense/13-dispense: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-dispense: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-dispense: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-dispense: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-dispense: MedicationDispense: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
-INFORMATION: MedicationDispense/13-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
-WARNING: MedicationDispense/13-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: MedicationDispense/13-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: MedicationDispense/13-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
-== fsh-generated/resources/MedicationDispense-13-dispense-2.json ==
-ERROR: MedicationDispense/13-dispense-2: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-dispense-2: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-dispense-2: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-dispense-2: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-dispense-2: MedicationDispense: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
-INFORMATION: MedicationDispense/13-dispense-2: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
-WARNING: MedicationDispense/13-dispense-2: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: MedicationDispense/13-dispense-2: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: MedicationDispense/13-dispense-2: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
-== fsh-generated/resources/MedicationDispense-13-dispense-3.json ==
-ERROR: MedicationDispense/13-dispense-3: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-dispense-3: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-dispense-3: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-dispense-3: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-dispense-3: MedicationDispense: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
-INFORMATION: MedicationDispense/13-dispense-3: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
-WARNING: MedicationDispense/13-dispense-3: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: MedicationDispense/13-dispense-3: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: MedicationDispense/13-dispense-3: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-13-1-dispense.json ==
+ERROR: MedicationDispense/13-1-dispense: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
+ERROR: MedicationDispense/13-1-dispense: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
+ERROR: MedicationDispense/13-1-dispense: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
+ERROR: MedicationDispense/13-1-dispense: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
+ERROR: MedicationDispense/13-1-dispense: MedicationDispense: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
+INFORMATION: MedicationDispense/13-1-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/13-1-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/13-1-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/13-1-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-13-2-dispense.json ==
+ERROR: MedicationDispense/13-2-dispense: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
+ERROR: MedicationDispense/13-2-dispense: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
+ERROR: MedicationDispense/13-2-dispense: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
+ERROR: MedicationDispense/13-2-dispense: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
+ERROR: MedicationDispense/13-2-dispense: MedicationDispense: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
+INFORMATION: MedicationDispense/13-2-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/13-2-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/13-2-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/13-2-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-13-3-dispense.json ==
+ERROR: MedicationDispense/13-3-dispense: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
+ERROR: MedicationDispense/13-3-dispense: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
+ERROR: MedicationDispense/13-3-dispense: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
+ERROR: MedicationDispense/13-3-dispense: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
+ERROR: MedicationDispense/13-3-dispense: MedicationDispense: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
+INFORMATION: MedicationDispense/13-3-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/13-3-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: MedicationDispense/13-3-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/13-3-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationDispense-2a-dispense.json ==
 ERROR: MedicationDispense/2a-dispense: MedicationDispense: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
 INFORMATION: MedicationDispense/2a-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
@@ -1383,12 +1403,12 @@ INFORMATION: MedicationRequest/8-prescription: MedicationRequest.medication.ofTy
 == fsh-generated/resources/MedicationStatement-1-treatmentLine.json ==
 ERROR: MedicationStatement/1-treatmentLine: MedicationStatement: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationStatement])
 INFORMATION: MedicationStatement/1-treatmentLine: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
-== fsh-generated/resources/MedicationStatement-13-treatmentLine.json ==
-ERROR: MedicationStatement/13-treatmentLine: MedicationStatement: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationStatement])
-INFORMATION: MedicationStatement/13-treatmentLine: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated
-== fsh-generated/resources/MedicationStatement-13-treatmentLine-2.json ==
-ERROR: MedicationStatement/13-treatmentLine-2: MedicationStatement: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationStatement])
-INFORMATION: MedicationStatement/13-treatmentLine-2: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationStatement-13-1-treatmentLine.json ==
+ERROR: MedicationStatement/13-1-treatmentLine: MedicationStatement: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationStatement])
+INFORMATION: MedicationStatement/13-1-treatmentLine: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationStatement-13-2-treatmentLine.json ==
+ERROR: MedicationStatement/13-2-treatmentLine: MedicationStatement: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationStatement])
+INFORMATION: MedicationStatement/13-2-treatmentLine: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://vos-identifier.be/vos_product_codes' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationStatement-15-treatmentLine.json ==
 ERROR: MedicationStatement/15-treatmentLine: MedicationStatement: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationStatement])
 INFORMATION: MedicationStatement/15-treatmentLine: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
@@ -1451,6 +1471,12 @@ ERROR: MedicationStatement/Paracetamol500mg1xCV: MedicationStatement.subject: Un
 == fsh-generated/resources/NamingSystem-be-ns-product-package-type.json ==
 == fsh-generated/resources/Provenance-1-provenance.json ==
 WARNING: Provenance/1-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-13-1-provenance.json ==
+WARNING: Provenance/13-1-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-13-2-provenance.json ==
+WARNING: Provenance/13-2-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-13-3-provenance.json ==
+WARNING: Provenance/13-3-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/Provenance-2-provenance.json ==
 WARNING: Provenance/2-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/Provenance-3-2-provenance.json ==
