@@ -55,6 +55,13 @@ Title: "Dispense medication before the prescription is available"
 * instance[=].resourceType = #MedicationRequest
 * instance[=].name = "New Prescription"
 
+* instance[+].resourceId = "3-provenance"
+* instance[=].resourceType = #Provenance
+* instance[=].name = "New Provenance"
+
+* instance[+].resourceId = "3-2-provenance"
+* instance[=].resourceType = #Provenance
+* instance[=].name = "New Provenance 2"
 
 * process[+]
   * title = "Dispense of medication before a existing prescription"
@@ -98,36 +105,42 @@ Title: "Dispense medication before the prescription is available"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "3-treatmentLine"
+      * step[+]
+        * operation.name = "Create new Provenance"
+        * operation.number = "6"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "3-provenance"
 
   * step[+]
     * process[+]
       * title = "Dispense"
       * step[+]
         * operation.name = "Get patient's Prescriptions"
-        * operation.number = "6"
+        * operation.number = "7"
         * operation.initiator = "VAULT"
         * operation.receiver = "PHARM"
         * operation.response.resourceId = "EB"
 
       * step[+]
         * operation.name = "Dispense original dispense"
-        * operation.number = "7"
+        * operation.number = "8"
         * operation.initiator = "PHARM"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "3-dispense"
       * step[+]
         * operation.name = "Dispense ancilliary product"
-        * operation.number = "8"
+        * operation.number = "9"
         * operation.initiator = "PHARM"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "3-2-dispense"
 
   * step[+]
     * process[+]
-      * title = "Treatment Resources Update"
+      * title = "Treatment Resources Update?"
       * step[+]
         * operation.name = "update treatment Line?"
-        * operation.number = "9"
+        * operation.number = "10"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "3-treatmentLine"
@@ -137,39 +150,34 @@ Title: "Dispense medication before the prescription is available"
       * title = "Reporting"
       * step[+]
         * operation.name = "Report of situation"
-        * operation.number = "10"
+        * operation.number = "11"
         * operation.initiator = "PHARM"
         * operation.receiver = "GP"
       * step[+]
         * operation.name = "Goes to new appointment"
-        * operation.number = "11"
+        * operation.number = "12"
         * operation.initiator = "PATIENT"
         * operation.receiver = "GP"
 
         * operation.name = "Get Patient's Medication"
-        * operation.number = "12"
+        * operation.number = "13"
         * operation.initiator = "GP"
         * operation.receiver = "VAULT"
         * operation.response.resourceId = "EB"
 
         * operation.name = "Create new prescription"
-        * operation.number = "13"
+        * operation.number = "14"
         * operation.initiator = "GP"
         * operation.receiver = "VAULT"
         * operation.response.resourceId = "3-2-prescription"
 
   * step[+]
     * process[+]
-      * title = "group 6"
+      * title = "Linking"
       * step[+]
-        * operation.name = "Create new treatment?"
-        * operation.number = "14"
-        * operation.initiator = "VAULT"
-        * operation.receiver = "VAULT"
-        * operation.request.resourceId = "3-treatment"
-      * step[+]
-        * operation.name = "Create new treatment Line?"
+        * operation.name = "Create new provenance"
         * operation.number = "15"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
-        * operation.request.resourceId = "3-treatmentLine"
+        * operation.request.resourceId = "3-2-provenance"
+
