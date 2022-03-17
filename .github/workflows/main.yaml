@@ -25,6 +25,14 @@ jobs:
      - uses: actions/checkout@v2
      - name: get validator
        run: wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
+     - name: checkout action
+     - uses: actions/checkout@v2
+     - name: install sushi
+     - uses: actions/setup-node@v2
+       with:
+        node-version: '14'
+        cache: 'npm'
+    - run: npm install sushi
      - name: ls
        run: ls
      - name: transform exampleScenarios
