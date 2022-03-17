@@ -29,7 +29,9 @@ jobs:
        with:
         node-version: '14'
      - name: Install dependencies
-       run: npm install sushi
+       run: |
+        npm install sushi
+        sushi .
      - name: get validator
        run: wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
 
