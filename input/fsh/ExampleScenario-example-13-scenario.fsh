@@ -26,25 +26,43 @@ Title: "Dispense of OTC medication on the community pharmacy"
 * instance[=].resourceType = #Bundle
 * instance[=].name = "Empty Bundle"
 
-* instance[+].resourceId = "13-treatmentLine"
+* instance[+].resourceId = "13-1-treatmentLine"
 * instance[=].resourceType = #MedicationStatement
-* instance[=].name = "New Treatment Line based on prescription"
+* instance[=].name = "New Treatment Line based on first dispense"
 
 * instance[+].resourceId = "13-treatment"
 * instance[=].resourceType = #CarePlan
-* instance[=].name = "New Treatment based on prescription"
+* instance[=].name = "New Treatment based on first dispense"
 
-* instance[+].resourceId = "13-dispense"
-* instance[=].resourceType = #MedicationDispense
-* instance[=].name = "Dispense"
+* instance[+].resourceId = "13-1-provenance"
+* instance[=].resourceType = #CarePlan
+* instance[=].name = "New Provenance based on first dispense"
 
-* instance[+].resourceId = "13-dispense-2"
-* instance[=].resourceType = #MedicationDispense
-* instance[=].name = " Dispense 2"
+* instance[+].resourceId = "13-2-treatmentLine"
+* instance[=].resourceType = #MedicationStatement
+* instance[=].name = "New Treatment Line based on second dispense"
 
-* instance[+].resourceId = "13-dispense-3"
+* instance[+].resourceId = "13-2-provenance"
+* instance[=].resourceType = #CarePlan
+* instance[=].name = "New Provenance based on second dispense"
+
+
+* instance[+].resourceId = "13-3-provenance"
+* instance[=].resourceType = #CarePlan
+* instance[=].name = "New Provenance based on third dispense"
+
+
+* instance[+].resourceId = "13-1-dispense"
 * instance[=].resourceType = #MedicationDispense
-* instance[=].name = " Dispense 3"
+* instance[=].name = "First Dispense"
+
+* instance[+].resourceId = "13-2-dispense"
+* instance[=].resourceType = #MedicationDispense
+* instance[=].name = "Second Dispense"
+
+* instance[+].resourceId = "13-3-dispense"
+* instance[=].resourceType = #MedicationDispense
+* instance[=].name = "Third Dispense"
 
 
 * process[+].title = "Dispense of OTC medication on the community pharmacy"
@@ -73,7 +91,7 @@ Title: "Dispense of OTC medication on the community pharmacy"
 * process[=].step[=].process[=].step[=].operation.number = "3"
 * process[=].step[=].process[=].step[=].operation.initiator = "PHARM"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "13-dispense"
+* process[=].step[=].process[=].step[=].operation.request.resourceId = "13-1-dispense"
 
 * process[=].step[+].process[+].title = "Treatment resources Creation"
 * process[=].step[=].process[=].step[+].operation.name = "Create new treatment"
@@ -86,48 +104,46 @@ Title: "Dispense of OTC medication on the community pharmacy"
 * process[=].step[=].process[=].step[=].operation.number = "5"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "13-treatmentLine"
+* process[=].step[=].process[=].step[=].operation.request.resourceId = "13-1-treatmentLine"
 
-
+* process[=].step[=].process[=].step[+].operation.name = "Create new provenance"
+* process[=].step[=].process[=].step[=].operation.number = "6"
+* process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
+* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].process[=].step[=].operation.request.resourceId = "13-1-provenance"
 
 
 * process[=].step[+].process[+].title = "Second Dispense"
 * process[=].step[=].process[=].step[+].operation.name = "Dispense another product"
-* process[=].step[=].process[=].step[=].operation.number = "6"
+* process[=].step[=].process[=].step[=].operation.number = "7"
 * process[=].step[=].process[=].step[=].operation.initiator = "PHARM"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].process[=].step[=].operation.request.resourceId = "13-2-dispense"
 
-* process[=].step[+].process[+].title = "New Treatment resources Creation"
-* process[=].step[=].process[=].step[+].operation.name = "Create new treatment"
-* process[=].step[=].process[=].step[=].operation.number = "7"
-* process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "13-treatment"
-
+* process[=].step[+].process[+].title = "New Resources Creation"
 * process[=].step[=].process[=].step[+].operation.name = "Create new treatment Line"
 * process[=].step[=].process[=].step[=].operation.number = "8"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "13-treatmentLine"
+* process[=].step[=].process[=].step[=].operation.request.resourceId = "13-2-treatmentLine"
+
+* process[=].step[=].process[=].step[+].operation.name = "Create new provenance"
+* process[=].step[=].process[=].step[=].operation.number = "9"
+* process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
+* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
+* process[=].step[=].process[=].step[=].operation.request.resourceId = "13-2-provenance"
 
 
 * process[=].step[+].process[+].title = "Third Dispense"
 * process[=].step[=].process[=].step[+].operation.name = "Dispense another product"
-* process[=].step[=].process[=].step[=].operation.number = "9"
+* process[=].step[=].process[=].step[=].operation.number = "10"
 * process[=].step[=].process[=].step[=].operation.initiator = "PHARM"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].process[=].step[=].operation.request.resourceId = "13-3-dispense"
 
 * process[=].step[+].process[+].title = "Treatment resources Creation"
-* process[=].step[=].process[=].step[+].operation.name = "Create new treatment"
-* process[=].step[=].process[=].step[=].operation.number = "10"
-* process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
-* process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "13-treatment"
-
-* process[=].step[=].process[=].step[+].operation.name = "Create new treatment Line"
+* process[=].step[=].process[=].step[+].operation.name = "Create new provenance"
 * process[=].step[=].process[=].step[=].operation.number = "11"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
-* process[=].step[=].process[=].step[=].operation.request.resourceId = "13-treatmentLine"
+* process[=].step[=].process[=].step[=].operation.request.resourceId = "13-3-provenance"

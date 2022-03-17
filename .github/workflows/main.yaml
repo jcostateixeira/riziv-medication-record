@@ -40,5 +40,6 @@ jobs:
      - name: transform exampleScenarios
        run: ./fromfsh_to_xml.sh ExampleScenario input/scenarios/
 
-  call_build: 
+  call_build:
+    needs: transform_exampleScenarios
     uses: openhie/empty-fhir-ig/.github/workflows/main.yml@master
