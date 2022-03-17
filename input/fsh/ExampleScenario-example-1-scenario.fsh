@@ -91,30 +91,35 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "1-treatmentLine"
-
+      * step[+]
+        * operation.name = "Create new Provenance"
+        * operation.number = "6"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "1-provenance"
   * step[+]
     * process[+]
       * title = "Dispense"
       * step[+]
         * operation.name = "Get patient's Prescriptions"
-        * operation.number = "6"
+        * operation.number = "7"
         * operation.initiator = "VAULT"
         * operation.receiver = "PHARM"
         * operation.request.resourceId = "EB"
       * step[+]
         * operation.name = "Create new dispense"
-        * operation.number = "7"
+        * operation.number = "8"
         * operation.initiator = "PHARM"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "1-dispense"
 
   * step[+]
     * process[+]
-      * title = "Treatment Resources Update?"
+      * title = "Relationship update"
 
       * step[+]
-        * operation.name = "Update treatment Line"
-        * operation.number = "8"
+        * operation.name = "Create new provenance for treatment"
+        * operation.number = "9"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
-        * operation.request.resourceId = "1-1-treatmentLine"
+        * operation.request.resourceId = "1-1-provenance"
