@@ -465,7 +465,7 @@
 -->
     <resource>
       <reference>
-        <reference value="MedicationStatement/13-treatmentLine-2"/>
+        <reference value="MedicationStatement/13-2-treatmentLine"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Medication Record"/>
@@ -474,7 +474,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="MedicationStatement/13-treatmentLine"/>
+        <reference value="MedicationStatement/13-1-treatmentLine"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Medication Record"/>
