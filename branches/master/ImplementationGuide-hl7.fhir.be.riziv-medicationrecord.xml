@@ -12,7 +12,7 @@
   <title value="MedicationRecord"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-03-17T16:39:50+00:00"/>
+  <date value="2022-03-17T17:34:21+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -339,7 +339,7 @@
         <valueString value="MedicationDispense"/>
       </extension>
       <reference>
-        <reference value="MedicationDispense/13-dispense"/>
+        <reference value="MedicationDispense/13-1-dispense"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Medication Dispense Example 2"/>
@@ -352,7 +352,7 @@
         <valueString value="MedicationDispense"/>
       </extension>
       <reference>
-        <reference value="MedicationDispense/13-dispense-2"/>
+        <reference value="MedicationDispense/13-2-dispense"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Medication Dispense Example 2"/>
@@ -365,11 +365,24 @@
         <valueString value="MedicationDispense"/>
       </extension>
       <reference>
-        <reference value="MedicationDispense/13-dispense-3"/>
+        <reference value="MedicationDispense/13-3-dispense"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Medication Dispense Example 2"/>
       <description value="Medication Dispense Example 2 - a simple example of a dispensation in a pharmacy - with a geolocation"/>
+      <exampleCanonical value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense"/>
+      <groupingId value="medicationdispense"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/13-treatment"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Treatment Example 13"/>
+      <description value="Treatment 13 - a treatment for OTCs"/>
       <exampleCanonical value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense"/>
       <groupingId value="medicationdispense"/>
     </resource>
@@ -630,7 +643,7 @@
         <valueString value="MedicationStatement"/>
       </extension>
       <reference>
-        <reference value="MedicationStatement/13-treatmentLine-2"/>
+        <reference value="MedicationStatement/13-2-treatmentLine"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Medication Record"/>
@@ -643,7 +656,7 @@
         <valueString value="MedicationStatement"/>
       </extension>
       <reference>
-        <reference value="MedicationStatement/13-treatmentLine"/>
+        <reference value="MedicationStatement/13-1-treatmentLine"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Medication Record"/>
@@ -1568,6 +1581,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/13-2-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -1610,16 +1631,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CarePlan"/>
-      </extension>
-      <reference>
-        <reference value="CarePlan/13-treatment"/>
-      </reference>
-      <name value="Headache"/>
-      <exampleCanonical value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -1642,6 +1653,14 @@
       </extension>
       <reference>
         <reference value="MedicationStatement/Dafalgan500mgmix"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/13-3-provenance"/>
       </reference>
     </resource>
     <resource>
@@ -1815,6 +1834,14 @@
       </extension>
       <reference>
         <reference value="MedicationStatement/Paracetamol500mg1xCV"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/13-1-provenance"/>
       </reference>
     </resource>
     <resource>
