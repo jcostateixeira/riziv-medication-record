@@ -51,6 +51,11 @@
     <resourceType value="MedicationDispense"/>
     <name value="New dispense"/>
   </instance>
+  <instance>
+    <resourceId value="2-provenance"/>
+    <resourceType value="Provenance"/>
+    <name value="New Provenance"/>
+  </instance>
   <process>
     <title value="Change VOS from prescription on dispense"/>
     <description value="description"/>
@@ -116,6 +121,17 @@
             </request>
           </operation>
         </step>
+        <step>
+          <operation>
+            <number value="6"/>
+            <name value="Create new Provenance"/>
+            <initiator value="VAULT"/>
+            <receiver value="VAULT"/>
+            <request>
+              <resourceId value="2-provenance"/>
+            </request>
+          </operation>
+        </step>
       </process>
     </step>
     <step>
@@ -123,10 +139,10 @@
         <title value="Dispense"/>
         <step>
           <operation>
-            <number value="6"/>
+            <number value="7"/>
             <name value="Get patient&#39;s Prescriptions"/>
-            <initiator value="PHARM"/>
-            <receiver value="VAULT"/>
+            <initiator value="VAULT"/>
+            <receiver value="PHARM"/>
             <request>
               <resourceId value="EB"/>
             </request>
@@ -134,7 +150,7 @@
         </step>
         <step>
           <operation>
-            <number value="7"/>
+            <number value="8"/>
             <name value="Create new dispense"/>
             <initiator value="PHARM"/>
             <receiver value="VAULT"/>
@@ -147,26 +163,15 @@
     </step>
     <step>
       <process>
-        <title value="Treatment Resources Update"/>
-        <step>
-          <operation>
-            <number value="8"/>
-            <name value="Create new treatment"/>
-            <initiator value="VAULT"/>
-            <receiver value="VAULT"/>
-            <request>
-              <resourceId value="2a-treatment"/>
-            </request>
-          </operation>
-        </step>
+        <title value="Resources Update"/>
         <step>
           <operation>
             <number value="9"/>
-            <name value="Create new treatment Line"/>
+            <name value="Create new provenance?"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
-              <resourceId value="2a-treatmentLine"/>
+              <resourceId value="2-2-provenance"/>
             </request>
           </operation>
         </step>
