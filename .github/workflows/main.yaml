@@ -40,6 +40,18 @@ jobs:
      - name: transform exampleScenarios
        run: ./fromfsh_to_xml.sh ExampleScenario input/scenarios/
 
+    - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || git commit -m "create exampleScenarios" -a
+          
+    - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main  
   call_build:
     needs: transform_exampleScenarios
     uses: openhie/empty-fhir-ig/.github/workflows/main.yml@master
