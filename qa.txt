@@ -3,7 +3,7 @@
 
 err = 142, warn = 196, info = 92
 IG Publisher Version: 1.1.112
-Generated Thu Mar 17 16:23:45 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv-medicationrecord#0.1.0-test (canonical = http://hl7belgium.org/fhir/riziv-medicationrecord)
+Generated Thu Mar 17 16:43:17 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv-medicationrecord#0.1.0-test (canonical = http://hl7belgium.org/fhir/riziv-medicationrecord)
  Build Errors : 960 / 26 / 1
  /github/workspace/fsh-generated/resources/Bundle-EB : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-1-treatment : 0 / 0 / 1
