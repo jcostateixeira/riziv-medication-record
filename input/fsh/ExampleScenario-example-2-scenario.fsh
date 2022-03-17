@@ -68,8 +68,8 @@ Title: "Prescribed medication is changed by another medication from a different 
       * step[+]
         * operation.name = "Get Patient's Medication"
         * operation.number = "2"
-        * operation.initiator = "GP"
-        * operation.receiver = "VAULT"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "GP"
         * operation.response.resourceId = "EB"
       * step[+]
         * operation.name = "Create new prescription"
@@ -117,14 +117,5 @@ Title: "Prescribed medication is changed by another medication from a different 
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "2a-dispense"
 
-  * step[+]
-    * process[+]
-      * title = "Resources Update"
 
-      * step[+]
-        * operation.name = "Create new provenance?"
-        * operation.number = "9"
-        * operation.initiator = "VAULT"
-        * operation.receiver = "VAULT"
-        * operation.request.resourceId = "2-2-provenance"
 

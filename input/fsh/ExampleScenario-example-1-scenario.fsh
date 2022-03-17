@@ -10,6 +10,7 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 * name = "ChangedmedicationSameVOSScenario"
 //* publisher = "DZOP"
 
+* useContext
 * actor[+].actorId = "PATIENT"
 * actor[=].type = #person
 * actor[=].name = "Pia Peters"
@@ -53,9 +54,9 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 
 * process[+]
   * title = "Change Branded Prescription"
-  * description = "description"
+  * description = "A different product than the one prescribed does not link a dispense to the same treatment line."
   * preConditions = "The patient visits their GP and is prescribed Amlor for hypertension. The GP prescribes Amlor, but at the pharmacy there is no Amlor and amlodipin Sandoz is dispensed."
-  * postConditions = "A new treatment and treatment line are created, inside the new treatment line, a prescription and dispense are contained and is possible to see which medication is associated with each."
+  * postConditions = "When the prescription is made, a new treatment and treatment line are created. For linking the prescription to them, a provenance is created. It enables to see which prescriptions and dispenses are associated to each treatment."
 
   * step[+]
     * process[+]
@@ -69,11 +70,11 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
       * step[+]
         * operation.name = "Get Patient's Medication"
         * operation.number = "2"
-        * operation.initiator = "GP"
-        * operation.receiver = "VAULT"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "GP"
         * operation.response.resourceId = "EB"
   
-
+      * step[+]
         * operation.name = "Create new prescription"
         * operation.number = "3"
         * operation.initiator = "GP"
@@ -103,6 +104,9 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
   * step[+]
     * process[+]
       * title = "Dispense"
+      * description = "test"
+      * postConditions = "Since the product is not the same, the dispense is not linked to the treamentLine."
+
       * step[+]
         * operation.name = "Get patient's Prescriptions"
         * operation.number = "7"

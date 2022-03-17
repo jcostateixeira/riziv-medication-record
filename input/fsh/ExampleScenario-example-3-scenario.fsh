@@ -45,23 +45,23 @@ Title: "Dispense medication before the prescription is available"
 
 * instance[+].resourceId = "3-prescription"
 * instance[=].resourceType = #MedicationRequest
-* instance[=].name = "Original Prescription"
+* instance[=].name = "First Prescription"
 
 * instance[+].resourceId = "3-2-dispense"
 * instance[=].resourceType = #MedicationDispense
-* instance[=].name = "Ancilliary Dispense of a product"
+* instance[=].name = "Dispense of an ancilliary product"
 
 * instance[+].resourceId = "3-2-prescription"
 * instance[=].resourceType = #MedicationRequest
-* instance[=].name = "New Prescription"
+* instance[=].name = "Second Prescription"
 
 * instance[+].resourceId = "3-provenance"
 * instance[=].resourceType = #Provenance
-* instance[=].name = "New Provenance"
+* instance[=].name = "First Provenance Creation"
 
 * instance[+].resourceId = "3-2-provenance"
 * instance[=].resourceType = #Provenance
-* instance[=].name = "New Provenance 2"
+* instance[=].name = "Second Provenance Creation"
 
 * process[+]
   * title = "Dispense of medication before a existing prescription"
@@ -139,7 +139,7 @@ Title: "Dispense medication before the prescription is available"
     * process[+]
       * title = "Treatment Resources Update?"
       * step[+]
-        * operation.name = "update treatment Line?"
+        * operation.name = "update treatment Line?Provenance?"
         * operation.number = "10"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"

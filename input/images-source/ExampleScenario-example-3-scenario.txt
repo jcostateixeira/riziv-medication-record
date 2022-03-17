@@ -17,37 +17,37 @@ group Initial Contact
 
 PATIENT -> GP : Goes to appointment\n
 VAULT -> GP : Get Patient's Medication\n[[ExampleScenario-example-3-scenario-resources.html#EB Empty Bundle]]
-GP -> VAULT : Create new prescription\n[[ExampleScenario-example-3-scenario-resources.html#3-prescription Original Prescription]]
+GP -> VAULT : Create new prescription\n[[ExampleScenario-example-3-scenario-resources.html#3-prescription First Prescription]]
 end
     
 group Treatment resources Creation
 
 VAULT -> VAULT : Create new treatment\n[[ExampleScenario-example-3-scenario-resources.html#3-treatment New Treatment]]
 VAULT -> VAULT : Create new treatment Line\n[[ExampleScenario-example-3-scenario-resources.html#3-treatmentLine New Treatment Line]]
-VAULT -> VAULT : Create new Provenance\n[[ExampleScenario-example-3-scenario-resources.html#3-provenance New Provenance]]
+VAULT -> VAULT : Create new Provenance\n[[ExampleScenario-example-3-scenario-resources.html#3-provenance First Provenance Creation]]
 end
     
 group Dispense
 
 VAULT -> PHARM : Get patient's Prescriptions\n[[ExampleScenario-example-3-scenario-resources.html#EB Empty Bundle]]
 PHARM -> VAULT : Dispense original dispense\n[[ExampleScenario-example-3-scenario-resources.html#3-dispense Dispense of product prescribed]]
-PHARM -> VAULT : Dispense ancilliary product\n[[ExampleScenario-example-3-scenario-resources.html#3-2-dispense Ancilliary Dispense of a product]]
+PHARM -> VAULT : Dispense ancilliary product\n[[ExampleScenario-example-3-scenario-resources.html#3-2-dispense Dispense of an ancilliary product]]
 end
     
 group Treatment Resources Update?
 
-VAULT -> VAULT : update treatment Line?\n[[ExampleScenario-example-3-scenario-resources.html#3-treatmentLine New Treatment Line]]
+VAULT -> VAULT : update treatment Line?Provenance?\n[[ExampleScenario-example-3-scenario-resources.html#3-treatmentLine New Treatment Line]]
 end
     
 group Reporting
 
 PHARM -> GP : Report of situation\n
-GP -> VAULT : Create new prescription\n[[ExampleScenario-example-3-scenario-resources.html#3-2-prescription New Prescription]]
+GP -> VAULT : Create new prescription\n[[ExampleScenario-example-3-scenario-resources.html#3-2-prescription Second Prescription]]
 end
     
 group Linking
 
-VAULT -> VAULT : Create new provenance\n[[ExampleScenario-example-3-scenario-resources.html#3-2-provenance New Provenance 2]]
+VAULT -> VAULT : Create new provenance\n[[ExampleScenario-example-3-scenario-resources.html#3-2-provenance Second Provenance Creation]]
 end
   
 

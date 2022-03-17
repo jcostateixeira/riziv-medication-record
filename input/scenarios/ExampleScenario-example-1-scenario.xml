@@ -58,9 +58,9 @@
   </instance>
   <process>
     <title value="Change Branded Prescription"/>
-    <description value="description"/>
+    <description value="A different product than the one prescribed does not link a dispense to the same treatment line."/>
     <preConditions value="The patient visits their GP and is prescribed Amlor for hypertension. The GP prescribes Amlor, but at the pharmacy there is no Amlor and amlodipin Sandoz is dispensed."/>
-    <postConditions value="A new treatment and treatment line are created, inside the new treatment line, a prescription and dispense are contained and is possible to see which medication is associated with each."/>
+    <postConditions value="When the prescription is made, a new treatment and treatment line are created. For linking the prescription to them, a provenance is created. It enables to see which prescriptions and dispenses are associated to each treatment."/>
     <step>
       <process>
         <title value="Initial Contact"/>
@@ -74,6 +74,17 @@
         </step>
         <step>
           <operation>
+            <number value="2"/>
+            <name value="Get Patient&#39;s Medication"/>
+            <initiator value="VAULT"/>
+            <receiver value="GP"/>
+            <response>
+              <resourceId value="EB"/>
+            </response>
+          </operation>
+        </step>
+        <step>
+          <operation>
             <number value="3"/>
             <name value="Create new prescription"/>
             <initiator value="GP"/>
@@ -81,9 +92,6 @@
             <request>
               <resourceId value="1-prescription"/>
             </request>
-            <response>
-              <resourceId value="EB"/>
-            </response>
           </operation>
         </step>
       </process>
@@ -129,6 +137,8 @@
     <step>
       <process>
         <title value="Dispense"/>
+        <description value="test"/>
+        <postConditions value="Since the product is not the same, the dispense is not linked to the treamentLine."/>
         <step>
           <operation>
             <number value="7"/>

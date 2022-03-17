@@ -16,7 +16,8 @@ actor "Pharmacist" as PHARM
 group Initial Contact
 
 PATIENT -> GP : Goes to appointment\n
-GP -> VAULT : Create new prescription\n[[ExampleScenario-example-1-scenario-resources.html#1-prescription New Prescription]][[ExampleScenario-example-1-scenario-resources.html#EB Empty Bundle]]
+VAULT -> GP : Get Patient's Medication\n[[ExampleScenario-example-1-scenario-resources.html#EB Empty Bundle]]
+GP -> VAULT : Create new prescription\n[[ExampleScenario-example-1-scenario-resources.html#1-prescription New Prescription]]
 end
     
 group Treatment resources Creation

@@ -17,25 +17,25 @@ group Initial contact
 
 PATIENT -> GP : Goes to appointment\n
 VAULT -> GP : Get Patient's Medication\n[[ExampleScenario-example-4-scenario-resources.html#EB Empty Bundle]]
-GP -> VAULT : Create new prescription\n[[ExampleScenario-example-4-scenario-resources.html#4-prescription ]]
+GP -> VAULT : Create new prescription\n[[ExampleScenario-example-4-scenario-resources.html#4-1-prescription New prescription]]
 end
     
 group Treatment resources Creation
 
 VAULT -> VAULT : Create new treatment\n[[ExampleScenario-example-4-scenario-resources.html#4-1-treatment New Treatment based on prescription]]
 VAULT -> VAULT : Create new treatment Line\n[[ExampleScenario-example-4-scenario-resources.html#4-1-treatmentLine New Treatment Line based on prescription]]
+VAULT -> VAULT : Create new Provenance\n[[ExampleScenario-example-4-scenario-resources.html#4-1-provenance ]]
 end
     
 group Dispense
 
-VAULT -> GP : Get patient's Prescriptions\n[[ExampleScenario-example-4-scenario-resources.html#EB Empty Bundle]]
+VAULT -> PHARM : Get patient's Prescriptions\n[[ExampleScenario-example-4-scenario-resources.html#EB Empty Bundle]]
 PHARM -> VAULT : Dispense new product\n[[ExampleScenario-example-4-scenario-resources.html#4-1-dispense Dispense for Prescription]]
 end
     
-group Treatment Resources Update
+group Resource Linking
 
-VAULT -> VAULT : Update treatment\n[[ExampleScenario-example-4-scenario-resources.html#4-1-treatment New Treatment based on prescription]]
-VAULT -> VAULT : Update treatment Line\n[[ExampleScenario-example-4-scenario-resources.html#4-1-treatmentLine New Treatment Line based on prescription]]
+VAULT -> VAULT : Create new provenance\n[[ExampleScenario-example-4-scenario-resources.html#4-2-provenance ]]
 end
     
 group Second dispense
@@ -47,6 +47,7 @@ group New Treatment resources Creation
 
 VAULT -> VAULT : Additional treatment\n[[ExampleScenario-example-4-scenario-resources.html#4-2-treatment New Treatment based on dispense]]
 VAULT -> VAULT : Additional Treatment Line\n[[ExampleScenario-example-4-scenario-resources.html#4-2-treatmentLine New Treatment Line based on dispense]]
+VAULT -> VAULT : Create new Provenance\n[[ExampleScenario-example-4-scenario-resources.html#4-3-provenance ]]
 end
   
 

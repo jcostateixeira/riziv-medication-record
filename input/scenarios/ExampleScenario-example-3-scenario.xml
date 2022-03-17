@@ -49,27 +49,27 @@
   <instance>
     <resourceId value="3-prescription"/>
     <resourceType value="MedicationRequest"/>
-    <name value="Original Prescription"/>
+    <name value="First Prescription"/>
   </instance>
   <instance>
     <resourceId value="3-2-dispense"/>
     <resourceType value="MedicationDispense"/>
-    <name value="Ancilliary Dispense of a product"/>
+    <name value="Dispense of an ancilliary product"/>
   </instance>
   <instance>
     <resourceId value="3-2-prescription"/>
     <resourceType value="MedicationRequest"/>
-    <name value="New Prescription"/>
+    <name value="Second Prescription"/>
   </instance>
   <instance>
     <resourceId value="3-provenance"/>
     <resourceType value="Provenance"/>
-    <name value="New Provenance"/>
+    <name value="First Provenance Creation"/>
   </instance>
   <instance>
     <resourceId value="3-2-provenance"/>
     <resourceType value="Provenance"/>
-    <name value="New Provenance 2"/>
+    <name value="Second Provenance Creation"/>
   </instance>
   <process>
     <title value="Dispense of medication before a existing prescription"/>
@@ -193,7 +193,7 @@
         <step>
           <operation>
             <number value="10"/>
-            <name value="update treatment Line?"/>
+            <name value="update treatment Line?Provenance?"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>

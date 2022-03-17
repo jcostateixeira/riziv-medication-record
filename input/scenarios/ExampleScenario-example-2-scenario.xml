@@ -76,8 +76,8 @@
           <operation>
             <number value="2"/>
             <name value="Get Patient&#39;s Medication"/>
-            <initiator value="GP"/>
-            <receiver value="VAULT"/>
+            <initiator value="VAULT"/>
+            <receiver value="GP"/>
             <response>
               <resourceId value="EB"/>
             </response>
@@ -156,22 +156,6 @@
             <receiver value="VAULT"/>
             <request>
               <resourceId value="2a-dispense"/>
-            </request>
-          </operation>
-        </step>
-      </process>
-    </step>
-    <step>
-      <process>
-        <title value="Resources Update"/>
-        <step>
-          <operation>
-            <number value="9"/>
-            <name value="Create new provenance?"/>
-            <initiator value="VAULT"/>
-            <receiver value="VAULT"/>
-            <request>
-              <resourceId value="2-2-provenance"/>
             </request>
           </operation>
         </step>
