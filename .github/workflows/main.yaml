@@ -21,6 +21,8 @@ jobs:
     steps:
      - name: get validator
        run: wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
+     - name: ls
+       run: ls
      - name: transform exampleScenarios
        run: ./fromfsh_to_xml.sh ExampleScenario input/scenarios/
 
