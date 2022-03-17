@@ -47,6 +47,9 @@ Title: "Prescribed medication is changed by another medication from a different 
 * instance[=].resourceType = #MedicationDispense
 * instance[=].name = "New dispense"
 
+* instance[+].resourceId = "2-provenance"
+* instance[=].resourceType = #Provenance
+* instance[=].name = "New Provenance"
 
 * process[+]
   * title = "Change VOS from prescription on dispense"
@@ -74,6 +77,7 @@ Title: "Prescribed medication is changed by another medication from a different 
         * operation.initiator = "GP"
         * operation.receiver = "VAULT"
         * operation.response.resourceId = "2a-prescription"
+        
 
   * step[+]
     * process[+]
@@ -90,31 +94,37 @@ Title: "Prescribed medication is changed by another medication from a different 
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "2a-treatmentLine"
+      * step[+]
+        * operation.name = "Create new Provenance"
+        * operation.number = "6"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "2-provenance"
 
   * step[+]
     * process[+]
       * title = "Dispense"
       * step[+]
         * operation.name = "Get patient's Prescriptions"
-        * operation.number = "6"
+        * operation.number = "7"
         * operation.initiator = "VAULT"
         * operation.receiver = "PHARM"
         * operation.request.resourceId = "EB"
       * step[+]
         * operation.name = "Create new dispense"
-        * operation.number = "7"
+        * operation.number = "8"
         * operation.initiator = "PHARM"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "2a-dispense"
 
   * step[+]
     * process[+]
-      * title = "Treatment Resources Update"
+      * title = "Resources Update"
 
       * step[+]
-        * operation.name = "update new treatment Line?"
-        * operation.number = "8"
+        * operation.name = "Create new provenance?"
+        * operation.number = "9"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
-        * operation.request.resourceId = "2a-treatmentLine"
+        * operation.request.resourceId = "2-2-provenance"
 
