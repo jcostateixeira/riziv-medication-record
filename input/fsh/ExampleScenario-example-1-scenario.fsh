@@ -113,13 +113,3 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "1-dispense"
 
-  * step[+]
-    * process[+]
-      * title = "Relationship update"
-
-      * step[+]
-        * operation.name = "Create new provenance for treatment"
-        * operation.number = "9"
-        * operation.initiator = "VAULT"
-        * operation.receiver = "VAULT"
-        * operation.request.resourceId = "1-1-provenance"
