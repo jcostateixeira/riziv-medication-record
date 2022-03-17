@@ -90,6 +90,7 @@ Title:    ""
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
 
+/*
 Instance: 1-1-treatmentLine 
 InstanceOf: MedRecordTreatmentLine
 Usage: #example
@@ -108,7 +109,7 @@ Title:    ""
 
 * extension[treatmentPlan].valueReference.identifier.value = "0d462dac-513a-4fb0-a2fe-fb7f53b27c5d"
 * extension[treatmentPlan].valueReference.identifier.system = "http://treatment-identifiers.com"
-
+*/
 
 Instance: 1-treatment 
 InstanceOf: MedRecordTreatment
@@ -128,3 +129,22 @@ Title:    ""
 * intent = #plan
 * title = "Treatment for Hypertension"
 * addresses = Reference(hypertension-condition)
+
+
+Instance: 1-provenance 
+InstanceOf: Provenance
+Usage: #example
+Description: "Provenance linking treatment line and prescription"
+Title:    "Example 1 - Provenance 1"
+
+
+* target = Reference(1-prescription)
+
+* recorded = "2021-07-19T13:00:00+02:00"
+
+* agent.who.identifier.value = "7c121778-5b2b-442d-9314-0a73995ab3dd"
+* agent.who.identifier.system = "http://physician-identifiers.com"
+* agent.role = #PRIMAUTH
+
+* entity[0].what = Reference(1-treatmentLine)
+* entity[0].role = #source
