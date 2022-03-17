@@ -59,7 +59,7 @@ Title: "Dispense medication before the prescription is available"
 * process[+]
   * title = "Dispense of medication before a existing prescription"
   * description = "description"
-  * preConditions = "After a GP visit, the patient Pia Peters (75 years) is prescribed diclofenac for arthritis.While making the dispense, the pharmacist understands that the patient has a history of stomachal ulcers. Since diclofenac creates stomachal irritations, the pharmacy also dispenses a stomach protector to prevent any case of stomach irritation or bleeding and advises to tell the information to the GP."
+  * preConditions = "After a GP visit, the patient Pia Peters (75 years) is prescribed diclofenac for arthritis. While making the dispense, the pharmacist understands that the patient has a history of stomachal ulcers. Since diclofenac creates stomachal irritations, the pharmacy also dispenses a stomach protector to prevent any case of stomach irritation or bleeding and advises to tell the information to the GP."
   * postConditions = "A new treatment and treatmentLine are created, inside the new treatment line, a prescription and dispense are contained and is possible to see which medication is associated with each."
 
   * step[+]
