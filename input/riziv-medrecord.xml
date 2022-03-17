@@ -503,6 +503,15 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Provenance/1-provenance" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example 1 - provenance 1" />
+      <description value="Provenance linking treatment line and prescription" />
+      <groupingId value="medicationrecord-validatingexamples"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CarePlan/1-treatment" />
       </reference>
       <fhirVersion value="4.0.1" />

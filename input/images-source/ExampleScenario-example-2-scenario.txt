@@ -24,18 +24,18 @@ group Treatment resources Creation
 
 VAULT -> VAULT : Create new treatment\n[[ExampleScenario-example-2-scenario-resources.html#2a-treatment New Treatment]]
 VAULT -> VAULT : Create new treatment Line\n[[ExampleScenario-example-2-scenario-resources.html#2a-treatmentLine New Treatment Line]]
+VAULT -> VAULT : Create new Provenance\n[[ExampleScenario-example-2-scenario-resources.html#2-provenance New Provenance]]
 end
     
 group Dispense
 
-PHARM -> VAULT : Get patient's Prescriptions\n[[ExampleScenario-example-2-scenario-resources.html#EB Empty Bundle]]
+VAULT -> PHARM : Get patient's Prescriptions\n[[ExampleScenario-example-2-scenario-resources.html#EB Empty Bundle]]
 PHARM -> VAULT : Create new dispense\n[[ExampleScenario-example-2-scenario-resources.html#2a-dispense New dispense]]
 end
     
-group Treatment Resources Update
+group Resources Update
 
-VAULT -> VAULT : Create new treatment\n[[ExampleScenario-example-2-scenario-resources.html#2a-treatment New Treatment]]
-VAULT -> VAULT : Create new treatment Line\n[[ExampleScenario-example-2-scenario-resources.html#2a-treatmentLine New Treatment Line]]
+VAULT -> VAULT : Create new provenance?\n[[ExampleScenario-example-2-scenario-resources.html#2-2-provenance ]]
 end
   
 

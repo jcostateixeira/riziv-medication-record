@@ -16,6 +16,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  # This workflow contains a single job called "build"
+  transform_exampleScenarios:
+    runs-on: ubuntu-latest
+    steps:
+     - name: get validator
+       run: wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
+     - name: transform exampleScenarios
+       run: ./fromfsh_to_xml.sh ExampleScenario input/scenarios
+
   call_build: 
     uses: openhie/empty-fhir-ig/.github/workflows/main.yml@master

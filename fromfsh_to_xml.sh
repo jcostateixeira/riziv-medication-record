@@ -8,6 +8,6 @@ echo "Converting $filename ...."
 echo ". . . . . "
     f="$(basename -- $filename)"
     b=${f%.*}
-    java -jar validator_cli.jar  fsh-generated/resources/"$b".json -version 4.0.1  -convert -output fsh-generated/xml/"$b".xml
+    java -jar validator_cli.jar  fsh-generated/resources/"$b".json -version 4.0.1  -convert -output $2"$b".xml
 done
 
