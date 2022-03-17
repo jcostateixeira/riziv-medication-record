@@ -45,7 +45,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add input/scenarios/*
-          git commit -m "[Actions] Create exampleScenarios"
+                    git diff --quiet && git diff --staged --quiet || git commit -m "[Actions] Create exampleScenarios" -a
           
      - name: push changes
        uses: ad-m/github-push-action@v0.6.0
