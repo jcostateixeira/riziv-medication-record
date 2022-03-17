@@ -80,9 +80,9 @@
         <step>
           <operation>
             <number value="2"/>
-            <name value="Get Patient&#39;s Medication"/>
-            <initiator value="GP"/>
-            <receiver value="VAULT"/>
+            <name value="Get Patient's Medication"/>
+            <initiator value="VAULT"/>
+            <receiver value="GP"/>
             <response>
               <resourceId value="EB"/>
             </response>
@@ -126,6 +126,17 @@
             </request>
           </operation>
         </step>
+        <step>
+          <operation>
+            <number value="6"/>
+            <name value="Create Provenance"/>
+            <initiator value="VAULT"/>
+            <receiver value="VAULT"/>
+            <request>
+              <resourceId value="8-1-provenance"/>
+            </request>
+          </operation>
+        </step>
       </process>
     </step>
     <step>
@@ -133,10 +144,10 @@
         <title value="Dispense"/>
         <step>
           <operation>
-            <number value="6"/>
-            <name value="Get patient&#39;s Prescriptions"/>
-            <initiator value="PHARM"/>
-            <receiver value="VAULT"/>
+            <number value="7"/>
+            <name value="Get patient's Prescriptions"/>
+            <initiator value="VAULT"/>
+            <receiver value="PHARM"/>
             <response>
               <resourceId value="EB"/>
             </response>
@@ -144,7 +155,7 @@
         </step>
         <step>
           <operation>
-            <number value="7"/>
+            <number value="8"/>
             <name value="Dispense"/>
             <initiator value="PHARM"/>
             <receiver value="VAULT"/>
@@ -153,9 +164,25 @@
             </request>
           </operation>
         </step>
+      </process>
+    </step>
+    <step>
+      <process>
+        <title value="Resource Linking"/>
         <step>
           <operation>
-            <number value="8"/>
+            <number value="9"/>
+            <name value="Create new provenance"/>
+            <initiator value="VAULT"/>
+            <receiver value="VAULT"/>
+            <response>
+              <resourceId value="8-2-provenance"/>
+            </response>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <number value="10"/>
             <name value="Stopping the taking of drug due to an adverse event"/>
             <initiator value="PATIENT"/>
             <receiver value="VAULT"/>
@@ -166,7 +193,7 @@
         </step>
         <step>
           <operation>
-            <number value="9"/>
+            <number value="11"/>
             <name value="Report the stopage of the taking"/>
             <initiator value="PATIENT"/>
             <receiver value="VAULT"/>
@@ -179,27 +206,27 @@
     </step>
     <step>
       <process>
-        <title value="Treatment Resources Update"/>
+        <title value="Resource Linking"/>
         <step>
           <operation>
-            <number value="10"/>
-            <name value="Update treatment"/>
+            <number value="12"/>
+            <name value="Create new provenance for administration"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
-            <request>
-              <resourceId value="8-treatment"/>
-            </request>
+            <response>
+              <resourceId value="8-3-provenance"/>
+            </response>
           </operation>
         </step>
         <step>
           <operation>
-            <number value="11"/>
-            <name value="Update treatment Line"/>
+            <number value="13"/>
+            <name value="Create new provenance for usage"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
-            <request>
-              <resourceId value="8-treatmentLine"/>
-            </request>
+            <response>
+              <resourceId value="8-4-provenance"/>
+            </response>
           </operation>
         </step>
       </process>
