@@ -26,3 +26,4 @@ Thumbs.db
 # mine
 .java-version
 .vscode/
+*.jar
