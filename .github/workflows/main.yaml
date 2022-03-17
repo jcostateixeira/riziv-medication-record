@@ -23,15 +23,16 @@ jobs:
        run: echo ${GITHUB_REF##*/}
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
      - uses: actions/checkout@v2
-     - name: get validator
-       run: wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
-
+    
      - name: Setup Node.js
        uses: actions/setup-node@v2
        with:
         node-version: '14'
      - name: Install dependencies
        run: npm install sushi
+     - name: get validator
+       run: wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
+
      - name: ls
        run: ls
      - name: transform exampleScenarios
