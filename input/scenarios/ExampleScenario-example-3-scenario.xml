@@ -90,7 +90,7 @@
         <step>
           <operation>
             <number value="2"/>
-            <name value="Get Patient&#39;s Medication"/>
+            <name value="Get Patient's Medication"/>
             <initiator value="VAULT"/>
             <receiver value="GP"/>
             <response>
@@ -155,7 +155,7 @@
         <step>
           <operation>
             <number value="7"/>
-            <name value="Get patient&#39;s Prescriptions"/>
+            <name value="Get patient's Prescriptions"/>
             <initiator value="VAULT"/>
             <receiver value="PHARM"/>
             <response>
