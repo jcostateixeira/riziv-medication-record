@@ -1,10 +1,10 @@
 ﻿MedicationRecord : Validation Results
 =========================================
 
-err = 140, warn = 181, info = 92
+err = 142, warn = 196, info = 92
 IG Publisher Version: 1.1.112
-Generated Thu Mar 17 10:56:32 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv-medicationrecord#0.1.0-test (canonical = http://hl7belgium.org/fhir/riziv-medicationrecord)
- Build Errors : 889 / 25 / 1
+Generated Thu Mar 17 16:23:45 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv-medicationrecord#0.1.0-test (canonical = http://hl7belgium.org/fhir/riziv-medicationrecord)
+ Build Errors : 960 / 26 / 1
  /github/workspace/fsh-generated/resources/Bundle-EB : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-1-treatment : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-13-treatment : 0 / 0 / 1
@@ -102,6 +102,20 @@ Generated Thu Mar 17 10:56:32 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv
  /github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-package-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Provenance-1-provenance : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Provenance-2-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-3-2-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-3-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-4-1-provenance : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-4-2-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-4-3-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-5-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-6-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-7-1-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-7-2-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-7-3-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-8-1-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-8-2-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-8-3-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-8-4-provenance : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecord : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordAdministration : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationRecordDispense : 4 / 1 / 1
@@ -180,6 +194,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/be-ns-product-package-type.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/reflux-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/reflux-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Provenance/4-1-provenance.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Provenance/4-1-provenance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/be-ns-prescription-ids.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationStatement/Paracetamol500mg1xCV.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/Paracetamol500mg1xCV.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -316,10 +332,12 @@ ERROR: /github/workspace/output/ExampleScenario-example-1-scenario-description.h
 ERROR: /github/workspace/output/ExampleScenario-example-1-scenario-description.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 223, column 36: The link 'versions.html#maturity' for "Experimental" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-1-scenario-description.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 225, column 36: The link 'versions.html#maturity' for "Copyright" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-1-scenario-description.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 231, column 18: The link 'versions.html#maturity' for "Purpose" cannot be resolved
-ERROR: /github/workspace/output/ExampleScenario-example-1-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 292, column 24: The link '#1' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, examplescenario-changedmedicationsamevosscenario-description, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
-ERROR: /github/workspace/output/ExampleScenario-example-1-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 293, column 24: The link '#2' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, examplescenario-changedmedicationsamevosscenario-description, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
-ERROR: /github/workspace/output/ExampleScenario-example-1-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 294, column 24: The link '#3' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, examplescenario-changedmedicationsamevosscenario-description, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
-ERROR: /github/workspace/output/ExampleScenario-example-1-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 295, column 24: The link '#4' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, examplescenario-changedmedicationsamevosscenario-description, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
+ERROR: /github/workspace/output/ExampleScenario-example-1-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 293, column 24: The link '#1' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, examplescenario-changedmedicationsamevosscenario-description, project-nav, publish-box, segment-post-footer, Actors, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, nullprocess-flow-a-different-product-than-the-one-prescribed-does-not-link-a-dispense-to-the-same-treatment
+-line-, segment-navbar, segment-content, segment-breadcrumb, flow])
+ERROR: /github/workspace/output/ExampleScenario-example-1-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 294, column 24: The link '#2' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, examplescenario-changedmedicationsamevosscenario-description, project-nav, publish-box, segment-post-footer, Actors, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, nullprocess-flow-a-different-product-than-the-one-prescribed-does-not-link-a-dispense-to-the-same-treatment
+-line-, segment-navbar, segment-content, segment-breadcrumb, flow])
+ERROR: /github/workspace/output/ExampleScenario-example-1-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 295, column 24: The link '#3' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, examplescenario-changedmedicationsamevosscenario-description, project-nav, publish-box, segment-post-footer, Actors, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, nullprocess-flow-a-different-product-than-the-one-prescribed-does-not-link-a-dispense-to-the-same-treatment
+-line-, segment-navbar, segment-content, segment-breadcrumb, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-1-scenario-resources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-1-scenario.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-1-scenario.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 220, column 8: The link 'ExampleScenario-example-1-scenario.xml.html' for "XML" cannot be resolved
@@ -350,7 +368,6 @@ ERROR: /github/workspace/output/ExampleScenario-example-2-scenario-description.h
 ERROR: /github/workspace/output/ExampleScenario-example-2-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 292, column 24: The link '#1' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, examplescenario-changedmedicationdifferentvosscenario-description, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-2-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 293, column 24: The link '#2' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, examplescenario-changedmedicationdifferentvosscenario-description, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-2-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 294, column 24: The link '#3' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, examplescenario-changedmedicationdifferentvosscenario-description, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
-ERROR: /github/workspace/output/ExampleScenario-example-2-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 295, column 24: The link '#4' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, examplescenario-changedmedicationdifferentvosscenario-description, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-2-scenario-resources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-2-scenario.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-2-scenario.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 220, column 8: The link 'ExampleScenario-example-2-scenario.xml.html' for "XML" cannot be resolved
@@ -397,7 +414,6 @@ ERROR: /github/workspace/output/ExampleScenario-example-5-scenario-description.h
 ERROR: /github/workspace/output/ExampleScenario-example-5-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 292, column 24: The link '#1' for "" cannot be resolved (valid targets: [examplescenario-dispensenewbrandoldunavailable-description, nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-5-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 293, column 24: The link '#2' for "" cannot be resolved (valid targets: [examplescenario-dispensenewbrandoldunavailable-description, nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-5-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 294, column 24: The link '#3' for "" cannot be resolved (valid targets: [examplescenario-dispensenewbrandoldunavailable-description, nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
-ERROR: /github/workspace/output/ExampleScenario-example-5-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 295, column 24: The link '#4' for "" cannot be resolved (valid targets: [examplescenario-dispensenewbrandoldunavailable-description, nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-5-scenario-resources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-5-scenario.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-5-scenario.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 220, column 8: The link 'ExampleScenario-example-5-scenario.xml.html' for "XML" cannot be resolved
@@ -427,6 +443,7 @@ ERROR: /github/workspace/output/ExampleScenario-example-7-scenario-description.h
 ERROR: /github/workspace/output/ExampleScenario-example-7-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 294, column 24: The link '#3' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, examplescenario-medicationnottaken-description, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-7-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 295, column 24: The link '#4' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, examplescenario-medicationnottaken-description, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-7-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 296, column 24: The link '#5' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, examplescenario-medicationnottaken-description, flow])
+ERROR: /github/workspace/output/ExampleScenario-example-7-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 297, column 24: The link '#6' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, examplescenario-medicationnottaken-description, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-7-scenario-resources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-7-scenario.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-7-scenario.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 220, column 8: The link 'ExampleScenario-example-7-scenario.xml.html' for "XML" cannot be resolved
@@ -793,6 +810,77 @@ ERROR: /github/workspace/output/Provenance-2-provenance.html#/html/body/div/div/
 ERROR: /github/workspace/output/Provenance-2-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Provenance-2-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Provenance-2-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-3-2-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-3-2-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-3-2-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-3-2-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-3-2-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-3-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-3-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-3-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-3-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-3-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-1-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-1-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-1-provenance.html#/html/body/div/div/div/div/div/div/p/a at Line 247, column 327: The link '4-1-prescription' for "4-1-prescription" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-1-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-1-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-1-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-2-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-2-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-2-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-2-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-2-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-3-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-3-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-3-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-3-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-4-3-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-5-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-5-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-5-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-5-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-5-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-6-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-6-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-6-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-6-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-6-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-1-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-1-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-1-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-1-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-1-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-2-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-2-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-2-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-2-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-2-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-3-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-3-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-3-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-3-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-7-3-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-1-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-1-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-1-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-1-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-1-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-2-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-2-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-2-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-2-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-2-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-3-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-3-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-3-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-3-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-3-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-4-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-4-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-4-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-4-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-8-4-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeModelMedicationRecord-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeModelMedicationRecord-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeModelMedicationRecord-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
@@ -1015,6 +1103,7 @@ ERROR: /github/workspace/output/ValueSet-medication-substitution-dispense-v1.jso
 ERROR: /github/workspace/output/ValueSet-medication-substitution-dispense-v1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-medication-substitution-dispense-v1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/a at Line 536, column 20: The link '' for "Example 1 - provenance 1" cannot be resolved
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/example1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/example10.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
@@ -1028,6 +1117,7 @@ ERROR: /github/workspace/output/example7.html#/html/body/div/div/nav/div/div/ul/
 ERROR: /github/workspace/output/example8.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/example9a.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/example9b.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/functional-description.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/howto.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/implementation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
@@ -1036,7 +1126,6 @@ ERROR: /github/workspace/output/medication-class-group.html#/html/body/div/div/n
 ERROR: /github/workspace/output/medication-granularity.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/medicationrecord-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/medicationrecord-fhir-resources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/medicationrecord-fhir-resources.html#/html/body/div/div/div/div/div/ul/li/a at Line 251, column 103: The link 'functional-description.html' for "functional description" cannot be resolved
 ERROR: /github/workspace/output/medicationrecord-fhir-resources.html#/html/body/div/div/div/div/div/p/a at Line 324, column 21: The link 'medicationrecord-transaction-types.html' for "Transaction Types" cannot be resolved
 ERROR: /github/workspace/output/medicationrecord-pattern-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/medicationrecord-pattern-2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
@@ -1364,6 +1453,35 @@ ERROR: MedicationStatement/Paracetamol500mg1xCV: MedicationStatement.subject: Un
 WARNING: Provenance/1-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/Provenance-2-provenance.json ==
 WARNING: Provenance/2-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-3-2-provenance.json ==
+WARNING: Provenance/3-2-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-3-provenance.json ==
+WARNING: Provenance/3-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-4-1-provenance.json ==
+ERROR: Provenance/4-1-provenance: Provenance.target[0]: Unable to resolve resource '4-1-prescription'
+WARNING: Provenance/4-1-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-4-2-provenance.json ==
+WARNING: Provenance/4-2-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-4-3-provenance.json ==
+WARNING: Provenance/4-3-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-5-provenance.json ==
+WARNING: Provenance/5-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-6-provenance.json ==
+WARNING: Provenance/6-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-7-1-provenance.json ==
+WARNING: Provenance/7-1-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-7-2-provenance.json ==
+WARNING: Provenance/7-2-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-7-3-provenance.json ==
+WARNING: Provenance/7-3-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-8-1-provenance.json ==
+WARNING: Provenance/8-1-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-8-2-provenance.json ==
+WARNING: Provenance/8-2-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-8-3-provenance.json ==
+WARNING: Provenance/8-3-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-8-4-provenance.json ==
+WARNING: Provenance/8-4-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/StructureDefinition-BeModelMedicationRecord.json ==
 ERROR: StructureDefinition/BeModelMedicationRecord: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
 WARNING: StructureDefinition/BeModelMedicationRecord: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
