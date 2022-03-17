@@ -25,7 +25,6 @@ jobs:
      - uses: actions/checkout@v2
      - name: get validator
        run: wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
-     - uses: actions/checkout@v2
 
      - name: Setup Node.js
        uses: actions/setup-node@v2
