@@ -12,7 +12,7 @@
   <title value="MedicationRecord"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-03-17T10:53:01+00:00"/>
+  <date value="2022-03-17T16:20:22+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -687,6 +687,18 @@
       <name value="Example 1 - prescription"/>
       <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
       <exampleCanonical value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder"/>
+      <groupingId value="medicationrecord-validatingexamples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/1-provenance"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example 1 - provenance 1"/>
+      <description value="Provenance linking treatment line and prescription"/>
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
     <resource>
@@ -1508,6 +1520,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/4-2-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1524,6 +1544,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/8-1-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationStatement"/>
       </extension>
       <reference>
@@ -1532,10 +1560,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/7-1-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
         <reference value="Bundle/EB"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/3-provenance"/>
       </reference>
     </resource>
     <resource>
@@ -1586,6 +1630,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/8-4-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationStatement"/>
       </extension>
       <reference>
@@ -1600,14 +1652,6 @@
         <reference value="NamingSystem/be-ns-cnk-codes"/>
       </reference>
       <description value="Naming System - CNK Product Codes"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Provenance"/>
-      </extension>
-      <reference>
-        <reference value="Provenance/1-provenance"/>
-      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1637,10 +1681,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/4-3-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationDispense"/>
       </extension>
       <reference>
         <reference value="MedicationDispense/example-dispense-communitypharmacy-1med"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/3-2-provenance"/>
       </reference>
     </resource>
     <resource>
@@ -1669,10 +1729,34 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/8-2-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/8-3-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationStatement"/>
       </extension>
       <reference>
         <reference value="MedicationStatement/Dafalgan500mg1xmeal"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/7-2-provenance"/>
       </reference>
     </resource>
     <resource>
@@ -1694,10 +1778,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/7-3-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
         <reference value="Condition/reflux-condition"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/4-1-provenance"/>
       </reference>
     </resource>
     <resource>
@@ -1723,6 +1823,22 @@
       </extension>
       <reference>
         <reference value="MedicationStatement/Co-Bisoprolol25-625mg1xACMd"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/5-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/6-provenance"/>
       </reference>
     </resource>
     <resource>
@@ -1756,9 +1872,14 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="usecases-dispense.html"/>
-        <title value="Use Cases - Dispense"/>
+        <nameUrl value="functional-description.html"/>
+        <title value="Functional Description"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="usecases-dispense.html"/>
+          <title value="Use Cases - Dispense"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <nameUrl value="medicationrecord.html"/>

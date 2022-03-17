@@ -11,7 +11,7 @@
   "title": "MedicationRecord",
   "status": "draft",
   "experimental": false,
-  "date": "2022-03-17T10:53:01+00:00",
+  "date": "2022-03-17T16:20:22+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -1010,6 +1010,23 @@
         "name": "Example 1 - prescription",
         "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
         "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder",
+        "groupingId": "medicationrecord-validatingexamples"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/1-provenance"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 1 - provenance 1",
+        "description": "Provenance linking treatment line and prescription",
         "groupingId": "medicationrecord-validatingexamples"
       },
       {
@@ -2150,6 +2167,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/4-2-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -2172,6 +2200,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/8-1-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationStatement"
           }
         ],
@@ -2183,11 +2222,33 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/7-1-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Bundle"
           }
         ],
         "reference": {
           "reference": "Bundle/EB"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/3-provenance"
         }
       },
       {
@@ -2255,6 +2316,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/8-4-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationStatement"
           }
         ],
@@ -2273,17 +2345,6 @@
           "reference": "NamingSystem/be-ns-cnk-codes"
         },
         "description": "Naming System - CNK Product Codes"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Provenance"
-          }
-        ],
-        "reference": {
-          "reference": "Provenance/1-provenance"
-        }
       },
       {
         "extension": [
@@ -2324,11 +2385,33 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/4-3-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationDispense"
           }
         ],
         "reference": {
           "reference": "MedicationDispense/example-dispense-communitypharmacy-1med"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/3-2-provenance"
         }
       },
       {
@@ -2368,11 +2451,44 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/8-2-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/8-3-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationStatement"
           }
         ],
         "reference": {
           "reference": "MedicationStatement/Dafalgan500mg1xmeal"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/7-2-provenance"
         }
       },
       {
@@ -2402,11 +2518,33 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/7-3-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Condition"
           }
         ],
         "reference": {
           "reference": "Condition/reflux-condition"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/4-1-provenance"
         }
       },
       {
@@ -2441,6 +2579,28 @@
         ],
         "reference": {
           "reference": "MedicationStatement/Co-Bisoprolol25-625mg1xACMd"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/5-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/6-provenance"
         }
       },
       {
@@ -2482,9 +2642,16 @@
           "generation": "html"
         },
         {
-          "nameUrl": "usecases-dispense.html",
-          "title": "Use Cases - Dispense",
-          "generation": "markdown"
+          "nameUrl": "functional-description.html",
+          "title": "Functional Description",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "usecases-dispense.html",
+              "title": "Use Cases - Dispense",
+              "generation": "markdown"
+            }
+          ]
         },
         {
           "nameUrl": "medicationrecord.html",
