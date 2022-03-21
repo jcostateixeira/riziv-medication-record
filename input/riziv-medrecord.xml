@@ -512,7 +512,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Provenance/1-provenance" />
+        <reference value="Provenance/1-1-provenance" />
       </reference>
       <fhirVersion value="4.0.1" />
       <name value="Example 1 - provenance 1" />
@@ -537,6 +537,16 @@
       <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Provenance/1-2-provenance" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example 1 - provenance 2" />
+      <description value="Provenance linking treatment line and dispense" />
+      <groupingId value="medicationrecord-validatingexamples"/>
+    </resource>
+
 
 
     <resource>
