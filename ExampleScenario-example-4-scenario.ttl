@@ -233,7 +233,7 @@
            fhir:index 0;
            fhir:ExampleScenario.process.step.operation [
              fhir:ExampleScenario.process.step.operation.number [ fhir:value "8" ];
-             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Create new provenance" ];
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Resource Linking" ];
              fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.request [
@@ -269,7 +269,7 @@
            fhir:index 0;
            fhir:ExampleScenario.process.step.operation [
              fhir:ExampleScenario.process.step.operation.number [ fhir:value "10" ];
-             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Additional treatment" ];
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Additional treatment Creation" ];
              fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.request [
@@ -280,7 +280,7 @@
            fhir:index 1;
            fhir:ExampleScenario.process.step.operation [
              fhir:ExampleScenario.process.step.operation.number [ fhir:value "11" ];
-             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Additional Treatment Line" ];
+             fhir:ExampleScenario.process.step.operation.name [ fhir:value "Additional Treatment Line Creation" ];
              fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "VAULT" ];
              fhir:ExampleScenario.process.step.operation.request [

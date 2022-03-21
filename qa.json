@@ -3,7 +3,7 @@
   "name": "MedicationRecord",
   "package-id": "hl7.fhir.be.riziv-medicationrecord",
   "ig-ver": "0.1.0-test",
-  "date": "Mon, 21 Mar, 2022 13:05:36 +0000",
+  "date": "Mon, 21 Mar, 2022 13:51:32 +0000",
   "errs": 143,
   "warnings": 203,
   "hints": 92,
