@@ -30,7 +30,7 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 
 * instance[+].resourceId = "1-prescription"
 * instance[=].resourceType = #MedicationRequest
-* instance[=].name = "New Prescription"
+* instance[=].name = "Amlor Prescription"
 
 * instance[+].resourceId = "EB"
 * instance[=].resourceType = #Bundle
@@ -46,7 +46,7 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 
 * instance[+].resourceId = "1-dispense"
 * instance[=].resourceType = #MedicationDispense
-* instance[=].name = "New dispense"
+* instance[=].name = "Amlodipin Sandoz dispense"
 
 * instance[+].resourceId = "1-1-provenance"
 * instance[=].resourceType = #Provenance

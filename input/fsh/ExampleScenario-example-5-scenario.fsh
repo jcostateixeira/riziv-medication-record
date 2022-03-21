@@ -29,12 +29,12 @@ Title: "Dispense of new brand medication that is given because the old is unavai
 
 * instance[+].resourceId = "5-dispense"
 * instance[=].resourceType = #MedicationDispense
-* instance[=].name = "Dispense for Prescription"
+* instance[=].name = "Paracetabs Dispense"
 
 
 * instance[+].resourceId = "5-prescription"
 * instance[=].resourceType = #MedicationRequest
-* instance[=].name = "New prescription"
+* instance[=].name = "dafalgan prescription"
 
 * instance[+].resourceId = "EB"
 * instance[=].resourceType = #Bundle

@@ -29,7 +29,7 @@ Title: "Refuse the dispense prescribed medication"
 
 * instance[+].resourceId = "6-prescription"
 * instance[=].resourceType = #MedicationRequest
-* instance[=].name = "New prescription"
+* instance[=].name = "ibuprofen prescription"
 
 * instance[+].resourceId = "EB"
 * instance[=].resourceType = #Bundle

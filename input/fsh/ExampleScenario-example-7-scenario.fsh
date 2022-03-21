@@ -30,7 +30,7 @@ Title: "Dispense of medication that was prescribed to take if needed, but was no
 
 * instance[+].resourceId = "7-prescription"
 * instance[=].resourceType = #MedicationRequest
-* instance[=].name = "New prescription"
+* instance[=].name = "Ciprofloxacine prescription"
 
 * instance[+].resourceId = "EB"
 * instance[=].resourceType = #Bundle
@@ -46,11 +46,11 @@ Title: "Dispense of medication that was prescribed to take if needed, but was no
 
 * instance[+].resourceId = "7-dispense"
 * instance[=].resourceType = #MedicationDispense
-* instance[=].name = "Dispense"
+* instance[=].name = "Ciprofloxacine Dispense"
 
 * instance[+].resourceId = "7-usage"
 * instance[=].resourceType = #MedicationStatement
-* instance[=].name = "Usage report"
+* instance[=].name = "Ciprofloxacine Usage report"
 
 * instance[+].resourceId = "7-1-provenance"
 * instance[=].resourceType = #MedicationStatement

@@ -29,16 +29,15 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 
 * instance[+].resourceId = "4-1-dispense"
 * instance[=].resourceType = #MedicationDispense
-* instance[=].name = "Dispense for Prescription"
-
+* instance[=].name = "Rosuvastatin Dispense"
 
 * instance[+].resourceId = "4-1-prescription"
 * instance[=].resourceType = #MedicationRequest
-* instance[=].name = "New prescription"
+* instance[=].name = "Rosuvastatin prescription"
 
 * instance[+].resourceId = "4-2-dispense"
 * instance[=].resourceType = #MedicationDispense
-* instance[=].name = "Isolated dispense"
+* instance[=].name = "Dafalgan dispense (non-prescription)"
 
 * instance[+].resourceId = "EB"
 * instance[=].resourceType = #Bundle

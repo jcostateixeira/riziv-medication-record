@@ -29,7 +29,7 @@ Title: "Prescribed medication is changed by another medication from a different 
 
 * instance[+].resourceId = "2a-prescription"
 * instance[=].resourceType = #MedicationRequest
-* instance[=].name = "New Prescription"
+* instance[=].name = "Paracetamol 1000 mg Prescription"
 
 * instance[+].resourceId = "EB"
 * instance[=].resourceType = #Bundle
@@ -45,7 +45,7 @@ Title: "Prescribed medication is changed by another medication from a different 
 
 * instance[+].resourceId = "2a-dispense"
 * instance[=].resourceType = #MedicationDispense
-* instance[=].name = "New dispense"
+* instance[=].name = "paracetamol 500 mg dispense"
 
 * instance[+].resourceId = "2-1-provenance"
 * instance[=].resourceType = #Provenance

@@ -29,7 +29,7 @@ Title: "Dispense medication before the prescription is available"
 
 * instance[+].resourceId = "3-dispense"
 * instance[=].resourceType = #MedicationDispense
-* instance[=].name = "Dispense of product prescribed"
+* instance[=].name = "Diclofenac Dispense "
 
 * instance[+].resourceId = "EB"
 * instance[=].resourceType = #Bundle
@@ -45,15 +45,15 @@ Title: "Dispense medication before the prescription is available"
 
 * instance[+].resourceId = "3-prescription"
 * instance[=].resourceType = #MedicationRequest
-* instance[=].name = "First Prescription"
+* instance[=].name = "Diclofenac Prescription"
 
 * instance[+].resourceId = "3-2-dispense"
 * instance[=].resourceType = #MedicationDispense
-* instance[=].name = "Dispense of an ancilliary product"
+* instance[=].name = "Pantoprazole Dispense [ancilliary product]"
 
 * instance[+].resourceId = "3-2-prescription"
 * instance[=].resourceType = #MedicationRequest
-* instance[=].name = "Second Prescription"
+* instance[=].name = "Pantoprazole Prescription"
 
 * instance[+].resourceId = "3-1-provenance"
 * instance[=].resourceType = #Provenance
