@@ -11,7 +11,7 @@
   "title": "MedicationRecord",
   "status": "draft",
   "experimental": false,
-  "date": "2022-03-21T14:13:18+00:00",
+  "date": "2022-03-21T14:58:08+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -2186,6 +2186,32 @@
         "reference": {
           "reference": "MedicationStatement/Asaflow500mg1xACMd"
         }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BeModelMedicationView"
+        },
+        "name": "Medication View logical model",
+        "description": "A model for a visualization of the patient's medication"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/med-view-comp"
+        },
+        "name": "Medication View profile",
+        "description": "The profile for how to organize the information in a medication View"
       },
       {
         "extension": [

@@ -39,8 +39,8 @@
     ],
     "Composition": [
       {
-        "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecord-comp",
-        "title": "Medication Record Composition profile"
+        "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp",
+        "title": "Medication View profile"
       }
     ],
     "MedicationAdministration": [

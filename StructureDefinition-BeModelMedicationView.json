@@ -1,0 +1,418 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BeModelMedicationView",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelMedicationView-definitions.html#BeModelMedicationView\" title=\"A model for a visualization of the patient's medication\">BeModelMedicationView</a><a name=\"BeModelMedicationView\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Medication View logical model</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelMedicationView-definitions.html#BeModelMedicationView.identifier\" title=\"The business identifier(s) for the Medication View\">identifier</a><a name=\"BeModelMedicationView.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The business identifier(s) for the Medication View</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelMedicationView-definitions.html#BeModelMedicationView.patient\" title=\"The subject of the medication record\">patient</a><a name=\"BeModelMedicationView.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>()</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The subject of the medication record</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelMedicationView-definitions.html#BeModelMedicationView.treatments\" title=\"The treaments that are included in this record\">treatments</a><a name=\"BeModelMedicationView.treatments\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The treaments that are included in this record<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelMedicationView-definitions.html#BeModelMedicationView.treatments.treatmentLines\" title=\"The treatment lines that are included in this record\">treatmentLines</a><a name=\"BeModelMedicationView.treatments.treatmentLines\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The treatment lines that are included in this record<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1001.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelMedicationView-definitions.html#BeModelMedicationView.treatments.treatmentLines.detailedRecords\" title=\"Detailed records - the most granular interactions\">detailedRecords</a><a name=\"BeModelMedicationView.treatments.treatmentLines.detailedRecords\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Detailed records<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelMedicationView-definitions.html#BeModelMedicationView.treatments.treatmentLines.detailedRecords.orders\" title=\"Explicit or implicit order for medication use or changes\">orders</a><a name=\"BeModelMedicationView.treatments.treatmentLines.detailedRecords.orders\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-BeModelMedicationRecordOrder.html\">http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordOrder</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Explicit or implicit order for medication use or changes<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelMedicationView-definitions.html#BeModelMedicationView.treatments.treatmentLines.detailedRecords.schedule\" title=\"Scheduled administrations of the medication\">schedule</a><a name=\"BeModelMedicationView.treatments.treatmentLines.detailedRecords.schedule\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-BeModelMedicationScheduledAdministration.html\">http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationScheduledAdministration</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Scheduled administrations of the medication<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelMedicationView-definitions.html#BeModelMedicationView.treatments.treatmentLines.detailedRecords.dispenses\" title=\"Registered or reported dispenses\">dispenses</a><a name=\"BeModelMedicationView.treatments.treatmentLines.detailedRecords.dispenses\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-BeModelMedicationRecordDispense.html\">http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordDispense</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Registered or reported dispenses<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelMedicationView-definitions.html#BeModelMedicationView.treatments.treatmentLines.detailedRecords.administrations\" title=\"Registered or reported single administrations\">administrations</a><a name=\"BeModelMedicationView.treatments.treatmentLines.detailedRecords.administrations\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-BeModelMedicationRecordAdministration.html\">http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordAdministration</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Registered or reported single administrations<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelMedicationView-definitions.html#BeModelMedicationView.treatments.treatmentLines.detailedRecords.usageReports\" title=\"Reported statements of medication usage\">usageReports</a><a name=\"BeModelMedicationView.treatments.treatmentLines.detailedRecords.usageReports\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-BeModelMedicationRecordUsage.html\">http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordUsage</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reported statements of medication usage<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-BeModelMedicationView-definitions.html#BeModelMedicationView.changeRecord\" title=\"Change records and provenance for the medication record components\">changeRecord</a><a name=\"BeModelMedicationView.changeRecord\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/provenance.html\">Provenance</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Change records and provenance for the medication record components<br/></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationView",
+  "version": "0.1.0-test",
+  "name": "BeModelMedicationView",
+  "title": "Medication View logical model",
+  "status": "active",
+  "date": "2022-03-21T14:58:08+00:00",
+  "publisher": "HL7 Belgium",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7belgium.org"
+        }
+      ]
+    }
+  ],
+  "description": "A model for a visualization of the patient's medication",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BE"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationView",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "BeModelMedicationView",
+        "path": "BeModelMedicationView",
+        "short": "Medication View logical model",
+        "definition": "A model for a visualization of the patient's medication",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Base",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "BeModelMedicationView.identifier",
+        "path": "BeModelMedicationView.identifier",
+        "short": "The business identifier(s) for the Medication View",
+        "definition": "The business identifier(s) for the Medication View",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "BeModelMedicationView.identifier",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.patient",
+        "path": "BeModelMedicationView.patient",
+        "short": "The subject of the medication record",
+        "definition": "The subject of the medication record",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "BeModelMedicationView.patient",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments",
+        "path": "BeModelMedicationView.treatments",
+        "short": "The treaments that are included in this record",
+        "definition": "The treaments that are included in this record",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "BeModelMedicationView.treatments",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments.treatmentLines",
+        "path": "BeModelMedicationView.treatments.treatmentLines",
+        "short": "The treatment lines that are included in this record",
+        "definition": "The treatment lines that are included in this record",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "BeModelMedicationView.treatments.treatmentLines",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments.treatmentLines.detailedRecords",
+        "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords",
+        "short": "Detailed records",
+        "definition": "Detailed records - the most granular interactions",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.orders",
+        "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.orders",
+        "short": "Explicit or implicit order for medication use or changes",
+        "definition": "Explicit or implicit order for medication use or changes",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.orders",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordOrder"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.schedule",
+        "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.schedule",
+        "short": "Scheduled administrations of the medication",
+        "definition": "Scheduled administrations of the medication",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.schedule",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationScheduledAdministration"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.dispenses",
+        "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.dispenses",
+        "short": "Registered or reported dispenses",
+        "definition": "Registered or reported dispenses",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.dispenses",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordDispense"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.administrations",
+        "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.administrations",
+        "short": "Registered or reported single administrations",
+        "definition": "Registered or reported single administrations",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.administrations",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordAdministration"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.usageReports",
+        "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.usageReports",
+        "short": "Reported statements of medication usage",
+        "definition": "Reported statements of medication usage",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.usageReports",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordUsage"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.changeRecord",
+        "path": "BeModelMedicationView.changeRecord",
+        "short": "Change records and provenance for the medication record components",
+        "definition": "Change records and provenance for the medication record components",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "BeModelMedicationView.changeRecord",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Provenance"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "BeModelMedicationView",
+        "path": "BeModelMedicationView",
+        "short": "Medication View logical model",
+        "definition": "A model for a visualization of the patient's medication"
+      },
+      {
+        "id": "BeModelMedicationView.identifier",
+        "path": "BeModelMedicationView.identifier",
+        "short": "The business identifier(s) for the Medication View",
+        "definition": "The business identifier(s) for the Medication View",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.patient",
+        "path": "BeModelMedicationView.patient",
+        "short": "The subject of the medication record",
+        "definition": "The subject of the medication record",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments",
+        "path": "BeModelMedicationView.treatments",
+        "short": "The treaments that are included in this record",
+        "definition": "The treaments that are included in this record",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments.treatmentLines",
+        "path": "BeModelMedicationView.treatments.treatmentLines",
+        "short": "The treatment lines that are included in this record",
+        "definition": "The treatment lines that are included in this record",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments.treatmentLines.detailedRecords",
+        "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords",
+        "short": "Detailed records",
+        "definition": "Detailed records - the most granular interactions",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.orders",
+        "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.orders",
+        "short": "Explicit or implicit order for medication use or changes",
+        "definition": "Explicit or implicit order for medication use or changes",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordOrder"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.schedule",
+        "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.schedule",
+        "short": "Scheduled administrations of the medication",
+        "definition": "Scheduled administrations of the medication",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationScheduledAdministration"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.dispenses",
+        "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.dispenses",
+        "short": "Registered or reported dispenses",
+        "definition": "Registered or reported dispenses",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordDispense"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.administrations",
+        "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.administrations",
+        "short": "Registered or reported single administrations",
+        "definition": "Registered or reported single administrations",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordAdministration"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.usageReports",
+        "path": "BeModelMedicationView.treatments.treatmentLines.detailedRecords.usageReports",
+        "short": "Reported statements of medication usage",
+        "definition": "Reported statements of medication usage",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordUsage"
+          }
+        ]
+      },
+      {
+        "id": "BeModelMedicationView.changeRecord",
+        "path": "BeModelMedicationView.changeRecord",
+        "short": "Change records and provenance for the medication record components",
+        "definition": "Change records and provenance for the medication record components",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Provenance"
+          }
+        ]
+      }
+    ]
+  }
+}

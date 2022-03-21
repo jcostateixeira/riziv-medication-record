@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "MedicationRecord"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2022-03-21T14:13:18+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-21T14:58:08+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Belgium"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -2458,6 +2458,32 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationView>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BeModelMedicationView" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication View logical model" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A model for a visualization of the patient's medication" ]
+     ], [
+       fhir:index 103;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/med-view-comp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication View profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for how to organize the information in a medication View" ]
+     ], [
+       fhir:index 104;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "MedicationDispense" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -2465,7 +2491,7 @@
          fhir:Reference.reference [ fhir:value "MedicationDispense/Dafalgan500mgDispense" ]
        ]
      ], [
-       fhir:index 103;
+       fhir:index 105;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2476,7 +2502,7 @@
          fhir:Reference.reference [ fhir:value "Condition/diarrhea-condition" ]
        ]
      ], [
-       fhir:index 104;
+       fhir:index 106;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2487,7 +2513,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/5-2-provenance" ]
        ]
      ], [
-       fhir:index 105;
+       fhir:index 107;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2498,7 +2524,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/4-2-provenance" ]
        ]
      ], [
-       fhir:index 106;
+       fhir:index 108;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2509,7 +2535,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/BePractitioner" ]
        ]
      ], [
-       fhir:index 107;
+       fhir:index 109;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2520,7 +2546,7 @@
          fhir:Reference.reference [ fhir:value "Condition/pharyngitis-condition" ]
        ]
      ], [
-       fhir:index 108;
+       fhir:index 110;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2531,7 +2557,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/8-1-provenance" ]
        ]
      ], [
-       fhir:index 109;
+       fhir:index 111;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2542,7 +2568,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/Asaflow500mg1xACM" ]
        ]
      ], [
-       fhir:index 110;
+       fhir:index 112;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2553,7 +2579,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/7-1-provenance" ]
        ]
      ], [
-       fhir:index 111;
+       fhir:index 113;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2564,7 +2590,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/13-2-provenance" ]
        ]
      ], [
-       fhir:index 112;
+       fhir:index 114;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2575,7 +2601,7 @@
          fhir:Reference.reference [ fhir:value "Bundle/EB" ]
        ]
      ], [
-       fhir:index 113;
+       fhir:index 115;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2586,7 +2612,7 @@
          fhir:Reference.reference [ fhir:value "Condition/toothache-condition" ]
        ]
      ], [
-       fhir:index 114;
+       fhir:index 116;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2597,7 +2623,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/2-2-provenance" ]
        ]
      ], [
-       fhir:index 115;
+       fhir:index 117;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2610,7 +2636,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Substitution Value Set" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for substituting a medication on dispense." ]
      ], [
-       fhir:index 116;
+       fhir:index 118;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2621,7 +2647,7 @@
          fhir:Reference.reference [ fhir:value "MedicationDispense/medication-dispense-hospital" ]
        ]
      ], [
-       fhir:index 117;
+       fhir:index 119;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2632,7 +2658,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/6-2-provenance" ]
        ]
      ], [
-       fhir:index 118;
+       fhir:index 120;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2645,7 +2671,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Summary Types CodeSystem" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem - Medication Summary types" ]
      ], [
-       fhir:index 119;
+       fhir:index 121;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2656,7 +2682,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/8-4-provenance" ]
        ]
      ], [
-       fhir:index 120;
+       fhir:index 122;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2667,7 +2693,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/3-3-provenance" ]
        ]
      ], [
-       fhir:index 121;
+       fhir:index 123;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2678,7 +2704,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/Dafalgan500mgmix" ]
        ]
      ], [
-       fhir:index 122;
+       fhir:index 124;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2689,7 +2715,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/13-3-provenance" ]
        ]
      ], [
-       fhir:index 123;
+       fhir:index 125;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2701,7 +2727,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Naming System - CNK Product Codes" ]
      ], [
-       fhir:index 124;
+       fhir:index 126;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2714,7 +2740,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Summary Types Value Set" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valueset -  Medication Summary types" ]
      ], [
-       fhir:index 125;
+       fhir:index 127;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2725,7 +2751,7 @@
          fhir:Reference.reference [ fhir:value "Condition/headache-condition" ]
        ]
      ], [
-       fhir:index 126;
+       fhir:index 128;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2736,7 +2762,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/4-3-provenance" ]
        ]
      ], [
-       fhir:index 127;
+       fhir:index 129;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2747,7 +2773,7 @@
          fhir:Reference.reference [ fhir:value "MedicationDispense/example-dispense-communitypharmacy-1med" ]
        ]
      ], [
-       fhir:index 128;
+       fhir:index 130;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2758,7 +2784,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/3-2-provenance" ]
        ]
      ], [
-       fhir:index 129;
+       fhir:index 131;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2769,7 +2795,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/BePatient" ]
        ]
      ], [
-       fhir:index 130;
+       fhir:index 132;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2780,7 +2806,7 @@
          fhir:Reference.reference [ fhir:value "Condition/hyperlipidemia-condition" ]
        ]
      ], [
-       fhir:index 131;
+       fhir:index 133;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2791,7 +2817,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/BeOrganization" ]
        ]
      ], [
-       fhir:index 132;
+       fhir:index 134;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2802,7 +2828,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/8-2-provenance" ]
        ]
      ], [
-       fhir:index 133;
+       fhir:index 135;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2813,7 +2839,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/8-3-provenance" ]
        ]
      ], [
-       fhir:index 134;
+       fhir:index 136;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2824,7 +2850,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/2-1-provenance" ]
        ]
      ], [
-       fhir:index 135;
+       fhir:index 137;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2835,7 +2861,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/Dafalgan500mg1xmeal" ]
        ]
      ], [
-       fhir:index 136;
+       fhir:index 138;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2846,7 +2872,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/7-2-provenance" ]
        ]
      ], [
-       fhir:index 137;
+       fhir:index 139;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2857,7 +2883,7 @@
          fhir:Reference.reference [ fhir:value "MedicationDispense/example-minimal-dispense" ]
        ]
      ], [
-       fhir:index 138;
+       fhir:index 140;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2869,7 +2895,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Naming System - Product Package Types" ]
      ], [
-       fhir:index 139;
+       fhir:index 141;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2880,7 +2906,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/7-3-provenance" ]
        ]
      ], [
-       fhir:index 140;
+       fhir:index 142;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2891,7 +2917,7 @@
          fhir:Reference.reference [ fhir:value "Condition/reflux-condition" ]
        ]
      ], [
-       fhir:index 141;
+       fhir:index 143;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2902,7 +2928,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/4-1-provenance" ]
        ]
      ], [
-       fhir:index 142;
+       fhir:index 144;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2914,7 +2940,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Naming System - Prescription IDs" ]
      ], [
-       fhir:index 143;
+       fhir:index 145;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2925,7 +2951,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/Paracetamol500mg1xCV" ]
        ]
      ], [
-       fhir:index 144;
+       fhir:index 146;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2936,7 +2962,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/3-4-provenance" ]
        ]
      ], [
-       fhir:index 145;
+       fhir:index 147;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2947,7 +2973,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/13-1-provenance" ]
        ]
      ], [
-       fhir:index 146;
+       fhir:index 148;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2958,7 +2984,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/Co-Bisoprolol25-625mg1xACMd" ]
        ]
      ], [
-       fhir:index 147;
+       fhir:index 149;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2969,7 +2995,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/5-provenance" ]
        ]
      ], [
-       fhir:index 148;
+       fhir:index 150;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2980,7 +3006,7 @@
          fhir:Reference.reference [ fhir:value "Provenance/6-provenance" ]
        ]
      ], [
-       fhir:index 149;
+       fhir:index 151;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2991,7 +3017,7 @@
          fhir:Reference.reference [ fhir:value "Condition/arthritis-condition" ]
        ]
      ], [
-       fhir:index 150;
+       fhir:index 152;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
