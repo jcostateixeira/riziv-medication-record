@@ -62,14 +62,24 @@
     <name value="Second Prescription"/>
   </instance>
   <instance>
-    <resourceId value="3-provenance"/>
+    <resourceId value="3-1-provenance"/>
     <resourceType value="Provenance"/>
-    <name value="First Provenance Creation"/>
+    <name value="Link first Prescription and treatmentLine"/>
   </instance>
   <instance>
     <resourceId value="3-2-provenance"/>
     <resourceType value="Provenance"/>
-    <name value="Second Provenance Creation"/>
+    <name value="Link first dispense and treatmentLine"/>
+  </instance>
+  <instance>
+    <resourceId value="3-3-provenance"/>
+    <resourceType value="Provenance"/>
+    <name value="Link second dispense and treatmentLine"/>
+  </instance>
+  <instance>
+    <resourceId value="3-4-provenance"/>
+    <resourceType value="Provenance"/>
+    <name value="Link second Prescription and treatmentLine"/>
   </instance>
   <process>
     <title value="Dispense of medication before a existing prescription"/>
@@ -139,11 +149,11 @@
         <step>
           <operation>
             <number value="6"/>
-            <name value="Create new Provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
-              <resourceId value="3-provenance"/>
+              <resourceId value="3-1-provenance"/>
             </request>
           </operation>
         </step>
@@ -189,15 +199,37 @@
     </step>
     <step>
       <process>
-        <title value="Treatment Resources Update?"/>
+        <title value="Treatment Line Creation and resource Linking"/>
         <step>
           <operation>
             <number value="10"/>
-            <name value="update treatment Line?Provenance?"/>
+            <name value="New Treatment Line for anciiliary product"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
               <resourceId value="3-treatmentLine"/>
+            </request>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <number value="11"/>
+            <name value="Resource Linking"/>
+            <initiator value="VAULT"/>
+            <receiver value="VAULT"/>
+            <request>
+              <resourceId value="3-2-provenance"/>
+            </request>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <number value="12"/>
+            <name value="Resource Linking"/>
+            <initiator value="VAULT"/>
+            <receiver value="VAULT"/>
+            <request>
+              <resourceId value="3-3-provenance"/>
             </request>
           </operation>
         </step>
@@ -208,15 +240,15 @@
         <title value="Reporting"/>
         <step>
           <operation>
-            <number value="11"/>
-            <name value="Report of situation"/>
+            <number value="13"/>
+            <name value="Notification of a dispense"/>
             <initiator value="PHARM"/>
             <receiver value="GP"/>
           </operation>
         </step>
         <step>
           <operation>
-            <number value="14"/>
+            <number value="16"/>
             <name value="Create new prescription"/>
             <initiator value="GP"/>
             <receiver value="VAULT"/>
@@ -232,12 +264,12 @@
         <title value="Linking"/>
         <step>
           <operation>
-            <number value="15"/>
-            <name value="Create new provenance"/>
+            <number value="17"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
-              <resourceId value="3-2-provenance"/>
+              <resourceId value="3-4-provenance"/>
             </request>
           </operation>
         </step>
