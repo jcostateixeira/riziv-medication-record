@@ -192,7 +192,7 @@
         <step>
           <operation>
             <number value="8"/>
-            <name value="Create new provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
@@ -224,7 +224,7 @@
         <step>
           <operation>
             <number value="10"/>
-            <name value="Additional treatment"/>
+            <name value="Additional treatment Creation"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
@@ -235,7 +235,7 @@
         <step>
           <operation>
             <number value="11"/>
-            <name value="Additional Treatment Line"/>
+            <name value="Additional Treatment Line Creation"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>

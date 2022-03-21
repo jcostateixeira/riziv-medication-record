@@ -29,47 +29,47 @@
   <instance>
     <resourceId value="13-1-treatmentLine"/>
     <resourceType value="MedicationStatement"/>
-    <name value="New Treatment Line based on first dispense"/>
+    <name value="New Treatment Line based on ibuprofen dispense"/>
   </instance>
   <instance>
     <resourceId value="13-treatment"/>
     <resourceType value="CarePlan"/>
-    <name value="New Treatment based on first dispense"/>
+    <name value="New Treatment based on ibuprofen dispense"/>
   </instance>
   <instance>
     <resourceId value="13-1-provenance"/>
     <resourceType value="CarePlan"/>
-    <name value="New Provenance based on first dispense"/>
+    <name value="Link first ibuprofen dispense and treatmentLine"/>
   </instance>
   <instance>
     <resourceId value="13-2-treatmentLine"/>
     <resourceType value="MedicationStatement"/>
-    <name value="New Treatment Line based on second dispense"/>
+    <name value="New Treatment Line based on paracetamol dispense"/>
   </instance>
   <instance>
     <resourceId value="13-2-provenance"/>
     <resourceType value="CarePlan"/>
-    <name value="New Provenance based on second dispense"/>
+    <name value="Link paracetamol dispense and treatmentLine"/>
   </instance>
   <instance>
     <resourceId value="13-3-provenance"/>
     <resourceType value="CarePlan"/>
-    <name value="New Provenance based on third dispense"/>
+    <name value="Link second ibuprofen dispense and treatmentLine"/>
   </instance>
   <instance>
     <resourceId value="13-1-dispense"/>
     <resourceType value="MedicationDispense"/>
-    <name value="First Dispense"/>
+    <name value="ibruprofen Dispense"/>
   </instance>
   <instance>
     <resourceId value="13-2-dispense"/>
     <resourceType value="MedicationDispense"/>
-    <name value="Second Dispense"/>
+    <name value="parecetamol Dispense"/>
   </instance>
   <instance>
     <resourceId value="13-3-dispense"/>
     <resourceType value="MedicationDispense"/>
-    <name value="Third Dispense"/>
+    <name value="ibruprofen Dispense"/>
   </instance>
   <process>
     <title value="Dispense of OTC medication on the community pharmacy"/>
@@ -144,7 +144,7 @@
         <step>
           <operation>
             <number value="6"/>
-            <name value="Create new provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
@@ -187,7 +187,7 @@
         <step>
           <operation>
             <number value="9"/>
-            <name value="Create new provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
@@ -215,11 +215,11 @@
     </step>
     <step>
       <process>
-        <title value="Treatment resources Creation"/>
+        <title value="Resource Linkage"/>
         <step>
           <operation>
             <number value="11"/>
-            <name value="Create new provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>

@@ -164,11 +164,16 @@
             </request>
           </operation>
         </step>
+      </process>
+    </step>
+    <step>
+      <process>
+        <title value="Resource Linkage"/>
         <step>
           <operation>
-            <number value="9"/>
+            <number value="8"/>
             <name value="Resource Linking"/>
-            <initiator value="PHARM"/>
+            <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
               <resourceId value="5-2-provenance"/>
