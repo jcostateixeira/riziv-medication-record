@@ -66,6 +66,21 @@
     <resourceType value="CarePlan"/>
     <name value="New Treatment based on dispense"/>
   </instance>
+  <instance>
+    <resourceId value="4-1-provenance"/>
+    <resourceType value="Provenance"/>
+    <name value="New provenance"/>
+  </instance>
+  <instance>
+    <resourceId value="4-2-provenance"/>
+    <resourceType value="Provenance"/>
+    <name value="New provenance"/>
+  </instance>
+  <instance>
+    <resourceId value="4-3-provenance"/>
+    <resourceType value="Provenance"/>
+    <name value="New provenance"/>
+  </instance>
   <process>
     <title value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription"/>
     <description value="description"/>
