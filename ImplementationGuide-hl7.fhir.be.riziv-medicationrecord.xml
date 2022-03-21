@@ -12,7 +12,7 @@
   <title value="MedicationRecord"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-03-17T17:34:21+00:00"/>
+  <date value="2022-03-21T12:01:30+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -707,7 +707,7 @@
         <valueString value="Provenance"/>
       </extension>
       <reference>
-        <reference value="Provenance/1-provenance"/>
+        <reference value="Provenance/1-1-provenance"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Example 1 - provenance 1"/>
@@ -738,6 +738,18 @@
       <name value="Example 1 - Treatment Line"/>
       <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
       <exampleCanonical value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"/>
+      <groupingId value="medicationrecord-validatingexamples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/1-2-provenance"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Example 1 - provenance 2"/>
+      <description value="Provenance linking treatment line and dispense"/>
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
     <resource>
@@ -1501,6 +1513,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/3-1-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
@@ -1597,18 +1617,18 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Provenance"/>
-      </extension>
-      <reference>
-        <reference value="Provenance/3-provenance"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
         <reference value="Condition/toothache-condition"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/2-2-provenance"/>
       </reference>
     </resource>
     <resource>
@@ -1649,6 +1669,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/3-3-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationStatement"/>
       </extension>
       <reference>
@@ -1681,14 +1709,6 @@
       </reference>
       <name value="Medication Summary Types Value Set"/>
       <description value="Valueset -  Medication Summary types"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Provenance"/>
-      </extension>
-      <reference>
-        <reference value="Provenance/2-provenance"/>
-      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1764,6 +1784,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/2-1-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationStatement"/>
       </extension>
       <reference>
@@ -1834,6 +1862,14 @@
       </extension>
       <reference>
         <reference value="MedicationStatement/Paracetamol500mg1xCV"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/3-4-provenance"/>
       </reference>
     </resource>
     <resource>
