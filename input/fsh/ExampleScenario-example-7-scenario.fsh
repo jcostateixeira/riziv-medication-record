@@ -52,6 +52,19 @@ Title: "Dispense of medication that was prescribed to take if needed, but was no
 * instance[=].resourceType = #MedicationStatement
 * instance[=].name = "Usage report"
 
+* instance[+].resourceId = "7-1-provenance"
+* instance[=].resourceType = #MedicationStatement
+* instance[=].name = "Link Prescription and treatmentLine"
+
+* instance[+].resourceId = "7-2-provenance"
+* instance[=].resourceType = #MedicationStatement
+* instance[=].name = "Link Dispense and treatmentLine"
+
+
+* instance[+].resourceId = "7-3-provenance"
+* instance[=].resourceType = #MedicationStatement
+* instance[=].name = "Link Usage and treatmentLine"
+
 
 * process[+]
   * title = "Dispense of medication that was prescribed to take if needed, but was not taken"
@@ -97,7 +110,7 @@ Title: "Dispense of medication that was prescribed to take if needed, but was no
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "7-treatmentLine"
       * step[+]
-        * operation.name = "Create new provenance"
+        * operation.name = "Resource Linking"
         * operation.number = "6"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
@@ -124,7 +137,7 @@ Title: "Dispense of medication that was prescribed to take if needed, but was no
     * process[+]
       * title = "Resource Linking"
       * step[+]
-        * operation.name = "Create new provenance"
+        * operation.name = "Resource Linking"
         * operation.number = "9"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
@@ -144,7 +157,7 @@ Title: "Dispense of medication that was prescribed to take if needed, but was no
     * process[+]
       * title = "Resource Linking"
       * step[+]
-        * operation.name = "Create new provenance"
+        * operation.name = "Resource Linking"
         * operation.number = "11"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"

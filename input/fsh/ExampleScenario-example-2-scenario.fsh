@@ -49,12 +49,12 @@ Title: "Prescribed medication is changed by another medication from a different 
 
 * instance[+].resourceId = "2-1-provenance"
 * instance[=].resourceType = #Provenance
-* instance[=].name = "New Provenance"
+* instance[=].name = "Link Prescription and treatmentLine"
 
 
 * instance[+].resourceId = "2-2-provenance"
 * instance[=].resourceType = #Provenance
-* instance[=].name = "New Provenance"
+* instance[=].name = "Link Dispense and treatmentLine"
 
 * process[+]
   * title = "Change VOS from prescription on dispense"

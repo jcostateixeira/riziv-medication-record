@@ -55,6 +55,24 @@ Title: "Dispense of medication that was prescribed, but not taken till the end"
 * instance[=].resourceType = #MedicationStatement
 * instance[=].name = "Report of non taking drug"
 
+* instance[+].resourceId = "8-1-provenance"
+* instance[=].resourceType = #MedicationStatement
+* instance[=].name = "Link Prescription and treatmentLine"
+
+* instance[+].resourceId = "8-2-provenance"
+* instance[=].resourceType = #MedicationStatement
+* instance[=].name = "Link Dispense and treatmentLine"
+
+* instance[+].resourceId = "8-3-provenance"
+* instance[=].resourceType = #MedicationStatement
+* instance[=].name = "Link Adminsitration and treatmentLine"
+
+* instance[+].resourceId = "8-4-provenance"
+* instance[=].resourceType = #MedicationStatement
+* instance[=].name = "Link Usage and treatmentLine"
+
+
+
 * process[+].title = "Dispense of medication that was prescribed, but not taken till the end"
 * process[=].description = "description"
 * process[=].preConditions = "After a GP visit, the patient Pia Peters is prescribed amoxicillin + clavulanic acid 875 mg + 125 mg for a pharyngitis for the conclusion of the package. The pharmacist, dispensed Amoxiclav Sandoz 875/125.  However, after 1 take, the patient stopped doing the medication because the patient had an alergic reaction.  "
@@ -95,7 +113,7 @@ Title: "Dispense of medication that was prescribed, but not taken till the end"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].process[=].step[=].operation.request.resourceId = "8-treatmentLine"
 
-* process[=].step[=].process[=].step[+].operation.name = "Create Provenance"
+* process[=].step[=].process[=].step[+].operation.name = "Resource Linking"
 * process[=].step[=].process[=].step[=].operation.number = "6"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
@@ -115,7 +133,7 @@ Title: "Dispense of medication that was prescribed, but not taken till the end"
 * process[=].step[=].process[=].step[=].operation.request.resourceId = "8-dispense"
 
 * process[=].step[+].process[+].title = "Resource Linking"
-* process[=].step[=].process[=].step[+].operation.name = "Create new provenance"
+* process[=].step[=].process[=].step[+].operation.name = "Resource Linking"
 * process[=].step[=].process[=].step[=].operation.number = "9"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
@@ -136,13 +154,13 @@ Title: "Dispense of medication that was prescribed, but not taken till the end"
 
 
 * process[=].step[+].process[+].title = "Resource Linking"
-* process[=].step[=].process[=].step[+].operation.name = "Create new provenance for administration"
+* process[=].step[=].process[=].step[+].operation.name = "Resource Linking"
 * process[=].step[=].process[=].step[=].operation.number = "12"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].process[=].step[=].operation.response.resourceId = "8-3-provenance"
 
-* process[=].step[=].process[=].step[+].operation.name = "Create new provenance for usage"
+* process[=].step[=].process[=].step[+].operation.name = "Resource Linking"
 * process[=].step[=].process[=].step[=].operation.number = "13"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"

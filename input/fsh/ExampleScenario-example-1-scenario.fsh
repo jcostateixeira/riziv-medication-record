@@ -50,11 +50,11 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 
 * instance[+].resourceId = "1-1-provenance"
 * instance[=].resourceType = #Provenance
-* instance[=].name = "New Provenance"
+* instance[=].name = "Link Prescription and treatmentLine"
 
 * instance[+].resourceId = "1-2-provenance"
 * instance[=].resourceType = #Provenance
-* instance[=].name = "New Provenance"
+* instance[=].name = "Link Dispense and treatmentLine"
 
 * process[+]
   * title = "Change Branded Prescription"

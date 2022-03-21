@@ -62,15 +62,15 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 
 * instance[+].resourceId = "4-1-provenance"
 * instance[=].resourceType = #Provenance
-* instance[=].name = "New provenance"
+* instance[=].name = "Link Prescription and treatmentLine"
 
 * instance[+].resourceId = "4-2-provenance"
 * instance[=].resourceType = #Provenance
-* instance[=].name = "New provenance"
+* instance[=].name = "Link Dispense and treatmentLine"
 
 * instance[+].resourceId = "4-3-provenance"
 * instance[=].resourceType = #Provenance
-* instance[=].name = "New provenance"
+* instance[=].name = "Link second Dispense and treatmentLine"
 
 
 
@@ -120,7 +120,7 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
         * operation.request.resourceId = "4-1-treatmentLine"
 
       * step[+]
-        * operation.name = "Create new Provenance"
+        * operation.name = "Resource Linking"
         * operation.number = "6"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
@@ -176,7 +176,7 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "4-2-treatmentLine"
       * step[+]
-        * operation.name = "Create new Provenance"
+        * operation.name = "Resource Linking"
         * operation.number = "12"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"

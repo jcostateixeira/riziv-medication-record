@@ -47,6 +47,17 @@ Title: "Refuse the dispense prescribed medication"
 * instance[=].resourceType = #MedicationDispense
 * instance[=].name = "Refused Dispense"
 
+
+* instance[+].resourceId = "6-provenance"
+* instance[=].resourceType = #Provenance
+* instance[=].name = "Link Prescription and treatmentLine"
+
+ instance[+].resourceId = "6-2-provenance"
+* instance[=].resourceType = #Provenance
+* instance[=].name = "Link refused dispense and treatmentLine"
+
+
+
 * process[+]
   * title = "Refuse the dispense prescribed medication"
   * description = "description"
@@ -88,7 +99,7 @@ Title: "Refuse the dispense prescribed medication"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "6-treatmentLine"
       * step[+]
-        * operation.name = "Create new Provenance"
+        * operation.name = "Resource Linking"
         * operation.number = "6"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
@@ -112,7 +123,7 @@ Title: "Refuse the dispense prescribed medication"
     * process[+]
       * title = "Resource Linking"
       * step[+]
-        * operation.name = "Create new provenance"
+        * operation.name = "Resource Linking"
         * operation.number = "8"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"

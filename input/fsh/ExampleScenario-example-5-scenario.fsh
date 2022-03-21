@@ -49,6 +49,15 @@ Title: "Dispense of new brand medication that is given because the old is unavai
 * instance[=].name = "New Treatment based on prescription"
 
 
+* instance[+].resourceId = "5-provenance"
+* instance[=].resourceType = #Provenance
+* instance[=].name = "Link Prescription and treatmentLine"
+
+* instance[+].resourceId = "5-2-provenance"
+* instance[=].resourceType = #Provenance
+* instance[=].name = "Link Dispense and treatmentLine"
+
+
 * process[+]
   * title = "Change brand from prescription on dispense because of out of stock"
   * description = "description"
@@ -91,7 +100,7 @@ Title: "Dispense of new brand medication that is given because the old is unavai
         * operation.request.resourceId = "5-treatmentLine"
               
       * step[+]
-        * operation.name = "Create new Provenance"
+        * operation.name = "Resource Linking"
         * operation.number = "6"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
@@ -112,3 +121,9 @@ Title: "Dispense of new brand medication that is given because the old is unavai
         * operation.initiator = "PHARM"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "5-dispense"
+      * step[+]
+        * operation.name = "Resource Linking"
+        * operation.number = "9"
+        * operation.initiator = "PHARM"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "5-2-provenance"

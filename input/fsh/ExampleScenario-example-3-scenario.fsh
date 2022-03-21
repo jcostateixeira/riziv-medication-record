@@ -168,7 +168,7 @@ Title: "Dispense medication before the prescription is available"
         * operation.request.resourceId = "3-3-provenance"
   * step[+]
     * process[+]
-      * title = "Reporting"
+      * title = "Reporting and new dispense"
       * step[+]
         * operation.name = "Notification of a dispense"
         * operation.number = "13"
