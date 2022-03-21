@@ -130,3 +130,12 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "1-2-provenance"
+  * step[+]
+    * process[+]
+      * title = "Vizualization ..."
+      * step[+]
+        * operation.name = "Resource Linking"
+        * operation.number = "8"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "1-2-provenance"
