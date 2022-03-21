@@ -175,6 +175,13 @@
     "name": "BeModelMedicationScheduledAdministration"
   },
   {
+    "id": "BeModelMedicationView",
+    "type": "StructureDefinition",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationView",
+    "version": "0.1.0-test",
+    "name": "BeModelMedicationView"
+  },
+  {
     "id": "BeOrganization",
     "type": "StructureDefinition",
     "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeOrganization",
@@ -278,6 +285,13 @@
     "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense",
     "version": "0.1.0-test",
     "name": "BeMedicationDispense"
+  },
+  {
+    "id": "med-view-comp",
+    "type": "StructureDefinition",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp",
+    "version": "0.1.0-test",
+    "name": "MedicationView"
   },
   {
     "id": "related-tl",

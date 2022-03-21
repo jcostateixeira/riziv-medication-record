@@ -12,7 +12,7 @@
   <title value="MedicationRecord"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-03-21T14:13:18+00:00"/>
+  <date value="2022-03-21T14:58:08+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -1534,6 +1534,26 @@
       <reference>
         <reference value="MedicationStatement/Asaflow500mg1xACMd"/>
       </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BeModelMedicationView"/>
+      </reference>
+      <name value="Medication View logical model"/>
+      <description value="A model for a visualization of the patient's medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/med-view-comp"/>
+      </reference>
+      <name value="Medication View profile"/>
+      <description value="The profile for how to organize the information in a medication View"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

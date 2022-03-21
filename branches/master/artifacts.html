@@ -216,19 +216,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#5">Medication Dispense</a>
       </li>
       <li>
-         <a href="#6">Structures: Resource Profiles</a>
+         <a href="#6">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#7">Terminology: Value Sets</a>
+         <a href="#7">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#8">Terminology: Code Systems</a>
+         <a href="#8">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#9">Terminology: Naming Systems</a>
+         <a href="#9">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#10">Other</a>
+         <a href="#10">Terminology: Naming Systems</a>
+      </li>
+      <li>
+         <a href="#11">Other</a>
       </li>
    </ul>
 </div>
@@ -488,7 +491,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </td>
             </tr>
             <tr>
-               <td style="column-width:30%"><a name="l882">​</a>
+               <td style="column-width:30%"><a name="l888">​</a>
                   <a href="null" title="Provenance/1-1-provenance">Example 1 - provenance 1</a>
                </td>
                <td>
@@ -512,7 +515,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </td>
             </tr>
             <tr>
-               <td style="column-width:30%"><a name="l927">​</a>
+               <td style="column-width:30%"><a name="l933">​</a>
                   <a href="null" title="Provenance/1-2-provenance">Example 1 - provenance 2</a>
                </td>
                <td>
@@ -1071,6 +1074,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="6"> </a>
+   <h3>Structures: Logical Models </h3>
+   <p>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-BeModelMedicationView.html" title="StructureDefinition/BeModelMedicationView">Medication View logical model</a>
+               </td>
+               <td>
+<p>A model for a visualization of the patient’s medication</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="7"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
@@ -1081,23 +1104,40 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-med-view-comp.html" title="StructureDefinition/med-view-comp">Medication View profile</a>
+               </td>
+               <td>
+<p>The profile for how to organize the information in a medication View</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-BePractitioner.html" title="StructureDefinition/BePractitioner">StructureDefinition/BePractitioner</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-BePatient.html" title="StructureDefinition/BePatient">StructureDefinition/BePatient</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-BeOrganization.html" title="StructureDefinition/BeOrganization">StructureDefinition/BeOrganization</a>
                </td>
+               <td>
+
+</td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="7"> </a>
+   <a name="8"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -1125,7 +1165,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="8"> </a>
+   <a name="9"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide</p>
@@ -1145,7 +1185,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="9"> </a>
+   <a name="10"> </a>
    <h3>Terminology: Naming Systems </h3>
    <p>
     <p>These define identifier and/or code system identities used by systems conforming to this implementation guide</p>
@@ -1181,7 +1221,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="10"> </a>
+   <a name="11"> </a>
    <h3>Other </h3>
    <p>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
@@ -1320,7 +1360,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.riziv-medicationrecord#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 21, 2022 14:13+0000">2022-03-21</span>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.riziv-medicationrecord#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 21, 2022 14:58+0000">2022-03-21</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
