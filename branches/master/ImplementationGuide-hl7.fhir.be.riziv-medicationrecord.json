@@ -11,7 +11,7 @@
   "title": "MedicationRecord",
   "status": "draft",
   "experimental": false,
-  "date": "2022-03-17T17:34:21+00:00",
+  "date": "2022-03-21T12:01:30+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -1038,7 +1038,7 @@
           }
         ],
         "reference": {
-          "reference": "Provenance/1-provenance"
+          "reference": "Provenance/1-1-provenance"
         },
         "fhirVersion": [
           "4.0.1"
@@ -1081,6 +1081,23 @@
         "name": "Example 1 - Treatment Line",
         "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
         "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine",
+        "groupingId": "medicationrecord-validatingexamples"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/1-2-provenance"
+        },
+        "fhirVersion": [
+          "4.0.1"
+        ],
+        "name": "Example 1 - provenance 2",
+        "description": "Provenance linking treatment line and dispense",
         "groupingId": "medicationrecord-validatingexamples"
       },
       {
@@ -2141,6 +2158,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/3-1-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Condition"
           }
         ],
@@ -2273,22 +2301,22 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Provenance"
+            "valueString": "Condition"
           }
         ],
         "reference": {
-          "reference": "Provenance/3-provenance"
+          "reference": "Condition/toothache-condition"
         }
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Condition"
+            "valueString": "Provenance"
           }
         ],
         "reference": {
-          "reference": "Condition/toothache-condition"
+          "reference": "Provenance/2-2-provenance"
         }
       },
       {
@@ -2343,6 +2371,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/3-3-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationStatement"
           }
         ],
@@ -2385,17 +2424,6 @@
         },
         "name": "Medication Summary Types Value Set",
         "description": "Valueset -  Medication Summary types"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Provenance"
-          }
-        ],
-        "reference": {
-          "reference": "Provenance/2-provenance"
-        }
       },
       {
         "extension": [
@@ -2500,6 +2528,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/2-1-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationStatement"
           }
         ],
@@ -2595,6 +2634,17 @@
         ],
         "reference": {
           "reference": "MedicationStatement/Paracetamol500mg1xCV"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/3-4-provenance"
         }
       },
       {

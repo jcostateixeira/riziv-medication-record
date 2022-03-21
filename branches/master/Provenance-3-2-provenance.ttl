@@ -10,12 +10,12 @@
   fhir:Resource.id [ fhir:value "3-2-provenance"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"3-2-provenance\" </p></div><p><b>target</b>: <a href=\"MedicationRequest-3-2-prescription.html\">MedicationRequest/3-2-prescription</a></p><p><b>recorded</b>: Jul 19, 2021, 11:00:00 AM</p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Role</b></td><td><b>Who</b></td></tr><tr><td>*</td><td>PRIMAUTH <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#PRIMAUTH)</span></td><td><span></span></td></tr></table><h3>Entities</h3><table class=\"grid\"><tr><td>-</td><td><b>Role</b></td><td><b>What</b></td></tr><tr><td>*</td><td>source</td><td><a href=\"MedicationStatement-3-treatmentLine.html\">MedicationStatement/3-treatmentLine</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"3-2-provenance\" </p></div><p><b>target</b>: <a href=\"MedicationDispense-3-dispense.html\">MedicationDispense/3-dispense</a></p><p><b>recorded</b>: Jul 19, 2021, 11:00:00 AM</p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Role</b></td><td><b>Who</b></td></tr><tr><td>*</td><td>PRIMAUTH <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#PRIMAUTH)</span></td><td><span></span></td></tr></table><h3>Entities</h3><table class=\"grid\"><tr><td>-</td><td><b>Role</b></td><td><b>What</b></td></tr><tr><td>*</td><td>source</td><td><a href=\"MedicationStatement-3-treatmentLine.html\">MedicationStatement/3-treatmentLine</a></td></tr></table></div>"
   ];
   fhir:Provenance.target [
      fhir:index 0;
-     fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationRequest/3-2-prescription>;
-     fhir:Reference.reference [ fhir:value "MedicationRequest/3-2-prescription" ]
+     fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationDispense/3-dispense>;
+     fhir:Reference.reference [ fhir:value "MedicationDispense/3-dispense" ]
   ];
   fhir:Provenance.recorded [ fhir:value "2021-07-19T13:00:00+02:00"^^xsd:dateTime];
   fhir:Provenance.agent [
