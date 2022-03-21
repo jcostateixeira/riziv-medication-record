@@ -29,7 +29,7 @@
   <instance>
     <resourceId value="3-dispense"/>
     <resourceType value="MedicationDispense"/>
-    <name value="Dispense of product prescribed"/>
+    <name value="Diclofenac Dispense "/>
   </instance>
   <instance>
     <resourceId value="EB"/>
@@ -49,17 +49,17 @@
   <instance>
     <resourceId value="3-prescription"/>
     <resourceType value="MedicationRequest"/>
-    <name value="First Prescription"/>
+    <name value="Diclofenac Prescription"/>
   </instance>
   <instance>
     <resourceId value="3-2-dispense"/>
     <resourceType value="MedicationDispense"/>
-    <name value="Dispense of an ancilliary product"/>
+    <name value="Pantoprazole Dispense [ancilliary product]"/>
   </instance>
   <instance>
     <resourceId value="3-2-prescription"/>
     <resourceType value="MedicationRequest"/>
-    <name value="Second Prescription"/>
+    <name value="Pantoprazole Prescription"/>
   </instance>
   <instance>
     <resourceId value="3-1-provenance"/>

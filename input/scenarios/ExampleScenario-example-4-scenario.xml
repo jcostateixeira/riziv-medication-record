@@ -29,17 +29,17 @@
   <instance>
     <resourceId value="4-1-dispense"/>
     <resourceType value="MedicationDispense"/>
-    <name value="Dispense for Prescription"/>
+    <name value="Rosuvastatin Dispense"/>
   </instance>
   <instance>
     <resourceId value="4-1-prescription"/>
     <resourceType value="MedicationRequest"/>
-    <name value="New prescription"/>
+    <name value="Rosuvastatin prescription"/>
   </instance>
   <instance>
     <resourceId value="4-2-dispense"/>
     <resourceType value="MedicationDispense"/>
-    <name value="Isolated dispense"/>
+    <name value="Dafalgan dispense (non-prescription)"/>
   </instance>
   <instance>
     <resourceId value="EB"/>

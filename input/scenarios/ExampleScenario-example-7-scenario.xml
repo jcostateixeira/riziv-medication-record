@@ -29,7 +29,7 @@
   <instance>
     <resourceId value="7-prescription"/>
     <resourceType value="MedicationRequest"/>
-    <name value="New prescription"/>
+    <name value="Ciprofloxacine prescription"/>
   </instance>
   <instance>
     <resourceId value="EB"/>
@@ -49,12 +49,12 @@
   <instance>
     <resourceId value="7-dispense"/>
     <resourceType value="MedicationDispense"/>
-    <name value="Dispense"/>
+    <name value="Ciprofloxacine Dispense"/>
   </instance>
   <instance>
     <resourceId value="7-usage"/>
     <resourceType value="MedicationStatement"/>
-    <name value="Usage report"/>
+    <name value="Ciprofloxacine Usage report"/>
   </instance>
   <instance>
     <resourceId value="7-1-provenance"/>

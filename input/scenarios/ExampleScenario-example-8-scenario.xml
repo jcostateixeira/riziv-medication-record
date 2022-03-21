@@ -88,7 +88,7 @@
     <postConditions value="A grouping of the prescription, dispense, and administration are coupled together within a treatment line, the new prescription should start a new treatment line under the same treatment."/>
     <step>
       <process>
-        <title value="Initial Contact"/>
+        <title value="Initial contact"/>
         <step>
           <operation>
             <number value="1"/>
@@ -195,11 +195,16 @@
             <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
-            <response>
+            <request>
               <resourceId value="8-2-provenance"/>
-            </response>
+            </request>
           </operation>
         </step>
+      </process>
+    </step>
+    <step>
+      <process>
+        <title value="Stop Usage"/>
         <step>
           <operation>
             <number value="10"/>
@@ -233,9 +238,9 @@
             <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
-            <response>
+            <request>
               <resourceId value="8-3-provenance"/>
-            </response>
+            </request>
           </operation>
         </step>
         <step>
@@ -244,9 +249,9 @@
             <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
-            <response>
+            <request>
               <resourceId value="8-4-provenance"/>
-            </response>
+            </request>
           </operation>
         </step>
       </process>

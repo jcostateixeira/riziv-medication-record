@@ -29,7 +29,7 @@
   <instance>
     <resourceId value="2a-prescription"/>
     <resourceType value="MedicationRequest"/>
-    <name value="New Prescription"/>
+    <name value="Paracetamol 1000 mg Prescription"/>
   </instance>
   <instance>
     <resourceId value="EB"/>
@@ -49,7 +49,7 @@
   <instance>
     <resourceId value="2a-dispense"/>
     <resourceType value="MedicationDispense"/>
-    <name value="New dispense"/>
+    <name value="paracetamol 500 mg dispense"/>
   </instance>
   <instance>
     <resourceId value="2-1-provenance"/>

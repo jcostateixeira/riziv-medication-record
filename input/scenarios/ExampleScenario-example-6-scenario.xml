@@ -29,7 +29,7 @@
   <instance>
     <resourceId value="6-prescription"/>
     <resourceType value="MedicationRequest"/>
-    <name value="New prescription"/>
+    <name value="ibuprofen prescription"/>
   </instance>
   <instance>
     <resourceId value="EB"/>

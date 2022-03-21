@@ -29,7 +29,7 @@
   <instance>
     <resourceId value="1-prescription"/>
     <resourceType value="MedicationRequest"/>
-    <name value="New Prescription"/>
+    <name value="Amlor Prescription"/>
   </instance>
   <instance>
     <resourceId value="EB"/>
@@ -49,7 +49,7 @@
   <instance>
     <resourceId value="1-dispense"/>
     <resourceType value="MedicationDispense"/>
-    <name value="New dispense"/>
+    <name value="Amlodipin Sandoz dispense"/>
   </instance>
   <instance>
     <resourceId value="1-1-provenance"/>
