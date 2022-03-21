@@ -48,7 +48,11 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 * instance[=].resourceType = #MedicationDispense
 * instance[=].name = "New dispense"
 
-* instance[+].resourceId = "1-provenance"
+* instance[+].resourceId = "1-1-provenance"
+* instance[=].resourceType = #Provenance
+* instance[=].name = "New Provenance"
+
+* instance[+].resourceId = "1-2-provenance"
 * instance[=].resourceType = #Provenance
 * instance[=].name = "New Provenance"
 
@@ -96,11 +100,11 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "1-treatmentLine"
       * step[+]
-        * operation.name = "Create new Provenance"
+        * operation.name = "Resource Linking"
         * operation.number = "6"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
-        * operation.request.resourceId = "1-provenance"
+        * operation.request.resourceId = "1-1-provenance"
   * step[+]
     * process[+]
       * title = "Dispense"
@@ -119,4 +123,9 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
         * operation.initiator = "PHARM"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "1-dispense"
-
+      * step[+]
+        * operation.name = "Resource Linking"
+        * operation.number = "8"
+        * operation.initiator = "PHARM"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "1-2-provenance"

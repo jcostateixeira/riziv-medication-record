@@ -60,6 +60,19 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
 * instance[=].resourceType = #CarePlan
 * instance[=].name = "New Treatment based on dispense"
 
+* instance[+].resourceId = "4-1-provenance"
+* instance[=].resourceType = #Provenance
+* instance[=].name = "New provenance"
+
+* instance[+].resourceId = "4-2-provenance"
+* instance[=].resourceType = #Provenance
+* instance[=].name = "New provenance"
+
+* instance[+].resourceId = "4-3-provenance"
+* instance[=].resourceType = #Provenance
+* instance[=].name = "New provenance"
+
+
 
 
 * process[+].

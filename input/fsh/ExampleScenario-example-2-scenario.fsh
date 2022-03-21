@@ -47,7 +47,12 @@ Title: "Prescribed medication is changed by another medication from a different 
 * instance[=].resourceType = #MedicationDispense
 * instance[=].name = "New dispense"
 
-* instance[+].resourceId = "2-provenance"
+* instance[+].resourceId = "2-1-provenance"
+* instance[=].resourceType = #Provenance
+* instance[=].name = "New Provenance"
+
+
+* instance[+].resourceId = "2-2-provenance"
 * instance[=].resourceType = #Provenance
 * instance[=].name = "New Provenance"
 
@@ -95,11 +100,11 @@ Title: "Prescribed medication is changed by another medication from a different 
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "2a-treatmentLine"
       * step[+]
-        * operation.name = "Create new Provenance"
+        * operation.name = "Resource Linking"
         * operation.number = "6"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
-        * operation.request.resourceId = "2-provenance"
+        * operation.request.resourceId = "2-1-provenance"
 
   * step[+]
     * process[+]
@@ -116,6 +121,10 @@ Title: "Prescribed medication is changed by another medication from a different 
         * operation.initiator = "PHARM"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "2a-dispense"
-
-
+      * step[+]
+        * operation.name = "Resource Linking"
+        * operation.number = "9"
+        * operation.initiator = "PHARM"
+        * operation.receiver = "VAULT"
+        * operation.request.resourceId = "2-2-provenance"
 

@@ -131,7 +131,7 @@ Title:    ""
 * addresses = Reference(hypertension-condition)
 
 
-Instance: 1-provenance 
+Instance: 1-1-provenance 
 InstanceOf: Provenance
 Usage: #example
 Description: "Provenance linking treatment line and prescription"
@@ -149,4 +149,21 @@ Title:    "Example 1 - Provenance 1"
 * entity[0].what = Reference(1-treatmentLine)
 * entity[0].role = #source
 
+Instance: 1-2-provenance 
+InstanceOf: Provenance
+Usage: #example
+Description: "Provenance linking treatment line and dispense"
+Title:    "Example 1 - Provenance 2"
+
+
+* target = Reference(1-dispense)
+
+* recorded = "2021-07-19T13:00:00+02:00"
+
+* agent.who.identifier.value = "7c121778-5b2b-442d-9314-0a73995ab3dd"
+* agent.who.identifier.system = "http://physician-identifiers.com"
+* agent.role = #PRIMAUTH
+
+* entity[0].what = Reference(1-treatmentLine)
+* entity[0].role = #source
 

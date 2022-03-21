@@ -115,7 +115,7 @@ Title:    ""
 * addresses = Reference(headache-condition)
 
 
-Instance: 2-provenance 
+Instance: 2-1-provenance 
 InstanceOf: Provenance
 Usage: #example
 Description: "Provenance linking treatment line and prescription"
@@ -123,6 +123,24 @@ Title:    "Example 2 - Provenance 1"
 
 
 * target = Reference(2a-prescription)
+
+* recorded = "2021-07-19T13:00:00+02:00"
+
+* agent.who.identifier.value = "7c121778-5b2b-442d-9314-0a73995ab3dd"
+* agent.who.identifier.system = "http://physician-identifiers.com"
+* agent.role = #PRIMAUTH
+
+* entity[0].what = Reference(2a-treatmentLine)
+* entity[0].role = #source
+
+Instance: 2-2-provenance 
+InstanceOf: Provenance
+Usage: #example
+Description: "Provenance linking treatment line and dispense"
+Title:    "Example 2 - Provenance 2"
+
+
+* target = Reference(2a-dispense)
 
 * recorded = "2021-07-19T13:00:00+02:00"
 
