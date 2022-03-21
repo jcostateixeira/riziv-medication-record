@@ -51,6 +51,16 @@
     <resourceType value="CarePlan"/>
     <name value="New Treatment based on prescription"/>
   </instance>
+  <instance>
+    <resourceId value="5-provenance"/>
+    <resourceType value="Provenance"/>
+    <name value="Link Prescription and treatmentLine"/>
+  </instance>
+  <instance>
+    <resourceId value="5-2-provenance"/>
+    <resourceType value="Provenance"/>
+    <name value="Link Dispense and treatmentLine"/>
+  </instance>
   <process>
     <title value="Change brand from prescription on dispense because of out of stock"/>
     <description value="description"/>
@@ -119,7 +129,7 @@
         <step>
           <operation>
             <number value="6"/>
-            <name value="Create new Provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
@@ -151,6 +161,17 @@
             <receiver value="VAULT"/>
             <request>
               <resourceId value="5-dispense"/>
+            </request>
+          </operation>
+        </step>
+        <step>
+          <operation>
+            <number value="9"/>
+            <name value="Resource Linking"/>
+            <initiator value="PHARM"/>
+            <receiver value="VAULT"/>
+            <request>
+              <resourceId value="5-2-provenance"/>
             </request>
           </operation>
         </step>

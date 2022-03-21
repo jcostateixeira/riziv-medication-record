@@ -61,6 +61,26 @@
     <resourceType value="MedicationStatement"/>
     <name value="Report of non taking drug"/>
   </instance>
+  <instance>
+    <resourceId value="8-1-provenance"/>
+    <resourceType value="MedicationStatement"/>
+    <name value="Link Prescription and treatmentLine"/>
+  </instance>
+  <instance>
+    <resourceId value="8-2-provenance"/>
+    <resourceType value="MedicationStatement"/>
+    <name value="Link Dispense and treatmentLine"/>
+  </instance>
+  <instance>
+    <resourceId value="8-3-provenance"/>
+    <resourceType value="MedicationStatement"/>
+    <name value="Link Adminsitration and treatmentLine"/>
+  </instance>
+  <instance>
+    <resourceId value="8-4-provenance"/>
+    <resourceType value="MedicationStatement"/>
+    <name value="Link Usage and treatmentLine"/>
+  </instance>
   <process>
     <title value="Dispense of medication that was prescribed, but not taken till the end"/>
     <description value="description"/>
@@ -129,7 +149,7 @@
         <step>
           <operation>
             <number value="6"/>
-            <name value="Create Provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
@@ -172,7 +192,7 @@
         <step>
           <operation>
             <number value="9"/>
-            <name value="Create new provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <response>
@@ -210,7 +230,7 @@
         <step>
           <operation>
             <number value="12"/>
-            <name value="Create new provenance for administration"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <response>
@@ -221,7 +241,7 @@
         <step>
           <operation>
             <number value="13"/>
-            <name value="Create new provenance for usage"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <response>

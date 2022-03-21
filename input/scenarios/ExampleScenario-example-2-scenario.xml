@@ -54,12 +54,12 @@
   <instance>
     <resourceId value="2-1-provenance"/>
     <resourceType value="Provenance"/>
-    <name value="New Provenance"/>
+    <name value="Link Prescription and treatmentLine"/>
   </instance>
   <instance>
     <resourceId value="2-2-provenance"/>
     <resourceType value="Provenance"/>
-    <name value="New Provenance"/>
+    <name value="Link Dispense and treatmentLine"/>
   </instance>
   <process>
     <title value="Change VOS from prescription on dispense"/>

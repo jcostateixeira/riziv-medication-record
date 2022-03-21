@@ -237,7 +237,7 @@
     </step>
     <step>
       <process>
-        <title value="Reporting"/>
+        <title value="Reporting and new dispense"/>
         <step>
           <operation>
             <number value="13"/>

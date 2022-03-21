@@ -69,17 +69,17 @@
   <instance>
     <resourceId value="4-1-provenance"/>
     <resourceType value="Provenance"/>
-    <name value="New provenance"/>
+    <name value="Link Prescription and treatmentLine"/>
   </instance>
   <instance>
     <resourceId value="4-2-provenance"/>
     <resourceType value="Provenance"/>
-    <name value="New provenance"/>
+    <name value="Link Dispense and treatmentLine"/>
   </instance>
   <instance>
     <resourceId value="4-3-provenance"/>
     <resourceType value="Provenance"/>
-    <name value="New provenance"/>
+    <name value="Link second Dispense and treatmentLine"/>
   </instance>
   <process>
     <title value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription"/>
@@ -149,7 +149,7 @@
         <step>
           <operation>
             <number value="6"/>
-            <name value="Create new Provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
@@ -246,7 +246,7 @@
         <step>
           <operation>
             <number value="12"/>
-            <name value="Create new Provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>

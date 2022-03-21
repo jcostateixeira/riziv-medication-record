@@ -56,6 +56,21 @@
     <resourceType value="MedicationStatement"/>
     <name value="Usage report"/>
   </instance>
+  <instance>
+    <resourceId value="7-1-provenance"/>
+    <resourceType value="MedicationStatement"/>
+    <name value="Link Prescription and treatmentLine"/>
+  </instance>
+  <instance>
+    <resourceId value="7-2-provenance"/>
+    <resourceType value="MedicationStatement"/>
+    <name value="Link Dispense and treatmentLine"/>
+  </instance>
+  <instance>
+    <resourceId value="7-3-provenance"/>
+    <resourceType value="MedicationStatement"/>
+    <name value="Link Usage and treatmentLine"/>
+  </instance>
   <process>
     <title value="Dispense of medication that was prescribed to take if needed, but was not taken"/>
     <description value="description"/>
@@ -124,7 +139,7 @@
         <step>
           <operation>
             <number value="6"/>
-            <name value="Create new provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
@@ -167,7 +182,7 @@
         <step>
           <operation>
             <number value="9"/>
-            <name value="Create new provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
@@ -199,7 +214,7 @@
         <step>
           <operation>
             <number value="11"/>
-            <name value="Create new provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>

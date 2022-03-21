@@ -51,6 +51,16 @@
     <resourceType value="MedicationDispense"/>
     <name value="Refused Dispense"/>
   </instance>
+  <instance>
+    <resourceId value="6-provenance"/>
+    <resourceType value="Provenance"/>
+    <name value="Link Prescription and treatmentLine"/>
+  </instance>
+  <instance>
+    <resourceId value="6-2-provenance"/>
+    <resourceType value="Provenance"/>
+    <name value="Link refused dispense and treatmentLine"/>
+  </instance>
   <process>
     <title value="Refuse the dispense prescribed medication"/>
     <description value="description"/>
@@ -119,7 +129,7 @@
         <step>
           <operation>
             <number value="6"/>
-            <name value="Create new Provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
@@ -162,7 +172,7 @@
         <step>
           <operation>
             <number value="8"/>
-            <name value="Create new provenance"/>
+            <name value="Resource Linking"/>
             <initiator value="VAULT"/>
             <receiver value="VAULT"/>
             <request>
