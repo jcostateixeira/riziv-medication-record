@@ -3,7 +3,7 @@
   "id": "example-13-scenario",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"example-13-scenario\" </p></div><p><b>url</b>: <code>http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-13-scenario</code></p><p><b>version</b>: 0.1.0-test</p><p><b>name</b>: MedicationOTC</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: 2019-09-11 12:00:00+0100</p><p><b>publisher</b>: HL7 Belgium</p><p><b>contact</b>: <a href=\"http://hl7belgium.org\">http://hl7belgium.org</a></p><p><b>jurisdiction</b>: Belgium <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#BE)</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: PATIENT</p><p><b>type</b>: person</p><p><b>name</b>: Pia Peters</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: PHARM</p><p><b>type</b>: person</p><p><b>name</b>: Pharmacist</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: VAULT</p><p><b>type</b>: entity</p><p><b>name</b>: Vault</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: EB</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Empty Bundle</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-1-treatmentLine</p><p><b>resourceType</b>: MedicationStatement</p><p><b>name</b>: New Treatment Line based on first dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-treatment</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: New Treatment based on first dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-1-provenance</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: New Provenance based on first dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-2-treatmentLine</p><p><b>resourceType</b>: MedicationStatement</p><p><b>name</b>: New Treatment Line based on second dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-2-provenance</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: New Provenance based on second dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-3-provenance</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: New Provenance based on third dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-1-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: First Dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-2-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: Second Dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-3-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: Third Dispense</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Dispense of OTC medication on the community pharmacy</p><p><b>description</b>: description</p><p><b>preConditions</b>: The patient Pia Peters goes to the pharmacy with a complaint of headache. The pharmacist, dispenses ibruprofen 200 mg. After a few months, another minor headache appears and the patient repeats the procedure, receveing this time parecetamol 500 mg. The following year, the same situation repeats, receiving this time another ibuprofen.</p><p><b>postConditions</b>: How the treatments and treatment line behave with OTC dispenses without prescription and for the same condition</p><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Initial Contact</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: First Dispense</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Treatment resources Creation</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Second Dispense</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: New Resources Creation</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Third Dispense</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Treatment resources Creation</p></blockquote></blockquote></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"example-13-scenario\" </p></div><p><b>url</b>: <code>http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-13-scenario</code></p><p><b>version</b>: 0.1.0-test</p><p><b>name</b>: MedicationOTC</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: 2019-09-11 12:00:00+0100</p><p><b>publisher</b>: HL7 Belgium</p><p><b>contact</b>: <a href=\"http://hl7belgium.org\">http://hl7belgium.org</a></p><p><b>jurisdiction</b>: Belgium <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#BE)</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: PATIENT</p><p><b>type</b>: person</p><p><b>name</b>: Pia Peters</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: PHARM</p><p><b>type</b>: person</p><p><b>name</b>: Pharmacist</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: VAULT</p><p><b>type</b>: entity</p><p><b>name</b>: Vault</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: EB</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Empty Bundle</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-1-treatmentLine</p><p><b>resourceType</b>: MedicationStatement</p><p><b>name</b>: New Treatment Line based on ibuprofen dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-treatment</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: New Treatment based on ibuprofen dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-1-provenance</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: Link first ibuprofen dispense and treatmentLine</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-2-treatmentLine</p><p><b>resourceType</b>: MedicationStatement</p><p><b>name</b>: New Treatment Line based on paracetamol dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-2-provenance</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: Link paracetamol dispense and treatmentLine</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-3-provenance</p><p><b>resourceType</b>: CarePlan</p><p><b>name</b>: Link second ibuprofen dispense and treatmentLine</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-1-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: ibruprofen Dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-2-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: parecetamol Dispense</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: 13-3-dispense</p><p><b>resourceType</b>: MedicationDispense</p><p><b>name</b>: ibruprofen Dispense</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Dispense of OTC medication on the community pharmacy</p><p><b>description</b>: description</p><p><b>preConditions</b>: The patient Pia Peters goes to the pharmacy with a complaint of headache. The pharmacist, dispenses ibruprofen 200 mg. After a few months, another minor headache appears and the patient repeats the procedure, receveing this time parecetamol 500 mg. The following year, the same situation repeats, receiving this time another ibuprofen.</p><p><b>postConditions</b>: How the treatments and treatment line behave with OTC dispenses without prescription and for the same condition</p><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Initial Contact</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: First Dispense</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Treatment resources Creation</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Second Dispense</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: New Resources Creation</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Third Dispense</p></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>process</b></p><p><b>title</b>: Resource Linkage</p></blockquote></blockquote></blockquote></div>"
   },
   "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ExampleScenario/example-13-scenario",
   "version": "0.1.0-test",
@@ -58,47 +58,47 @@
     {
       "resourceId": "13-1-treatmentLine",
       "resourceType": "MedicationStatement",
-      "name": "New Treatment Line based on first dispense"
+      "name": "New Treatment Line based on ibuprofen dispense"
     },
     {
       "resourceId": "13-treatment",
       "resourceType": "CarePlan",
-      "name": "New Treatment based on first dispense"
+      "name": "New Treatment based on ibuprofen dispense"
     },
     {
       "resourceId": "13-1-provenance",
       "resourceType": "CarePlan",
-      "name": "New Provenance based on first dispense"
+      "name": "Link first ibuprofen dispense and treatmentLine"
     },
     {
       "resourceId": "13-2-treatmentLine",
       "resourceType": "MedicationStatement",
-      "name": "New Treatment Line based on second dispense"
+      "name": "New Treatment Line based on paracetamol dispense"
     },
     {
       "resourceId": "13-2-provenance",
       "resourceType": "CarePlan",
-      "name": "New Provenance based on second dispense"
+      "name": "Link paracetamol dispense and treatmentLine"
     },
     {
       "resourceId": "13-3-provenance",
       "resourceType": "CarePlan",
-      "name": "New Provenance based on third dispense"
+      "name": "Link second ibuprofen dispense and treatmentLine"
     },
     {
       "resourceId": "13-1-dispense",
       "resourceType": "MedicationDispense",
-      "name": "First Dispense"
+      "name": "ibruprofen Dispense"
     },
     {
       "resourceId": "13-2-dispense",
       "resourceType": "MedicationDispense",
-      "name": "Second Dispense"
+      "name": "parecetamol Dispense"
     },
     {
       "resourceId": "13-3-dispense",
       "resourceType": "MedicationDispense",
-      "name": "Third Dispense"
+      "name": "ibruprofen Dispense"
     }
   ],
   "process": [
@@ -186,7 +186,7 @@
                 {
                   "operation": {
                     "number": "6",
-                    "name": "Create new provenance",
+                    "name": "Resource Linking",
                     "initiator": "VAULT",
                     "receiver": "VAULT",
                     "request": {
@@ -237,7 +237,7 @@
                 {
                   "operation": {
                     "number": "9",
-                    "name": "Create new provenance",
+                    "name": "Resource Linking",
                     "initiator": "VAULT",
                     "receiver": "VAULT",
                     "request": {
@@ -272,12 +272,12 @@
         {
           "process": [
             {
-              "title": "Treatment resources Creation",
+              "title": "Resource Linkage",
               "step": [
                 {
                   "operation": {
                     "number": "11",
-                    "name": "Create new provenance",
+                    "name": "Resource Linking",
                     "initiator": "VAULT",
                     "receiver": "VAULT",
                     "request": {
