@@ -108,8 +108,6 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
   * step[+]
     * process[+]
       * title = "Dispense"
-      * description = "test"
-      * postConditions = "Since the product is not the same, the dispense is not linked to the treamentLine."
 
       * step[+]
         * operation.name = "Get patient's Prescriptions"
@@ -123,9 +121,12 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
         * operation.initiator = "PHARM"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "1-dispense"
+  * step[+]
+    * process[+]
+      * title = "Resource Linkage"
       * step[+]
         * operation.name = "Resource Linking"
         * operation.number = "8"
-        * operation.initiator = "PHARM"
+        * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "1-2-provenance"

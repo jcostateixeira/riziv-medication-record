@@ -121,10 +121,13 @@ Title: "Prescribed medication is changed by another medication from a different 
         * operation.initiator = "PHARM"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "2a-dispense"
+  * step[+]
+    * process[+]
+      * title = "Resource Linkage"
       * step[+]
         * operation.name = "Resource Linking"
-        * operation.number = "9"
-        * operation.initiator = "PHARM"
+        * operation.number = "8"
+        * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "2-2-provenance"
 

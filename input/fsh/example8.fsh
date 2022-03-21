@@ -201,7 +201,7 @@ Title:    "Example 8 - Provenance 2"
 Instance: 8-3-provenance 
 InstanceOf: Provenance
 Usage: #example
-Description: "Provenance linking treatment line and prescription"
+Description: "Provenance linking treatment line and administration"
 Title:    "Example 8 - Provenance 3"
 
 
@@ -219,7 +219,7 @@ Title:    "Example 8 - Provenance 3"
 Instance: 8-4-provenance 
 InstanceOf: Provenance
 Usage: #example
-Description: "Provenance linking treatment line and prescription"
+Description: "Provenance linking treatment line and usage"
 Title:    "Example 8 - Provenance 4"
 
 

@@ -26,43 +26,45 @@ Title: "Dispense of OTC medication on the community pharmacy"
 * instance[=].resourceType = #Bundle
 * instance[=].name = "Empty Bundle"
 
+
+
 * instance[+].resourceId = "13-1-treatmentLine"
 * instance[=].resourceType = #MedicationStatement
-* instance[=].name = "New Treatment Line based on first dispense"
+* instance[=].name = "New Treatment Line based on ibuprofen dispense"
 
 * instance[+].resourceId = "13-treatment"
 * instance[=].resourceType = #CarePlan
-* instance[=].name = "New Treatment based on first dispense"
+* instance[=].name = "New Treatment based on ibuprofen dispense"
 
 * instance[+].resourceId = "13-1-provenance"
 * instance[=].resourceType = #CarePlan
-* instance[=].name = "New Provenance based on first dispense"
+* instance[=].name = "Link first ibuprofen dispense and treatmentLine"
 
 * instance[+].resourceId = "13-2-treatmentLine"
 * instance[=].resourceType = #MedicationStatement
-* instance[=].name = "New Treatment Line based on second dispense"
+* instance[=].name = "New Treatment Line based on paracetamol dispense"
 
 * instance[+].resourceId = "13-2-provenance"
 * instance[=].resourceType = #CarePlan
-* instance[=].name = "New Provenance based on second dispense"
+* instance[=].name = "Link paracetamol dispense and treatmentLine"
 
 
 * instance[+].resourceId = "13-3-provenance"
 * instance[=].resourceType = #CarePlan
-* instance[=].name = "New Provenance based on third dispense"
+* instance[=].name = "Link second ibuprofen dispense and treatmentLine"
 
 
 * instance[+].resourceId = "13-1-dispense"
 * instance[=].resourceType = #MedicationDispense
-* instance[=].name = "First Dispense"
+* instance[=].name = "ibruprofen Dispense"
 
 * instance[+].resourceId = "13-2-dispense"
 * instance[=].resourceType = #MedicationDispense
-* instance[=].name = "Second Dispense"
+* instance[=].name = "parecetamol Dispense"
 
 * instance[+].resourceId = "13-3-dispense"
 * instance[=].resourceType = #MedicationDispense
-* instance[=].name = "Third Dispense"
+* instance[=].name = "ibruprofen Dispense"
 
 
 * process[+].title = "Dispense of OTC medication on the community pharmacy"
@@ -106,7 +108,7 @@ Title: "Dispense of OTC medication on the community pharmacy"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].process[=].step[=].operation.request.resourceId = "13-1-treatmentLine"
 
-* process[=].step[=].process[=].step[+].operation.name = "Create new provenance"
+* process[=].step[=].process[=].step[+].operation.name = "Resource Linking"
 * process[=].step[=].process[=].step[=].operation.number = "6"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
@@ -127,7 +129,7 @@ Title: "Dispense of OTC medication on the community pharmacy"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].process[=].step[=].operation.request.resourceId = "13-2-treatmentLine"
 
-* process[=].step[=].process[=].step[+].operation.name = "Create new provenance"
+* process[=].step[=].process[=].step[+].operation.name = "Resource Linking"
 * process[=].step[=].process[=].step[=].operation.number = "9"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
@@ -141,8 +143,8 @@ Title: "Dispense of OTC medication on the community pharmacy"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"
 * process[=].step[=].process[=].step[=].operation.request.resourceId = "13-3-dispense"
 
-* process[=].step[+].process[+].title = "Treatment resources Creation"
-* process[=].step[=].process[=].step[+].operation.name = "Create new provenance"
+* process[=].step[+].process[+].title = "Resource Linkage"
+* process[=].step[=].process[=].step[+].operation.name = "Resource Linking"
 * process[=].step[=].process[=].step[=].operation.number = "11"
 * process[=].step[=].process[=].step[=].operation.initiator = "VAULT"
 * process[=].step[=].process[=].step[=].operation.receiver = "VAULT"

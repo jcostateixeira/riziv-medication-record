@@ -143,7 +143,7 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
     * process[+]
       * title = "Resource Linking"
       * step[+]
-        * operation.name = "Create new provenance"
+        * operation.name = "Resource Linking"
         * operation.number = "8"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
@@ -163,13 +163,13 @@ Title: "Dispense of prescribed medication, and dispense of a product that can be
     * process[+]
       * title = "New Treatment resources Creation"
       * step[+]
-        * operation.name = "Additional treatment"
+        * operation.name = "Additional treatment Creation"
         * operation.number = "10"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "4-2-treatment"
       * step[+]
-        * operation.name = "Additional Treatment Line"
+        * operation.name = "Additional Treatment Line Creation"
         * operation.number = "11"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"

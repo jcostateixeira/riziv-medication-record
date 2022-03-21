@@ -121,9 +121,14 @@ Title: "Dispense of new brand medication that is given because the old is unavai
         * operation.initiator = "PHARM"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "5-dispense"
+
+  * step[+]
+    * process[+]
+      * title = "Resource Linkage"
       * step[+]
         * operation.name = "Resource Linking"
-        * operation.number = "9"
-        * operation.initiator = "PHARM"
+        * operation.number = "8"
+        * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
         * operation.request.resourceId = "5-2-provenance"
+
