@@ -29,12 +29,12 @@
   <instance>
     <resourceId value="5-dispense"/>
     <resourceType value="MedicationDispense"/>
-    <name value="Dispense for Prescription"/>
+    <name value="Paracetabs Dispense"/>
   </instance>
   <instance>
     <resourceId value="5-prescription"/>
     <resourceType value="MedicationRequest"/>
-    <name value="New prescription"/>
+    <name value="dafalgan prescription"/>
   </instance>
   <instance>
     <resourceId value="EB"/>
