@@ -11,7 +11,7 @@
   "title": "MedicationRecord",
   "status": "draft",
   "experimental": false,
-  "date": "2022-03-21T12:01:30+00:00",
+  "date": "2022-03-21T12:30:26+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -2207,6 +2207,17 @@
         ],
         "reference": {
           "reference": "Condition/diarrhea-condition"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/5-2-provenance"
         }
       },
       {
