@@ -52,7 +52,7 @@ Title: "Refuse the dispense prescribed medication"
 * instance[=].resourceType = #Provenance
 * instance[=].name = "Link Prescription and treatmentLine"
 
- instance[+].resourceId = "6-2-provenance"
+* instance[+].resourceId = "6-2-provenance"
 * instance[=].resourceType = #Provenance
 * instance[=].name = "Link refused dispense and treatmentLine"
 
@@ -113,6 +113,7 @@ Title: "Refuse the dispense prescribed medication"
         * operation.initiator = "VAULT"
         * operation.receiver = "PHARM"
         * operation.response.resourceId = "EB"
+
       * step[+]
         * operation.name = "Refuse Dispense"
         * operation.number = "7"
