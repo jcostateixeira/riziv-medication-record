@@ -1,10 +1,10 @@
 ﻿MedicationRecord : Validation Results
 =========================================
 
-err = 143, warn = 201, info = 92
+err = 143, warn = 203, info = 92
 IG Publisher Version: 1.1.113
-Generated Mon Mar 21 12:33:46 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv-medicationrecord#0.1.0-test (canonical = http://hl7belgium.org/fhir/riziv-medicationrecord)
- Build Errors : 1005 / 25 / 1
+Generated Mon Mar 21 13:09:05 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv-medicationrecord#0.1.0-test (canonical = http://hl7belgium.org/fhir/riziv-medicationrecord)
+ Build Errors : 1017 / 25 / 1
  /github/workspace/fsh-generated/resources/Bundle-EB : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-1-treatment : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-13-treatment : 1 / 0 / 1
@@ -32,7 +32,7 @@ Generated Mon Mar 21 12:33:46 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv
  /github/workspace/fsh-generated/resources/ExampleScenario-example-1-scenario : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ExampleScenario-example-13-scenario : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ExampleScenario-example-2-scenario : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ExampleScenario-example-3-scenario : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ExampleScenario-example-3-scenario : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ExampleScenario-example-4-scenario : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ExampleScenario-example-5-scenario : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ExampleScenario-example-6-scenario : 0 / 0 / 1
@@ -116,6 +116,7 @@ Generated Mon Mar 21 12:33:46 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv
  /github/workspace/fsh-generated/resources/Provenance-4-3-provenance : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Provenance-5-2-provenance : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Provenance-5-provenance : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Provenance-6-2-provenance : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Provenance-6-provenance : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Provenance-7-1-provenance : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Provenance-7-2-provenance : 0 / 1 / 1
@@ -455,6 +456,9 @@ ERROR: /github/workspace/output/ExampleScenario-example-7-scenario-description.h
 ERROR: /github/workspace/output/ExampleScenario-example-7-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 296, column 24: The link '#5' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, examplescenario-medicationnottaken-description, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-7-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 297, column 24: The link '#6' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, examplescenario-medicationnottaken-description, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-7-scenario-resources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-example-7-scenario-resources.html#/html/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 274, column 33: The link './MedicationStatement-7-1-provenance.html' for "Link Prescription and treatmentLine" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-example-7-scenario-resources.html#/html/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 279, column 33: The link './MedicationStatement-7-2-provenance.html' for "Link Dispense and treatmentLine" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-example-7-scenario-resources.html#/html/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 284, column 33: The link './MedicationStatement-7-3-provenance.html' for "Link Usage and treatmentLine" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-7-scenario.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-7-scenario.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 220, column 8: The link 'ExampleScenario-example-7-scenario.xml.html' for "XML" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-7-scenario.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 227, column 8: The link 'ExampleScenario-example-7-scenario.json.html' for "JSON" cannot be resolved
@@ -470,6 +474,10 @@ ERROR: /github/workspace/output/ExampleScenario-example-8-scenario-description.h
 ERROR: /github/workspace/output/ExampleScenario-example-8-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 295, column 24: The link '#4' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, examplescenario-medicationstopped-description, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-8-scenario-description.html#/html/body/div/div/div/div/div/div/div/div/div/table/tbody/tr/a at Line 296, column 24: The link '#5' for "" cannot be resolved (valid targets: [nullactors, project-logo, segment-header, project-nav, publish-box, segment-post-footer, examplescenario-medicationstopped-description, Actors, nullprocess-flow-description, family-logo, family-nav, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, flow])
 ERROR: /github/workspace/output/ExampleScenario-example-8-scenario-resources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-example-8-scenario-resources.html#/html/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 274, column 33: The link './MedicationStatement-8-1-provenance.html' for "Link Prescription and treatmentLine" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-example-8-scenario-resources.html#/html/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 279, column 33: The link './MedicationStatement-8-2-provenance.html' for "Link Dispense and treatmentLine" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-example-8-scenario-resources.html#/html/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 284, column 33: The link './MedicationStatement-8-3-provenance.html' for "Link Adminsitration and treatmentLine" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-example-8-scenario-resources.html#/html/body/div/div/div/div/div/div/div/table/tbody/tr/td/a at Line 289, column 33: The link './MedicationStatement-8-4-provenance.html' for "Link Usage and treatmentLine" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-8-scenario.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-8-scenario.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 220, column 8: The link 'ExampleScenario-example-8-scenario.xml.html' for "XML" cannot be resolved
 ERROR: /github/workspace/output/ExampleScenario-example-8-scenario.change.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 227, column 8: The link 'ExampleScenario-example-8-scenario.json.html' for "JSON" cannot be resolved
@@ -892,6 +900,11 @@ ERROR: /github/workspace/output/Provenance-5-provenance.html#/html/body/div/div/
 ERROR: /github/workspace/output/Provenance-5-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Provenance-5-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Provenance-5-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-6-2-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-6-2-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-6-2-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-6-2-provenance.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Provenance-6-2-provenance.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Provenance-6-provenance.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 127, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Provenance-6-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 123, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Provenance-6-provenance.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 125, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
@@ -1240,6 +1253,7 @@ INFORMATION: Condition/toothache-condition: Condition.code.coding[0]: Code Syste
 == fsh-generated/resources/ExampleScenario-example-13-scenario.json ==
 == fsh-generated/resources/ExampleScenario-example-2-scenario.json ==
 == fsh-generated/resources/ExampleScenario-example-3-scenario.json ==
+WARNING: ExampleScenario/example-3-scenario: ExampleScenario.instance[0].name: value should not start or finish with whitespace 'Diclofenac...Dispense '
 == fsh-generated/resources/ExampleScenario-example-4-scenario.json ==
 == fsh-generated/resources/ExampleScenario-example-5-scenario.json ==
 == fsh-generated/resources/ExampleScenario-example-6-scenario.json ==
@@ -1533,6 +1547,8 @@ WARNING: Provenance/4-3-provenance: Provenance.agent[0].role[0].coding[0]: A cod
 WARNING: Provenance/5-2-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/Provenance-5-provenance.json ==
 WARNING: Provenance/5-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Provenance-6-2-provenance.json ==
+WARNING: Provenance/6-2-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/Provenance-6-provenance.json ==
 WARNING: Provenance/6-provenance: Provenance.agent[0].role[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/Provenance-7-1-provenance.json ==
