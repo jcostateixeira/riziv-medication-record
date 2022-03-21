@@ -281,3 +281,24 @@ Description: "The profile for Medication Record"
 * entry[MedRecordUsage] ^short = "Medication summaries associated with the patient"
 * entry[MedRecordUsage].resource 1.. MS
 * entry[MedRecordUsage].resource only MedRecordUsage
+
+
+
+Profile: MedicationView
+Title: "Medication View profile"
+Description: "The profile for how to organize the information in a medication View"
+Parent: Composition
+Id: med-view-comp
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "type.coding.code"
+* section ^slicing.rules = #open
+* section contains
+    MedRecordTreatment 0..* MS and
+    MedRecordTreatmentLine 0..* MS and
+    MedRecordMedicationSummaryView 0..* MS and
+    detailsRecord 0..1 MS 
+* section[MedRecordTreatment].entry only Reference(MedRecordTreatment)
+* section[MedRecordTreatmentLine].entry only Reference(MedRecordTreatmentLine)
+* section[MedRecordMedicationSummaryView].entry only Reference(MedRecordMedicationSummaryView)
+* section[detailsRecord].entry only Reference(MedRecordUsage or MedRecordOrder or MedRecordDispense or MedRecordAdministration or MedRecordMedicationScheduledAdministration)
+
