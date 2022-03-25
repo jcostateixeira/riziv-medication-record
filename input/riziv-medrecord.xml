@@ -501,52 +501,7 @@
       <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
-    <resource>
-      <reference>
-        <reference value="MedicationRequest/1-prescription" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example 1 - prescription" />
-      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
-      <groupingId value="medicationrecord-validatingexamples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Provenance/1-1-provenance" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example 1 - provenance 1" />
-      <description value="Provenance linking treatment line and prescription" />
-      <groupingId value="medicationrecord-validatingexamples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CarePlan/1-treatment" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example 1 - Treatment" />
-      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
-      <groupingId value="medicationrecord-validatingexamples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="MedicationStatement/1-treatmentLine" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example 1 - Treatment Line" />
-      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
-      <groupingId value="medicationrecord-validatingexamples"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Provenance/1-2-provenance" />
-      </reference>
-      <fhirVersion value="4.0.1" />
-      <name value="Example 1 - provenance 2" />
-      <description value="Provenance linking treatment line and dispense" />
-      <groupingId value="medicationrecord-validatingexamples"/>
-    </resource>
-
+   
 
 
     <resource>
