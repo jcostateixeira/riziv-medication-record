@@ -1,13 +1,13 @@
 ﻿MedicationRecord : Validation Results
 =========================================
 
-err = 144, warn = 258, info = 92
+err = 118, warn = 254, info = 90
 IG Publisher Version: 1.1.113
-Generated Fri Mar 25 12:59:13 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv-medicationrecord#0.1.0-test (canonical = http://hl7belgium.org/fhir/riziv-medicationrecord)
- Build Errors : 1036 / 78 / 1
+Generated Fri Mar 25 14:42:53 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv-medicationrecord#0.1.0-test (canonical = http://hl7belgium.org/fhir/riziv-medicationrecord)
+ Build Errors : 1030 / 77 / 1
  /github/workspace/fsh-generated/resources/Bundle-EB : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-1-treatment : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CarePlan-13-treatment : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/CarePlan-13-treatment : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-15-treatment : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CarePlan-15-treatment-2 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CarePlan-2a-treatment : 0 / 0 / 1
@@ -21,6 +21,8 @@ Generated Fri Mar 25 12:59:13 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv
  /github/workspace/fsh-generated/resources/CarePlan-total-view : 2 / 0 / 3
  /github/workspace/fsh-generated/resources/CarePlan-week-view : 2 / 0 / 3
  /github/workspace/fsh-generated/resources/CodeSystem-be-cs-medication-summary-types : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Composition-1-scheduled-view : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/Composition-1-summary-view : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-arthritis-condition : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-diarrhea-condition : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-headache-condition : 0 / 0 / 2
@@ -43,9 +45,9 @@ Generated Fri Mar 25 12:59:13 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv
  /github/workspace/fsh-generated/resources/MedicationDispense-10-1-dispense : 0 / 2 / 3
  /github/workspace/fsh-generated/resources/MedicationDispense-10-2-dispense : 0 / 2 / 3
  /github/workspace/fsh-generated/resources/MedicationDispense-10-3-dispense : 0 / 2 / 3
- /github/workspace/fsh-generated/resources/MedicationDispense-13-1-dispense : 5 / 2 / 5
- /github/workspace/fsh-generated/resources/MedicationDispense-13-2-dispense : 5 / 2 / 5
- /github/workspace/fsh-generated/resources/MedicationDispense-13-3-dispense : 5 / 2 / 5
+ /github/workspace/fsh-generated/resources/MedicationDispense-13-1-dispense : 1 / 2 / 3
+ /github/workspace/fsh-generated/resources/MedicationDispense-13-2-dispense : 1 / 2 / 3
+ /github/workspace/fsh-generated/resources/MedicationDispense-13-3-dispense : 1 / 2 / 3
  /github/workspace/fsh-generated/resources/MedicationDispense-2a-dispense : 4 / 2 / 4
  /github/workspace/fsh-generated/resources/MedicationDispense-3-2-dispense : 1 / 2 / 3
  /github/workspace/fsh-generated/resources/MedicationDispense-3-dispense : 1 / 2 / 3
@@ -58,7 +60,7 @@ Generated Fri Mar 25 12:59:13 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv
  /github/workspace/fsh-generated/resources/MedicationDispense-Dafalgan500mgDispense : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med : 0 / 2 / 3
  /github/workspace/fsh-generated/resources/MedicationDispense-example-minimal-dispense : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/MedicationDispense-medication-dispense-example-2 : 4 / 2 / 5
+ /github/workspace/fsh-generated/resources/MedicationDispense-medication-dispense-example-2 : 2 / 2 / 5
  /github/workspace/fsh-generated/resources/MedicationDispense-medication-dispense-hospital : 2 / 0 / 3
  /github/workspace/fsh-generated/resources/MedicationRequest-1-prescription : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationRequest-15-prescription : 2 / 0 / 2
@@ -149,12 +151,11 @@ Generated Fri Mar 25 12:59:13 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv
  /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordTreatment : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordTreatmentLine : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedRecordUsage : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-medicationdispense : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-med-view-comp : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-medicationdispense : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-med-view-comp : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-related-tl : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-vs-medication-summary-types : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-substitution-dispense-v1 : 0 / 0 / 1
- /github/workspace/input/examples/MedicationDispense/medication-dispense-example-1 : 2 / 3 / 3
  /github/workspace/input/models/structuredefinition-be-model-medicationdispense : 12 / 0 / 1
  /github/workspace/input/riziv-medrecord : 1 / 1 / 1
  /github/workspace/input/vocabulary/be-ns-nihdi-organization : 0 / 0 / 1
@@ -165,52 +166,46 @@ ERROR: ImplementationGuide.definition.parameter[26].value: Supressed messages fi
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[0].url: The correct canonical URL for this dependency is https://hl7belgium.org/profiles/ehealth/be-core/ImplementationGuide/be-core
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/3-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/hypertension-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/hypertension-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/7-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/3-2-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/13-1-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/15-scheduleAdministration-4.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationStatement/Asaflow500mg1xACMd.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/Asaflow500mg1xACMd.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/4-1-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationDispense/medication-dispense-example-2.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/medication-dispense-example-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/4-1-treatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationDispense/Dafalgan500mgDispense.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/Dafalgan500mgDispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/diarrhea-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/diarrhea-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/15-treatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/2a-treatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/BePractitioner.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BePractitioner.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/7-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/pharyngitis-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/pharyngitis-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/6-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/3-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/13-3-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/13-1-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/8-treatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationStatement/Asaflow500mg1xACM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/Asaflow500mg1xACM.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/EB.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/EB.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/toothache-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/toothache-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/6-prescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/7-prescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationDispense/medication-dispense-hospital.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/medication-dispense-hospital.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/13-treatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/4-2-treatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/4-1-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/week-view.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationStatement/Dafalgan500mgmix.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/Dafalgan500mgmix.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/8-usage.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/15-scheduleAdministration-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/6-treatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/15-prescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/be-ns-cnk-codes.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/6-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/1-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/headache-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/headache-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/10-1-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/15-treatment-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationDispense/example-dispense-communitypharmacy-1med.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
@@ -218,12 +213,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/15-scheduleAdministration-3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/8-prescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/5-treatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/BePatient.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/hyperlipidemia-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/hyperlipidemia-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/BeOrganization.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeOrganization.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/1-prescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationStatement/Dafalgan500mg1xmeal.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/Dafalgan500mg1xmeal.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -231,18 +220,17 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationDispense/example-minimal-dispense.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-minimal-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/10-3-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/be-ns-product-package-type.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/8-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Composition/1-scheduled-view.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/2a-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/13-2-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/7-treatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/reflux-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/reflux-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/8-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Provenance/4-1-provenance.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Provenance/4-1-provenance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/be-ns-prescription-ids.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationStatement/Paracetamol500mg1xCV.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/Paracetamol500mg1xCV.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Composition/1-summary-view.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/5-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationStatement/Co-Bisoprolol25-625mg1xACMd.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/Co-Bisoprolol25-625mg1xACMd.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -255,14 +243,13 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/4-2-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/3-2-prescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/4-2-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Condition/arthritis-condition.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/arthritis-condition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/1-treatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/15-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationStatement/Co-Bisoprolol25-625mg1xACM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/Co-Bisoprolol25-625mg1xACM.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/4-prescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/5-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/13-2-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/3-prescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/2a-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/10-2-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -350,6 +337,18 @@ ERROR: /github/workspace/output/CodeSystem-be-cs-medication-summary-types.html#/
 ERROR: /github/workspace/output/CodeSystem-be-cs-medication-summary-types.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-be-cs-medication-summary-types.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-be-cs-medication-summary-types.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Composition-1-scheduled-view.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Composition-1-scheduled-view.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Composition-1-scheduled-view.html#/html/body/div/div/div/div/div/div/p/a at Line 248, column 762: The link 'BeOrganization' for "BeOrganization" cannot be resolved
+ERROR: /github/workspace/output/Composition-1-scheduled-view.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Composition-1-scheduled-view.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Composition-1-scheduled-view.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Composition-1-summary-view.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Composition-1-summary-view.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Composition-1-summary-view.html#/html/body/div/div/div/div/div/div/p/a at Line 248, column 766: The link 'BeOrganization' for "BeOrganization" cannot be resolved
+ERROR: /github/workspace/output/Composition-1-summary-view.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Composition-1-summary-view.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/Composition-1-summary-view.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Condition-arthritis-condition.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Condition-arthritis-condition.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Condition-arthritis-condition.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
@@ -645,11 +644,6 @@ ERROR: /github/workspace/output/MedicationDispense-example-minimal-dispense.html
 ERROR: /github/workspace/output/MedicationDispense-example-minimal-dispense.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-example-minimal-dispense.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-example-minimal-dispense.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-medication-dispense-example-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-medication-dispense-example-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-medication-dispense-example-1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-medication-dispense-example-1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/MedicationDispense-medication-dispense-example-1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-medication-dispense-example-2.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-medication-dispense-example-2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationDispense-medication-dispense-example-2.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
@@ -1284,7 +1278,6 @@ ERROR: /github/workspace/output/usecases-dispense.html#/html/body/div/div/nav/di
 == fsh-generated/resources/Bundle-EB.json ==
 == fsh-generated/resources/CarePlan-1-treatment.json ==
 == fsh-generated/resources/CarePlan-13-treatment.json ==
-ERROR: CarePlan/13-treatment: CarePlan: Specified profile type was 'MedicationDispense' in profile 'http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense', but found type 'CarePlan'
 == fsh-generated/resources/CarePlan-15-treatment.json ==
 INFORMATION: CarePlan/15-treatment: CarePlan.activity[0].detail.product.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
 == fsh-generated/resources/CarePlan-15-treatment-2.json ==
@@ -1309,6 +1302,12 @@ ERROR: CarePlan/week-view: CarePlan.activity[1].detail.status: The value provide
 INFORMATION: CarePlan/week-view: CarePlan.activity[1].detail.product.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
 == fsh-generated/resources/CodeSystem-be-cs-medication-summary-types.json ==
 INFORMATION: CodeSystem/be-cs-medication-summary-types: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/Composition-1-scheduled-view.json ==
+ERROR: Composition/1-scheduled-view: Composition.status: The value provided ('active') is not in the value set 'CompositionStatus' (http://hl7.org/fhir/ValueSet/composition-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)
+ERROR: Composition/1-scheduled-view: Composition.author[0]: Unable to resolve resource 'BeOrganization'
+== fsh-generated/resources/Composition-1-summary-view.json ==
+ERROR: Composition/1-summary-view: Composition.status: The value provided ('active') is not in the value set 'CompositionStatus' (http://hl7.org/fhir/ValueSet/composition-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)
+ERROR: Composition/1-summary-view: Composition.author[0]: Unable to resolve resource 'BeOrganization'
 == fsh-generated/resources/Condition-arthritis-condition.json ==
 INFORMATION: Condition/arthritis-condition: Condition.code.coding[0]: Code System URI 'http://snomed.ct' is unknown so the code cannot be validated
 == fsh-generated/resources/Condition-diarrhea-condition.json ==
@@ -1361,30 +1360,18 @@ WARNING: MedicationDispense/10-3-dispense: MedicationDispense.performer[0].funct
 WARNING: MedicationDispense/10-3-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: MedicationDispense/10-3-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationDispense-13-1-dispense.json ==
-ERROR: MedicationDispense/13-1-dispense: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-1-dispense: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-1-dispense: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-1-dispense: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
 ERROR: MedicationDispense/13-1-dispense: MedicationDispense: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
 INFORMATION: MedicationDispense/13-1-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
 WARNING: MedicationDispense/13-1-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: MedicationDispense/13-1-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: MedicationDispense/13-1-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationDispense-13-2-dispense.json ==
-ERROR: MedicationDispense/13-2-dispense: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-2-dispense: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-2-dispense: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-2-dispense: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
 ERROR: MedicationDispense/13-2-dispense: MedicationDispense: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
 INFORMATION: MedicationDispense/13-2-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
 WARNING: MedicationDispense/13-2-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: MedicationDispense/13-2-dispense: MedicationDispense.performer[1].function.coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: MedicationDispense/13-2-dispense: MedicationDispense.quantity: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationDispense-13-3-dispense.json ==
-ERROR: MedicationDispense/13-3-dispense: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-3-dispense: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-3-dispense: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/13-3-dispense: MedicationDispense.performer[1]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
 ERROR: MedicationDispense/13-3-dispense: MedicationDispense: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationDispense])
 INFORMATION: MedicationDispense/13-3-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
 WARNING: MedicationDispense/13-3-dispense: MedicationDispense.performer[0].function.coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -1460,8 +1447,6 @@ INFORMATION: MedicationDispense/example-dispense-communitypharmacy-1med: Medicat
 == fsh-generated/resources/MedicationDispense-example-minimal-dispense.json ==
 INFORMATION: MedicationDispense/example-minimal-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationDispense-medication-dispense-example-2.json ==
-ERROR: MedicationDispense/medication-dispense-example-2: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/medication-dispense-example-2: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
 ERROR: MedicationDispense/medication-dispense-example-2: MedicationDispense.contained[0].ofType(Organization): The modifier extension http://hl7.org/fhir/StructureDefinition/geolocation is not allowed to be used at this point (allowed = e:Address; this element is [[MedicationDispense.contained.ofType(Organization), Organization])
 ERROR: MedicationDispense/medication-dispense-example-2: MedicationDispense.contained[0].ofType(Organization).type[0].coding[0]: Unknown Code https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy in https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty for 'https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#pharmacy'
 WARNING: MedicationDispense/medication-dispense-example-2: MedicationDispense.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -1789,19 +1774,11 @@ INFORMATION: StructureDefinition/MedRecordDispense: StructureDefinition.snapshot
 == fsh-generated/resources/StructureDefinition-MedRecordUsage.json ==
 == fsh-generated/resources/StructureDefinition-be-medicationdispense.json ==
 INFORMATION: StructureDefinition/be-medicationdispense: StructureDefinition.snapshot.element[97].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-med-view-comp.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-related-tl.json ==
 == fsh-generated/resources/ValueSet-be-vs-medication-summary-types.json ==
 == fsh-generated/resources/ValueSet-medication-substitution-dispense-v1.json ==
-== input/examples/MedicationDispense/medication-dispense-example-1.json ==
-ERROR: MedicationDispense/medication-dispense-example-1: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispensingOrganization in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-ERROR: MedicationDispense/medication-dispense-example-1: MedicationDispense.performer[0]: Slicing cannot be evaluated: Could not match discriminator ([actor]) for slice MedicationDispense.performer:dispenser in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/be-medicationdispense - the discriminator [actor] does not have fixed value, binding or existence assertions
-WARNING: MedicationDispense/medication-dispense-example-1: MedicationDispense.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: MedicationDispense/medication-dispense-example-1: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
-WARNING: MedicationDispense/medication-dispense-example-1: MedicationDispense.context.identifier.type.coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: MedicationDispense/medication-dispense-example-1: MedicationDispense.quantity: Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated
-WARNING: MedicationDispense/medication-dispense-example-1: MedicationDispense.meta.profile[0]: Profile reference 'https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 == input/models/structuredefinition-be-model-medicationdispense.xml ==
 ERROR: /f:StructureDefinition/f:differential/f:element/f:code: Undefined attribute '@value' on code for type Coding (properties = [Coding.id, Coding.extension, Coding.system, Coding.version, Coding.code, Coding.display, Coding.userSelected])
 ERROR: /f:StructureDefinition/f:differential/f:element/f:type: Element must have some content

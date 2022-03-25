@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "be-cs-medication-summary-types"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">kmehr-ms-5.6<a name=\"be-cs-medication-summary-types-kmehr-ms-5.466\"> </a></td><td>Belgian Medication Schema v5.6 - 09/2018</td></tr><tr><td style=\"white-space:nowrap\">kmehr-ms-5.5<a name=\"be-cs-medication-summary-types-kmehr-ms-5.465\"> </a></td><td>Belgian Medication Schema v5.5 - 12-2017</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">kmehr-ms-5.6<a name=\"be-cs-medication-summary-types-kmehr-ms-5.466\"> </a></td><td>Belgian Medication Schema v5.6 - 09/2018</td></tr><tr><td style=\"white-space:nowrap\">kmehr-ms-5.5<a name=\"be-cs-medication-summary-types-kmehr-ms-5.465\"> </a></td><td>Belgian Medication Schema v5.5 - 12-2017</td></tr><tr><td style=\"white-space:nowrap\">Scheduled<a name=\"be-cs-medication-summary-types-Scheduled\"> </a></td><td>Scheduled Takes View</td></tr><tr><td style=\"white-space:nowrap\">Summary<a name=\"be-cs-medication-summary-types-Summary\"> </a></td><td>Summary view for a physician</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types"];
   fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
   fhir:CodeSystem.name [ fhir:value "BeCSMedicationSummaryTypes"];
   fhir:CodeSystem.title [ fhir:value "Medication Summary Types CodeSystem"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-03-25T12:55:42+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-03-25T14:39:23+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 Belgium"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -37,7 +37,7 @@
      ]
   ];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "kmehr-ms-5.6" ];
@@ -46,6 +46,14 @@
      fhir:index 1;
      fhir:CodeSystem.concept.code [ fhir:value "kmehr-ms-5.5" ];
      fhir:CodeSystem.concept.display [ fhir:value "Belgian Medication Schema v5.5 - 12-2017" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "Scheduled" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Scheduled Takes View" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "Summary" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Summary view for a physician" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

@@ -1,9 +1,9 @@
-﻿<!-- layouts\layout-changehistory.html --><!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.BE.RIZIV-MEDICATIONRECORD\ - FHIR v4.0.1</title>
+    <title>HL7.FHIR.BE.RIZIV-MEDICATIONRECORD\Scheduled View for Patient X - TTL Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +46,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"7.88"}
+    h3,h4,h5,h6{--heading-prefix:"7.88"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Left logo - typically the publisher's logo - project or affiliate -->
@@ -117,7 +117,7 @@
 			<li>
 				<a href="functional-description.html">Description</a>
 			</li>
-			<li><a name="l208">​</a>
+			<li><a name="l206">​</a>
 				<a href="usecases.html">Use Cases</a>
 			</li>
 			<li>
@@ -175,7 +175,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Scheduled View for Patient X</b></li>
           
         </ul>
       </div>    <!-- /container -->
@@ -187,10 +187,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
+<div style="counter-reset: section 9" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">MedicationRecord - Local Development build (v0.1.0-test). See the <a href="http://hl7belgium.org/fhir/riziv-medicationrecord/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
-<div style="counter-reset: section 10" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MedicationRecord - Local Development build (v0.1.0-test). See the <a href="http://hl7belgium.org/fhir/riziv-medicationrecord/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  
 
 
 
@@ -200,20 +199,20 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="MedicationDispense-medication-dispense-example-1.html">Narrative Content</a>
+    <a href="Composition-1-summary-view.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="MedicationDispense-medication-dispense-example-1.xml.html">XML</a>
+      <a href="Composition-1-summary-view.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="MedicationDispense-medication-dispense-example-1.json.html">JSON</a>
+      <a href="Composition-1-summary-view.json.html">JSON</a>
     </li>
   
 
@@ -223,14 +222,81 @@
 </ul>
 
 
-  <a name="root"> </a>
-  <h2 id="root">: MedicationDispense/medication-dispense-example-1 - Change History</h2>
-  <p>History of changes for medication-dispense-example-1 .</p>
+<a name="root"> </a>
 
+
+<h2 id="root">: Scheduled View for Patient X - TTL Representation</h2>
+  <table class="null">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Composition-1-summary-view.ttl" no-download="true">Raw ttl</a> | <a download="null" href="Composition-1-summary-view.ttl">Download</a></p>
+
+    <!-- insert intro if present -->
   
 
-</div>
 
+
+  <pre class="rdf"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Composition;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "1-summary-view"];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp";
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp&gt;     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "generated" ];
+     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource \"1-summary-view\" &lt;/p&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Profile: &lt;a href=\"StructureDefinition-med-view-comp.html\"&gt;Medication View profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Summary view for a physician &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-be-cs-medication-summary-types.html\"&gt;Medication Summary Types CodeSystem&lt;/a&gt;#Summary)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2021-08-15 01:00:00+0200&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\"BeOrganization\"&gt;BeOrganization&lt;/a&gt; \"BeOrganization\"&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Scheduled View for Patient X&lt;/p&gt;&lt;/div&gt;"
+  ];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.status">fhir:Composition.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "active"];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.type">fhir:Composition.type</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://hl7belgium.org/fhir/riziv-medicationrecord/CodeSystem/be-cs-medication-summary-types" ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "Summary" ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.date">fhir:Composition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-08-15T13:00:00+02:00"^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.author">fhir:Composition.author</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "BeOrganization" ]
+  ];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.title">fhir:Composition.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Scheduled View for Patient X"].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</code></pre>
+
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
         </div>    <!-- /inner-wrapper -->
       </div>    <!-- /row -->
     </div>    <!-- /container -->
@@ -238,29 +304,6 @@
 
   <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
-
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '1';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -273,7 +316,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.riziv-medicationrecord#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 25, 2022 12:55+0000">2022-03-25</span>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.riziv-medicationrecord#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 25, 2022 14:39+0000">2022-03-25</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
