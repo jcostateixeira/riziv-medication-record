@@ -6,8 +6,12 @@
 ","The subject of the medication record","The subject of the medication record","","","","","","","","","",,,,,"",,,,"BeModelMedicationView.patient",1,1,"",""
 "BeModelMedicationView.treatments","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","The treaments that are included in this record","The treaments that are included in this record","","","","","","","","","",,,,,"",,,,"BeModelMedicationView.treatments",0,*,"",""
+"BeModelMedicationView.treatments.indication","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Why the treatment exists","Why the treatment exists","","","","","","","","","",,,,,"",,,,"BeModelMedicationView.treatments.indication",0,*,"",""
 "BeModelMedicationView.treatments.treatmentLines","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","The treatment lines that are included in this record","The treatment lines that are included in this record","","","","","","","","","",,,,,"",,,,"BeModelMedicationView.treatments.treatmentLines",0,*,"",""
+"BeModelMedicationView.treatments.treatmentLines.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","Product for which the treatment line refers to","Product for which the treatment line refers to","","","","","","","","","",,,,,"",,,,"BeModelMedicationView.treatments.treatmentLines.product[x]",1,1,"",""
 "BeModelMedicationView.treatments.treatmentLines.detailedRecords","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","Detailed records","Detailed records - the most granular interactions","","","","","","","","","",,,,,"",,,,"BeModelMedicationView.treatments.treatmentLines.detailedRecords",0,*,"",""
 "BeModelMedicationView.treatments.treatmentLines.detailedRecords.orders","","","",0,*,"","","","http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/BeModelMedicationRecordOrder {[]} {[]}

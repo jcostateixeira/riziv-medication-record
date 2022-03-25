@@ -11,7 +11,7 @@
   "title": "MedicationRecord",
   "status": "draft",
   "experimental": false,
-  "date": "2022-03-21T14:58:08+00:00",
+  "date": "2022-03-25T12:46:50+00:00",
   "publisher": "HL7 Belgium",
   "contact": [
     {
@@ -1010,94 +1010,6 @@
         "name": "Example 1 - Dispense",
         "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
         "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense",
-        "groupingId": "medicationrecord-validatingexamples"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationRequest/1-prescription"
-        },
-        "fhirVersion": [
-          "4.0.1"
-        ],
-        "name": "Example 1 - prescription",
-        "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
-        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder",
-        "groupingId": "medicationrecord-validatingexamples"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Provenance"
-          }
-        ],
-        "reference": {
-          "reference": "Provenance/1-1-provenance"
-        },
-        "fhirVersion": [
-          "4.0.1"
-        ],
-        "name": "Example 1 - provenance 1",
-        "description": "Provenance linking treatment line and prescription",
-        "groupingId": "medicationrecord-validatingexamples"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/1-treatment"
-        },
-        "fhirVersion": [
-          "4.0.1"
-        ],
-        "name": "Example 1 - Treatment",
-        "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
-        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment",
-        "groupingId": "medicationrecord-validatingexamples"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/1-treatmentLine"
-        },
-        "fhirVersion": [
-          "4.0.1"
-        ],
-        "name": "Example 1 - Treatment Line",
-        "description": "Prescribed branded medication is changed by another branded medication from the same VOS-cluster",
-        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine",
-        "groupingId": "medicationrecord-validatingexamples"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Provenance"
-          }
-        ],
-        "reference": {
-          "reference": "Provenance/1-2-provenance"
-        },
-        "fhirVersion": [
-          "4.0.1"
-        ],
-        "name": "Example 1 - provenance 2",
-        "description": "Provenance linking treatment line and dispense",
         "groupingId": "medicationrecord-validatingexamples"
       },
       {
@@ -2423,6 +2335,17 @@
           }
         ],
         "reference": {
+          "reference": "Provenance/1-2-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
           "reference": "Provenance/3-3-provenance"
         }
       },
@@ -2521,6 +2444,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Provenance"
+          }
+        ],
+        "reference": {
+          "reference": "Provenance/1-1-provenance"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -2582,6 +2516,19 @@
         "reference": {
           "reference": "Provenance/2-1-provenance"
         }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/1-prescription"
+        },
+        "name": "Example MedicationRequest - 1-prescription",
+        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder"
       },
       {
         "extension": [
@@ -2754,12 +2701,38 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/1-treatment"
+        },
+        "name": "Treatment for Hypertension",
+        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MedicationStatement"
           }
         ],
         "reference": {
           "reference": "MedicationStatement/Co-Bisoprolol25-625mg1xACM"
         }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/1-treatmentLine"
+        },
+        "name": "Example MedicationStatement - 1-treatmentLine",
+        "exampleCanonical": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"
       }
     ],
     "page": {
