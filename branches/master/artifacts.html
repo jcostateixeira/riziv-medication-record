@@ -216,28 +216,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#4">Medication Record - Validating examples</a>
       </li>
       <li>
-         <a href="#5">Medication Dispense</a>
+         <a href="#5">Supporting Resources</a>
       </li>
       <li>
-         <a href="#6">Structures: Logical Models</a>
+         <a href="#6">Example: Example Instances</a>
       </li>
       <li>
-         <a href="#7">Structures: Resource Profiles</a>
-      </li>
-      <li>
-         <a href="#8">Terminology: Value Sets</a>
-      </li>
-      <li>
-         <a href="#9">Terminology: Code Systems</a>
-      </li>
-      <li>
-         <a href="#10">Terminology: Naming Systems</a>
-      </li>
-      <li>
-         <a href="#11">Example: Example Instances</a>
-      </li>
-      <li>
-         <a href="#12">Other</a>
+         <a href="#7">Other</a>
       </li>
    </ul>
 </div>
@@ -246,7 +231,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <a name="1"> </a>
    <h3>Medication Record - schema </h3>
    <p>
-    <p>Conformance artifactsfor Medication Record, to meet the scope of the Medication Schema</p>
+    <p>Conformance artifacts for Medication Record, to meet the scope of the Medication Schema</p>
 </p>
    <p>
       <table class="grid">
@@ -296,6 +281,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-be-model-medication-dispense.html" title="StructureDefinition/be-model-medication-dispense">Logical Model be-model-medication-dispense</a>
+               </td>
+               <td>
+<p>be-model-medication-dispense</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-KMEHRv58.html" title="StructureDefinition/KMEHRv58">KMEHR Medication Schema v5.8 Logical Model</a>
@@ -376,6 +369,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Medication Record Logical Model - Scheduled Administration detail Logical Model</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-BeModelMedicationView.html" title="StructureDefinition/BeModelMedicationView">MedicationView - Global Model</a>
+               </td>
+               <td>
+<p>Medication View Global Model</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -444,6 +445,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Extension - Related Treatment Line</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-med-view-comp.html" title="StructureDefinition/med-view-comp">Medication view Profile</a>
+               </td>
+               <td>
+<p>Medication view Profile</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-be-medicationdispense.html" title="StructureDefinition/be-medicationdispense">be Medicationdispense Profile</a>
+               </td>
+               <td>
+<p>be Medicationdispense Profile</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -456,22 +473,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MedicationStatement-13-2-treatmentLine.html" title="MedicationStatement/13-2-treatmentLine">Logical Model Medication Record</a>
-               </td>
-               <td>
-<p>Medication Record Composition profile</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MedicationStatement-13-1-treatmentLine.html" title="MedicationStatement/13-1-treatmentLine">Logical Model Medication Record</a>
-               </td>
-               <td>
-<p>Medication Record Composition profile</p>
-</td>
-            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ExampleScenario-example-1-scenario.html" title="ExampleScenario/example-1-scenario">ExampleScenario 1 - Changing brand name in the same VOS</a>
@@ -493,7 +494,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="ExampleScenario-example-3-scenario.html" title="ExampleScenario/example-3-scenario">ExampleScenario 3 - Dispense medication before the prescription is available</a>
                </td>
                <td>
-<p>This example shows a dispense of a medication that is made before an existing prescription</p>
+<p>Dispense of a medication that is made before an existing prescription</p>
 </td>
             </tr>
             <tr>
@@ -501,7 +502,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="ExampleScenario-example-4-scenario.html" title="ExampleScenario/example-4-scenario">ExampleScenario 4 - Dispense of prescribed medication and of a product without a prescription</a>
                </td>
                <td>
-<p>This example shows a dispense of two products. One that has a prescription and other that does not (and does not need one).</p>
+<p>Dispense of two products. One that has a prescription and other that does not (and does not need one).</p>
 </td>
             </tr>
             <tr>
@@ -509,7 +510,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="ExampleScenario-example-5-scenario.html" title="ExampleScenario/example-5-scenario">ExampleScenario 5 - Dispense of new brand medication because the old is unavailable</a>
                </td>
                <td>
-<p>This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster because there is no stock.</p>
+<p>Prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster because there is no stock.</p>
 </td>
             </tr>
             <tr>
@@ -517,7 +518,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="ExampleScenario-example-6-scenario.html" title="ExampleScenario/example-6-scenario">ExampleScenario 6 - Refusal to dispense the prescribed medication</a>
                </td>
                <td>
-<p>This example shows a prescription that is made by VOS and the pharmacist refuses to dispense the medication due to interaction with previous medication.</p>
+<p>Prescription that is made by VOS and the pharmacist refuses to dispense the medication due to interaction with previous medication.</p>
 </td>
             </tr>
             <tr>
@@ -525,7 +526,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="ExampleScenario-example-7-scenario.html" title="ExampleScenario/example-7-scenario">ExampleScenario 7 - Dispense of medication that was prescribed to take if needed, but was not taken</a>
                </td>
                <td>
-<p>This example shows a prescription that is made by VOS and to take only if needed and the pharmacist dispenses it. Then it is reported that the medication was not taken at all.</p>
+<p>Prescription that is made by VOS and to take only if needed and the pharmacist dispenses it. Then it is reported that the medication was not taken at all.</p>
 </td>
             </tr>
             <tr>
@@ -533,7 +534,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="ExampleScenario-example-8-scenario.html" title="ExampleScenario/example-8-scenario">ExampleScenario 8 - Dispense of medication that was prescribed, but not taken till the end</a>
                </td>
                <td>
-<p>This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction.</p>
+<p>Prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction.</p>
 </td>
             </tr>
             <tr>
@@ -541,32 +542,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="ExampleScenario-example-13-scenario.html" title="ExampleScenario/example-13-scenario">ExampleScenario 13 - Dispense of OTC medication for acute symptons</a>
                </td>
                <td>
-<p>This example shows dispense of medication OTC and how treatment resources should be handled</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CarePlan-total-view.html" title="CarePlan/total-view">Example 15 - Total View of Medication</a>
-               </td>
-               <td>
-<p>Medication summary</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CarePlan-week-view.html" title="CarePlan/week-view">Example 15 - Week View of Medication</a>
-               </td>
-               <td>
-<p>Medication summary</p>
+<p>Dispense of medication OTC and how treatment resources should be handled</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
    <a name="5"> </a>
-   <h3>Medication Dispense </h3>
+   <h3>Supporting Resources </h3>
    <p>
-    <p>Medication Dispense</p>
+    <p>Supporting resources used in the examples</p>
 </p>
    <p>
       <table class="grid">
@@ -574,220 +559,96 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-be-model-medication-dispense.html" title="StructureDefinition/be-model-medication-dispense">Logical Model Medication Dispense</a>
+                  <a href="StructureDefinition-BePatient.html" title="StructureDefinition/BePatient">Be Patient</a>
                </td>
                <td>
-<p>Medication Dispense entry - information captured when dispensing medication e.g. in pharmacies and hospitals</p>
+<p>Be Patient</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-be-medicationdispense.html" title="StructureDefinition/be-medicationdispense">Profile - Medication Dispense</a>
+                  <a href="StructureDefinition-BePractitioner.html" title="StructureDefinition/BePractitioner">Be Practitioner</a>
                </td>
                <td>
-<p>Medication Dispense entry - information captured when dispensing medication e.g. in pharmacies and hospitals</p>
+<p>Be Practitioner</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="MedicationDispense-medication-dispense-example-1.html" title="MedicationDispense/medication-dispense-example-1">Medication Dispense Example 1</a>
+                  <a href="StructureDefinition-BeOrganization.html" title="StructureDefinition/BeOrganization">Be Organization</a>
                </td>
                <td>
-<p>Medication Dispense Example 1 - a simple example of a dispensation in a pharmacy</p>
+<p>Be Organization</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="MedicationDispense-medication-dispense-example-2.html" title="MedicationDispense/medication-dispense-example-2">Medication Dispense Example 2</a>
+                  <a href="Condition-hypertension-condition.html" title="Condition/hypertension-condition">hypertension-condition</a>
                </td>
                <td>
-<p>Medication Dispense Example 2 - a simple example of a dispensation in a pharmacy - with a geolocation</p>
+<p>hypertension-condition</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="MedicationDispense-13-1-dispense.html" title="MedicationDispense/13-1-dispense">Medication Dispense Example 2</a>
+                  <a href="Condition-headache-condition.html" title="Condition/headache-condition">headache-condition</a>
                </td>
                <td>
-<p>Medication Dispense Example 2 - a simple example of a dispensation in a pharmacy - with a geolocation</p>
+<p>headache-condition</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="MedicationDispense-13-2-dispense.html" title="MedicationDispense/13-2-dispense">Medication Dispense Example 2</a>
+                  <a href="Condition-arthritis-condition.html" title="Condition/arthritis-condition">arthritis-condition</a>
                </td>
                <td>
-<p>Medication Dispense Example 2 - a simple example of a dispensation in a pharmacy - with a geolocation</p>
+<p>arthritis-condition</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="MedicationDispense-13-3-dispense.html" title="MedicationDispense/13-3-dispense">Medication Dispense Example 2</a>
+                  <a href="Condition-toothache-condition.html" title="Condition/toothache-condition">toothache-condition</a>
                </td>
                <td>
-<p>Medication Dispense Example 2 - a simple example of a dispensation in a pharmacy - with a geolocation</p>
+<p>toothache-condition</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CarePlan-13-treatment.html" title="CarePlan/13-treatment">Treatment Example 13</a>
+                  <a href="Condition-diarrhea-condition.html" title="Condition/diarrhea-condition">diarrhea-condition</a>
                </td>
                <td>
-<p>Treatment 13 - a treatment for OTCs</p>
+<p>diarrhea-condition</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-pharyngitis-condition.html" title="Condition/pharyngitis-condition">pharyngitis-condition</a>
+               </td>
+               <td>
+<p>pharyngitis-condition</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-reflux-condition.html" title="Condition/reflux-condition">reflux-condition</a>
+               </td>
+               <td>
+<p>reflux-condition</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-hyperlipidemia-condition.html" title="Condition/hyperlipidemia-condition">hyperlipidemia-condition</a>
+               </td>
+               <td>
+<p>hyperlipidemia-condition</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
    <a name="6"> </a>
-   <h3>Structures: Logical Models </h3>
-   <p>
-    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-BeModelMedicationView.html" title="StructureDefinition/BeModelMedicationView">Medication View logical model</a>
-               </td>
-               <td>
-<p>A model for a visualization of the patient’s medication</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="7"> </a>
-   <h3>Structures: Resource Profiles </h3>
-   <p>
-    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-med-view-comp.html" title="StructureDefinition/med-view-comp">Medication View profile</a>
-               </td>
-               <td>
-<p>The profile for how to organize the information in a medication View</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-BePractitioner.html" title="StructureDefinition/BePractitioner">StructureDefinition/BePractitioner</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-BePatient.html" title="StructureDefinition/BePatient">StructureDefinition/BePatient</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-BeOrganization.html" title="StructureDefinition/BeOrganization">StructureDefinition/BeOrganization</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="8"> </a>
-   <h3>Terminology: Value Sets </h3>
-   <p>
-    <p>These define sets of codes used by systems conforming to this implementation guide</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-medication-substitution-dispense-v1.html" title="ValueSet/medication-substitution-dispense-v1">Medication Substitution Value Set</a>
-               </td>
-               <td>
-<p>Value set for substituting a medication on dispense.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-be-vs-medication-summary-types.html" title="ValueSet/be-vs-medication-summary-types">Medication Summary Types Value Set</a>
-               </td>
-               <td>
-<p>Valueset -  Medication Summary types</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="9"> </a>
-   <h3>Terminology: Code Systems </h3>
-   <p>
-    <p>These define new code systems used by systems conforming to this implementation guide</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-be-cs-medication-summary-types.html" title="CodeSystem/be-cs-medication-summary-types">Medication Summary Types CodeSystem</a>
-               </td>
-               <td>
-<p>CodeSystem - Medication Summary types</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="10"> </a>
-   <h3>Terminology: Naming Systems </h3>
-   <p>
-    <p>These define identifier and/or code system identities used by systems conforming to this implementation guide</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="NamingSystem-be-ns-cnk-codes.html" title="NamingSystem/be-ns-cnk-codes">NamingSystem/be-ns-cnk-codes</a>
-               </td>
-               <td>
-<p>Naming System - CNK Product Codes</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="NamingSystem-be-ns-product-package-type.html" title="NamingSystem/be-ns-product-package-type">NamingSystem/be-ns-product-package-type</a>
-               </td>
-               <td>
-<p>Naming System - Product Package Types</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="NamingSystem-be-ns-prescription-ids.html" title="NamingSystem/be-ns-prescription-ids">NamingSystem/be-ns-prescription-ids</a>
-               </td>
-               <td>
-<p>Naming System - Prescription IDs</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="11"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -800,271 +661,510 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <td style="column-width:30%">
                   <a href="MedicationStatement-3-treatmentLine.html" title="MedicationStatement/3-treatmentLine">Example MedicationStatement - 3-treatmentLine</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationStatement-7-treatmentLine.html" title="MedicationStatement/7-treatmentLine">Example MedicationStatement - 7-treatmentLine</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-3-2-dispense.html" title="MedicationDispense/3-2-dispense">Example MedicationDispense - 3-2-dispense</a>
                </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationStatement-13-1-treatmentLine.html" title="MedicationStatement/13-1-treatmentLine">Example MedicationStatement - 13-1-treatmentLine</a>
+               </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-15-scheduleAdministration-4.html" title="MedicationRequest/15-scheduleAdministration-4">Example MedicationRequest - 15-scheduleAdministration-4</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-4-1-dispense.html" title="MedicationDispense/4-1-dispense">Example MedicationDispense - 4-1-dispense</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CarePlan-4-1-treatment.html" title="CarePlan/4-1-treatment">Treatment for Hyperlipidemia</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CarePlan-15-treatment.html" title="CarePlan/15-treatment">Treatment for acid reflux</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CarePlan-2a-treatment.html" title="CarePlan/2a-treatment">Treatment for headache</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-7-dispense.html" title="MedicationDispense/7-dispense">Example MedicationDispense - 7-dispense</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-6-dispense.html" title="MedicationDispense/6-dispense">Example MedicationDispense - 6-dispense</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-3-dispense.html" title="MedicationDispense/3-dispense">Example MedicationDispense - 3-dispense</a>
                </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationDispense-13-3-dispense.html" title="MedicationDispense/13-3-dispense">Example MedicationDispense - 13-3-dispense</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationDispense-13-1-dispense.html" title="MedicationDispense/13-1-dispense">Example MedicationDispense - 13-1-dispense</a>
+               </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CarePlan-8-treatment.html" title="CarePlan/8-treatment">Treament of pharyngitis</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-6-prescription.html" title="MedicationRequest/6-prescription">Example MedicationRequest - 6-prescription</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-7-prescription.html" title="MedicationRequest/7-prescription">Example MedicationRequest - 7-prescription</a>
                </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-13-treatment.html" title="CarePlan/13-treatment">Headache</a>
+               </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CarePlan-4-2-treatment.html" title="CarePlan/4-2-treatment">Treatment for Toothache</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationStatement-4-1-treatmentLine.html" title="MedicationStatement/4-1-treatmentLine">Example MedicationStatement - 4-1-treatmentLine</a>
                </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-week-view.html" title="CarePlan/week-view">Patient scheduled medication for week x</a>
+               </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationStatement-8-usage.html" title="MedicationStatement/8-usage">Example MedicationStatement - 8-usage</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-15-scheduleAdministration-2.html" title="MedicationRequest/15-scheduleAdministration-2">Example MedicationRequest - 15-scheduleAdministration-2</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CarePlan-6-treatment.html" title="CarePlan/6-treatment">Treatment for Hyperlipidemia</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-15-prescription.html" title="MedicationRequest/15-prescription">Example MedicationRequest - 15-prescription</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationStatement-6-treatmentLine.html" title="MedicationStatement/6-treatmentLine">Example MedicationStatement - 6-treatmentLine</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-1-dispense.html" title="MedicationDispense/1-dispense">Example MedicationDispense - 1-dispense</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-10-1-dispense.html" title="MedicationDispense/10-1-dispense">Example MedicationDispense - 10-1-dispense</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CarePlan-15-treatment-2.html" title="CarePlan/15-treatment-2">Treatment for preventing stroke</a>
                </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-total-view.html" title="CarePlan/total-view">Patient Total Medication</a>
+               </td>
+               <td>
+<p>Overview of the patient’s medication</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-15-scheduleAdministration-3.html" title="MedicationRequest/15-scheduleAdministration-3">Example MedicationRequest - 15-scheduleAdministration-3</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-8-prescription.html" title="MedicationRequest/8-prescription">Example MedicationRequest - 8-prescription</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CarePlan-5-treatment.html" title="CarePlan/5-treatment">Treatment for headache</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-1-prescription.html" title="MedicationRequest/1-prescription">Example MedicationRequest - 1-prescription</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-15-scheduleAdministration.html" title="MedicationRequest/15-scheduleAdministration">Example MedicationRequest - 15-scheduleAdministration</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-10-3-dispense.html" title="MedicationDispense/10-3-dispense">Example MedicationDispense - 10-3-dispense</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationStatement-8-treatmentLine.html" title="MedicationStatement/8-treatmentLine">Example MedicationStatement - 8-treatmentLine</a>
                </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-1-scheduled-view.html" title="Composition/1-scheduled-view">Scheduled View for Patient X</a>
+               </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationStatement-2a-treatmentLine.html" title="MedicationStatement/2a-treatmentLine">Example MedicationStatement - 2a-treatmentLine</a>
                </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationDispense-13-2-dispense.html" title="MedicationDispense/13-2-dispense">Example MedicationDispense - 13-2-dispense</a>
+               </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CarePlan-7-treatment.html" title="CarePlan/7-treatment">Diarrhea Prevention</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-8-dispense.html" title="MedicationDispense/8-dispense">Example MedicationDispense - 8-dispense</a>
                </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-1-summary-view.html" title="Composition/1-summary-view">Scheduled View for Patient X</a>
+               </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-5-dispense.html" title="MedicationDispense/5-dispense">Example MedicationDispense - 5-dispense</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CarePlan-3-treatment.html" title="CarePlan/3-treatment">Treatment for Arthritis</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationStatement-7-usage.html" title="MedicationStatement/7-usage">Example MedicationStatement - 7-usage</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-5-prescription.html" title="MedicationRequest/5-prescription">Example MedicationRequest - 5-prescription</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-15-prescription-2.html" title="MedicationRequest/15-prescription-2">Example MedicationRequest - 15-prescription-2</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-2a-prescription.html" title="MedicationRequest/2a-prescription">Example MedicationRequest - 2a-prescription</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationAdministration-8-administration.html" title="MedicationAdministration/8-administration">Example MedicationAdministration - 8-administration</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationStatement-4-2-treatmentLine.html" title="MedicationStatement/4-2-treatmentLine">Example MedicationStatement - 4-2-treatmentLine</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-3-2-prescription.html" title="MedicationRequest/3-2-prescription">Example MedicationRequest - 3-2-prescription</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-4-2-dispense.html" title="MedicationDispense/4-2-dispense">Example MedicationDispense - 4-2-dispense</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CarePlan-1-treatment.html" title="CarePlan/1-treatment">Treatment for Hypertension</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationStatement-15-treatmentLine.html" title="MedicationStatement/15-treatmentLine">Example MedicationStatement - 15-treatmentLine</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-4-prescription.html" title="MedicationRequest/4-prescription">Example MedicationRequest - 4-prescription</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationStatement-5-treatmentLine.html" title="MedicationStatement/5-treatmentLine">Example MedicationStatement - 5-treatmentLine</a>
                </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationStatement-13-2-treatmentLine.html" title="MedicationStatement/13-2-treatmentLine">Example MedicationStatement - 13-2-treatmentLine</a>
+               </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationRequest-3-prescription.html" title="MedicationRequest/3-prescription">Example MedicationRequest - 3-prescription</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-2a-dispense.html" title="MedicationDispense/2a-dispense">Example MedicationDispense - 2a-dispense</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-10-2-dispense.html" title="MedicationDispense/10-2-dispense">Example MedicationDispense - 10-2-dispense</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationStatement-1-treatmentLine.html" title="MedicationStatement/1-treatmentLine">Example MedicationStatement - 1-treatmentLine</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationStatement-15-treatmentLine-2.html" title="MedicationStatement/15-treatmentLine-2">Example MedicationStatement - 15-treatmentLine-2</a>
                </td>
+               <td>
+
+</td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="12"> </a>
+   <a name="7"> </a>
    <h3>Other </h3>
    <p>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
@@ -1075,27 +1175,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Condition-hypertension-condition.html" title="Condition/hypertension-condition">Condition/hypertension-condition</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="MedicationStatement-Asaflow500mg1xACMd.html" title="MedicationStatement/Asaflow500mg1xACMd">MedicationStatement/Asaflow500mg1xACMd</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="MedicationDispense-medication-dispense-example-2.html" title="MedicationDispense/medication-dispense-example-2">MedicationDispense/medication-dispense-example-2</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="MedicationDispense-Dafalgan500mgDispense.html" title="MedicationDispense/Dafalgan500mgDispense">MedicationDispense/Dafalgan500mgDispense</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Condition-diarrhea-condition.html" title="Condition/diarrhea-condition">Condition/diarrhea-condition</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Condition-pharyngitis-condition.html" title="Condition/pharyngitis-condition">Condition/pharyngitis-condition</a>
                </td>
             </tr>
             <tr>
@@ -1110,11 +1200,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Condition-toothache-condition.html" title="Condition/toothache-condition">Condition/toothache-condition</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="MedicationDispense-medication-dispense-hospital.html" title="MedicationDispense/medication-dispense-hospital">MedicationDispense/medication-dispense-hospital</a>
                </td>
             </tr>
@@ -1125,17 +1210,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Condition-headache-condition.html" title="Condition/headache-condition">Condition/headache-condition</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="MedicationDispense-example-dispense-communitypharmacy-1med.html" title="MedicationDispense/example-dispense-communitypharmacy-1med">MedicationDispense/example-dispense-communitypharmacy-1med</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Condition-hyperlipidemia-condition.html" title="Condition/hyperlipidemia-condition">Condition/hyperlipidemia-condition</a>
                </td>
             </tr>
             <tr>
@@ -1146,11 +1221,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationDispense-example-minimal-dispense.html" title="MedicationDispense/example-minimal-dispense">MedicationDispense/example-minimal-dispense</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Condition-reflux-condition.html" title="Condition/reflux-condition">Condition/reflux-condition</a>
                </td>
             </tr>
             <tr>
@@ -1166,11 +1236,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="MedicationStatement-Co-Bisoprolol25-625mg1xACMd.html" title="MedicationStatement/Co-Bisoprolol25-625mg1xACMd">MedicationStatement/Co-Bisoprolol25-625mg1xACMd</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Condition-arthritis-condition.html" title="Condition/arthritis-condition">Condition/arthritis-condition</a>
                </td>
             </tr>
             <tr>
@@ -1203,7 +1268,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.riziv-medicationrecord#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 25, 2022 12:55+0000">2022-03-25</span>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="http://hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.riziv-medicationrecord#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 25, 2022 14:39+0000">2022-03-25</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
