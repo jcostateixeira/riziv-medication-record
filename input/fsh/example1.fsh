@@ -146,3 +146,27 @@ Title:    "Example 1 - Provenance 2"
 * entity[0].what = Reference(1-treatmentLine)
 * entity[0].role = #source
 
+
+Instance: 1-summary-view
+InstanceOf: MedicationView
+Usage: #example
+Description: "Summary view for a Physician"
+Title:    "Example 1 - Summary view"
+
+* status = #active
+* date = "2021-08-15T13:00:00+02:00"
+* author = Reference(BeOrganization)
+* title = "Scheduled View for Patient X"
+* type = be-cs-medication-summary-types#Summary
+
+Instance: 1-scheduled-view
+InstanceOf: MedicationView
+Usage: #example
+Description: "Summary view for a Patient or Care Taker"
+Title:    "Example 1 - Scheduled Takes view"
+
+* status = #active
+* date = "2021-08-15T13:00:00+02:00"
+* author = Reference(BeOrganization)
+* title = "Scheduled View for Patient X"
+* type = be-cs-medication-summary-types#Scheduled

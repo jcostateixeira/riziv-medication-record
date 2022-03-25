@@ -27,6 +27,10 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 * actor[=].type = #person
 * actor[=].name = "Pharmacist"
 
+* actor[+].actorId = "GP2"
+* actor[=].type = #person
+* actor[=].name = "Dr. Omar"
+
 
 * instance[+].resourceId = "1-prescription"
 * instance[=].resourceType = #MedicationRequest
@@ -55,6 +59,16 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
 * instance[+].resourceId = "1-2-provenance"
 * instance[=].resourceType = #Provenance
 * instance[=].name = "Link Dispense and treatmentLine"
+
+* instance[+].resourceId = "1-summary-view"
+* instance[=].resourceType = #Composition
+* instance[=].name = "Summary view for a Physician"
+
+
+* instance[+].resourceId = "1-scheduled-view"
+* instance[=].resourceType = #Composition
+* instance[=].name = "Scheduled Administrations view for a Patient"
+
 
 * process[+]
   * title = "Change Branded Prescription"
@@ -132,10 +146,40 @@ Title: "Dispense Example - Prescribed branded medication is changed by another b
         * operation.request.resourceId = "1-2-provenance"
   * step[+]
     * process[+]
-      * title = "Vizualization ..."
+      * title = "Vizualization Data for physician"
       * step[+]
-        * operation.name = "Resource Linking"
-        * operation.number = "8"
+        * operation.name = "Requiring Visualization"
+        * operation.number = "9"
+        * operation.initiator = "GP2"
+        * operation.receiver = "VAULT"
+      * step[+]
+        * operation.name = "Creating Visualization"
+        * operation.number = "10"
         * operation.initiator = "VAULT"
         * operation.receiver = "VAULT"
-        * operation.request.resourceId = "1-2-provenance"
+      * step[+]
+        * operation.name = "Displaying Visualization"
+        * operation.number = "11"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "GP2"
+        * operation.request.resourceId = "1-summary-view"
+
+  * step[+]
+    * process[+]
+      * title = "Vizualization Data for patient (scheduled Administrations)"
+      * step[+]
+        * operation.name = "Requiring Visualization"
+        * operation.number = "12"
+        * operation.initiator = "PATIENT"
+        * operation.receiver = "VAULT"
+      * step[+]
+        * operation.name = "Creating Visualization"
+        * operation.number = "13"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "VAULT"
+      * step[+]
+        * operation.name = "Displaying Visualization"
+        * operation.number = "14"
+        * operation.initiator = "VAULT"
+        * operation.receiver = "PATIENT"
+        * operation.request.resourceId = "1-scheduled-view"
