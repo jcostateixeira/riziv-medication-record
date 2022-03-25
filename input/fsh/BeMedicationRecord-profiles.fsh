@@ -302,3 +302,60 @@ Id: med-view-comp
 * section[MedRecordMedicationSummaryView].entry only Reference(MedRecordMedicationSummaryView)
 * section[detailsRecord].entry only Reference(MedRecordUsage or MedRecordOrder or MedRecordDispense or MedRecordAdministration or MedRecordMedicationScheduledAdministration)
 
+
+Profile: MedicationView2
+Title: "Medication View profile 2"
+Description: "The profile for how to organize the information in a medication View 2"
+Parent: Composition
+Id: med-view-comp-two
+
+
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "type.coding.code"
+* section ^slicing.rules = #open
+* section contains
+    MedRecordTreatment 0..* MS 
+* section[MedRecordTreatment].entry only Reference(MedRecordTreatment)
+
+* section[MedRecordTreatment].section ^slicing.discriminator.type = #value
+* section[MedRecordTreatment].section ^slicing.discriminator.path = "type.coding.code"
+* section[MedRecordTreatment].section ^slicing.rules = #open
+* section[MedRecordTreatment].section contains     
+    MedRecordTreatmentLine 0..* MS
+* section[MedRecordTreatment].section[MedRecordTreatmentLine].entry only Reference(MedRecordTreatmentLine)
+
+* section[MedRecordTreatment].section[MedRecordTreatmentLine].section ^slicing.discriminator.type = #value
+* section[MedRecordTreatment].section[MedRecordTreatmentLine].section ^slicing.discriminator.path = "type.coding.code"
+* section[MedRecordTreatment].section[MedRecordTreatmentLine].section ^slicing.rules = #open
+* section[MedRecordTreatment].section[MedRecordTreatmentLine].section contains     
+    detailsRecord 0..* MS
+* section[MedRecordTreatment].section[MedRecordTreatmentLine].section[detailsRecord].entry only Reference(MedRecordUsage or MedRecordOrder or MedRecordDispense or MedRecordAdministration or MedRecordMedicationScheduledAdministration)
+
+
+Profile: scheduledView
+Title: "Medication View profile 2"
+Description: "The profile for how to organize the information in a medication View 2"
+Parent: Composition
+Id: sche-view-comp
+
+
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "type.coding.code"
+* section ^slicing.rules = #open
+* section contains
+    MedRecordTreatment 0..* MS 
+* section[MedRecordTreatment].entry only Reference(MedRecordTreatment)
+
+* section[MedRecordTreatment].section ^slicing.discriminator.type = #value
+* section[MedRecordTreatment].section ^slicing.discriminator.path = "type.coding.code"
+* section[MedRecordTreatment].section ^slicing.rules = #open
+* section[MedRecordTreatment].section contains     
+    MedRecordTreatmentLine 0..* MS
+* section[MedRecordTreatment].section[MedRecordTreatmentLine].entry only Reference(MedRecordTreatmentLine)
+
+* section[MedRecordTreatment].section[MedRecordTreatmentLine].section ^slicing.discriminator.type = #value
+* section[MedRecordTreatment].section[MedRecordTreatmentLine].section ^slicing.discriminator.path = "type.coding.code"
+* section[MedRecordTreatment].section[MedRecordTreatmentLine].section ^slicing.rules = #open
+* section[MedRecordTreatment].section[MedRecordTreatmentLine].section contains     
+    detailsRecord 0..* MS
+* section[MedRecordTreatment].section[MedRecordTreatmentLine].section[detailsRecord].entry only Reference(MedRecordMedicationScheduledAdministration)
