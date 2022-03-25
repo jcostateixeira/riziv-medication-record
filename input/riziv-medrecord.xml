@@ -492,7 +492,7 @@
       <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
-    <resource>
+   <!-- <resource>
       <reference>
         <reference value="MedicationDispense/1-dispense" />
       </reference>
@@ -501,7 +501,53 @@
       <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
-   
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/1-prescription" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example 1 - prescription" />
+      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+      <groupingId value="medicationrecord-validatingexamples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Provenance/1-1-provenance" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example 1 - provenance 1" />
+      <description value="Provenance linking treatment line and prescription" />
+      <groupingId value="medicationrecord-validatingexamples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CarePlan/1-treatment" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example 1 - Treatment" />
+      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+      <groupingId value="medicationrecord-validatingexamples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/1-treatmentLine" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example 1 - Treatment Line" />
+      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster" />
+      <groupingId value="medicationrecord-validatingexamples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Provenance/1-2-provenance" />
+      </reference>
+      <fhirVersion value="4.0.1" />
+      <name value="Example 1 - provenance 2" />
+      <description value="Provenance linking treatment line and dispense" />
+      <groupingId value="medicationrecord-validatingexamples"/>
+    </resource> 
+  -->
+
 
 
     <resource>
@@ -513,7 +559,7 @@
       <description value="Prescribed medication is changed by another medication from a different VOS-cluster" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
-    <resource>
+  <!--  <resource>
       <reference>
         <reference value="MedicationDispense/2a-dispense" />
       </reference>
@@ -549,6 +595,7 @@
       <description value="Prescribed medication is changed by another medication from a different VOS-cluster - Different strength" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
+  -->
 
 
 
@@ -567,7 +614,7 @@
       <description value="This example shows a dispense of a medication that is made before an existing prescription" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
-    <resource>
+ <!--   <resource>
       <reference>
         <reference value="MedicationDispense/3-dispense" />
       </reference>
@@ -621,6 +668,7 @@
       <description value="Dispense medication before the prescription of the general practitioner" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
+  -->
 
 
 
@@ -637,7 +685,7 @@
       <description value="This example shows a dispense of two products. One that has a prescription and other that does not (and does not need one)." />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
-    <resource>
+  <!--  <resource>
       <reference>
         <reference value="MedicationRequest/4-prescription" />
       </reference>
@@ -699,8 +747,7 @@
       <name value="Example 4 - Treatment Line 2" />
       <description value="Dispense of prescribed medication, and dispense of a product that can be done without a prescription" />
       <groupingId value="medicationrecord-validatingexamples"/>
-    </resource>
-
+    </resource> -->
 
 
 
@@ -720,7 +767,7 @@
       <description value="This example shows a prescription that is made by brand name and the pharmacist changes the brand name for another brand name in the same VOS - Cluster because there is no stock." />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
-    <resource>
+  <!--  <resource>
       <reference>
         <reference value="MedicationDispense/5-dispense" />
       </reference>
@@ -756,6 +803,7 @@
       <description value="Dispense of new brand medication that is given because the old is unavailable, so giving to continue the treatment and not to replace it" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
+  -->
 
 
     <resource>
@@ -767,7 +815,7 @@
       <description value="This example shows a prescription that is made by VOS and the pharmacist refuses to dispense the medication due to interaction with previous medication." />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
-    <resource>
+  <!--  <resource>
       <reference>
         <reference value="MedicationDispense/6-dispense" />
       </reference>
@@ -803,6 +851,9 @@
       <description value="Refuse the dispense prescribed medication" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
+  -->
+
+
 
     <resource>
       <reference>
@@ -813,7 +864,7 @@
       <description value="This example shows a prescription that is made by VOS and to take only if needed and the pharmacist dispenses it. Then it is reported that the medication was not taken at all." />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
-    <resource>
+ <!--   <resource>
       <reference>
         <reference value="MedicationDispense/7-dispense" />
       </reference>
@@ -858,7 +909,7 @@
       <description value="Dispense of medication that was prescribed to take if needed, but was not taken" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
-
+  -->
 
 
 
@@ -876,7 +927,7 @@
       <description value="This example shows a prescription that is made by VOS and the pharmacist dispenses it. But at the time of administration, the treatment is stopped due to a reaction." />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
-    <resource>
+  <!--  <resource>
       <reference>
         <reference value="MedicationRequest/8-prescription" />
       </reference>
@@ -930,6 +981,7 @@
       <description value="Dispense of medication that was prescribed, but not taken till the end" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
+  -->
 
 
 
@@ -956,7 +1008,7 @@
 
 
 
-
+<!--
     <resource>
       <reference>
         <reference value="MedicationDispense/10-1-dispense" />
@@ -985,7 +1037,7 @@
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
 
-
+  -->
 
 
     <resource>
@@ -997,7 +1049,7 @@
       <description value="This example shows dispense of medication OTC and how treatment resources should be handled" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
-    <resource>
+ <!--   <resource>
       <reference>
         <reference value="MedicationRequest/15-prescription" />
       </reference>
@@ -1087,7 +1139,7 @@
       <description value="Medication summary" />
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
-
+  -->
 <!--
 
 -->
@@ -1111,6 +1163,10 @@
     </resource>
 
     <!--     \\\\\\\\\\\\\\\\                    End of resources            \\\\\\\\\\\\\\\\\         -->
+
+
+
+    
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
