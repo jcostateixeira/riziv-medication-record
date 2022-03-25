@@ -12,7 +12,7 @@
   <title value="MedicationRecord"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-03-21T14:58:08+00:00"/>
+  <date value="2022-03-25T12:46:50+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <telecom>
@@ -687,69 +687,6 @@
       <name value="Example 1 - Dispense"/>
       <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
       <exampleCanonical value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordDispense"/>
-      <groupingId value="medicationrecord-validatingexamples"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationRequest"/>
-      </extension>
-      <reference>
-        <reference value="MedicationRequest/1-prescription"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Example 1 - prescription"/>
-      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
-      <exampleCanonical value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder"/>
-      <groupingId value="medicationrecord-validatingexamples"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Provenance"/>
-      </extension>
-      <reference>
-        <reference value="Provenance/1-1-provenance"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Example 1 - provenance 1"/>
-      <description value="Provenance linking treatment line and prescription"/>
-      <groupingId value="medicationrecord-validatingexamples"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CarePlan"/>
-      </extension>
-      <reference>
-        <reference value="CarePlan/1-treatment"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Example 1 - Treatment"/>
-      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
-      <exampleCanonical value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment"/>
-      <groupingId value="medicationrecord-validatingexamples"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationStatement"/>
-      </extension>
-      <reference>
-        <reference value="MedicationStatement/1-treatmentLine"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Example 1 - Treatment Line"/>
-      <description value="Prescribed branded medication is changed by another branded medication from the same VOS-cluster"/>
-      <exampleCanonical value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"/>
-      <groupingId value="medicationrecord-validatingexamples"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Provenance"/>
-      </extension>
-      <reference>
-        <reference value="Provenance/1-2-provenance"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Example 1 - provenance 2"/>
-      <description value="Provenance linking treatment line and dispense"/>
       <groupingId value="medicationrecord-validatingexamples"/>
     </resource>
     <resource>
@@ -1708,6 +1645,14 @@
         <valueString value="Provenance"/>
       </extension>
       <reference>
+        <reference value="Provenance/1-2-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
         <reference value="Provenance/3-3-provenance"/>
       </reference>
     </resource>
@@ -1780,6 +1725,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/1-1-provenance"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1825,6 +1778,16 @@
       <reference>
         <reference value="Provenance/2-1-provenance"/>
       </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/1-prescription"/>
+      </reference>
+      <name value="Example MedicationRequest - 1-prescription"/>
+      <exampleCanonical value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordOrder"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1950,11 +1913,31 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/1-treatment"/>
+      </reference>
+      <name value="Treatment for Hypertension"/>
+      <exampleCanonical value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationStatement"/>
       </extension>
       <reference>
         <reference value="MedicationStatement/Co-Bisoprolol25-625mg1xACM"/>
       </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/1-treatmentLine"/>
+      </reference>
+      <name value="Example MedicationStatement - 1-treatmentLine"/>
+      <exampleCanonical value="http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/MedRecordTreatmentLine"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
