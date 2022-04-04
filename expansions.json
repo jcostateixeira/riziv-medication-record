@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "def5ec20-164d-488c-bcee-ba9b7ac56c7d",
+  "id" : "75848d3a-fa3e-49f4-98a0-239f7d80fc25",
   "meta" : {
-    "lastUpdated" : "2022-03-25T14:39:23.193+00:00"
+    "lastUpdated" : "2022-04-04T13:17:06.192+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "SubstitutionReason",
       "title" : "Medication Substitution Value Set",
       "status" : "active",
-      "date" : "2022-03-25T14:39:23+00:00",
+      "date" : "2022-04-04T13:17:06+00:00",
       "publisher" : "HL7 Belgium",
       "contact" : [{
         "telecom" : [{
@@ -35,8 +35,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2f455620-7b52-4499-b10f-0d3fedc2f4e2",
-        "timestamp" : "2022-03-25T14:39:58+00:00",
+        "identifier" : "urn:uuid:b03e7b66-7dcc-4a11-a5d6-bda1204e1ff5",
+        "timestamp" : "2022-04-04T13:17:47+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -52,29 +52,21 @@
         }],
         "contains" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-          "abstract" : false,
-          "inactive" : false,
           "code" : "CT",
           "display" : "continuing therapy"
         },
         {
           "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-          "abstract" : false,
-          "inactive" : false,
           "code" : "FP",
           "display" : "formulary policy"
         },
         {
           "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-          "abstract" : false,
-          "inactive" : false,
           "code" : "OS",
           "display" : "out of stock"
         },
         {
           "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-          "abstract" : false,
-          "inactive" : false,
           "code" : "RR",
           "display" : "regulatory requirement"
         },
@@ -100,7 +92,7 @@
       "name" : "BeVSMedicationSummaryTypes",
       "title" : "Medication Summary Types Value Set",
       "status" : "active",
-      "date" : "2022-03-25T14:39:23+00:00",
+      "date" : "2022-04-04T13:17:06+00:00",
       "publisher" : "HL7 Belgium",
       "contact" : [{
         "telecom" : [{
@@ -116,8 +108,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1dc299aa-4374-449c-8196-0d5866055d87",
-        "timestamp" : "2022-03-25T14:40:04+00:00",
+        "identifier" : "urn:uuid:5f1b411f-1ba4-4e73-8bf4-94b826f4595e",
+        "timestamp" : "2022-04-04T13:18:01+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
