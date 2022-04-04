@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="def5ec20-164d-488c-bcee-ba9b7ac56c7d"/>
+  <id value="75848d3a-fa3e-49f4-98a0-239f7d80fc25"/>
   <meta>
-    <lastUpdated value="2022-03-25T14:39:23.193+00:00"/>
+    <lastUpdated value="2022-04-04T13:17:06.192+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -93,7 +93,7 @@
         <name value="SubstitutionReason"/>
         <title value="Medication Substitution Value Set"/>
         <status value="active"/>
-        <date value="2022-03-25T14:39:23+00:00"/>
+        <date value="2022-04-04T13:17:06+00:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -109,8 +109,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2f455620-7b52-4499-b10f-0d3fedc2f4e2"/>
-          <timestamp value="2022-03-25T14:39:58+00:00"/>
+          <identifier value="urn:uuid:b03e7b66-7dcc-4a11-a5d6-bda1204e1ff5"/>
+          <timestamp value="2022-04-04T13:17:47+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -126,29 +126,21 @@
           </parameter>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
-            <abstract value="false"/>
-            <inactive value="false"/>
             <code value="CT"/>
             <display value="continuing therapy"/>
           </contains>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
-            <abstract value="false"/>
-            <inactive value="false"/>
             <code value="FP"/>
             <display value="formulary policy"/>
           </contains>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
-            <abstract value="false"/>
-            <inactive value="false"/>
             <code value="OS"/>
             <display value="out of stock"/>
           </contains>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
-            <abstract value="false"/>
-            <inactive value="false"/>
             <code value="RR"/>
             <display value="regulatory requirement"/>
           </contains>
@@ -223,7 +215,7 @@
         <name value="BeVSMedicationSummaryTypes"/>
         <title value="Medication Summary Types Value Set"/>
         <status value="active"/>
-        <date value="2022-03-25T14:39:23+00:00"/>
+        <date value="2022-04-04T13:17:06+00:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <telecom>
@@ -239,8 +231,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1dc299aa-4374-449c-8196-0d5866055d87"/>
-          <timestamp value="2022-03-25T14:40:04+00:00"/>
+          <identifier value="urn:uuid:5f1b411f-1ba4-4e73-8bf4-94b826f4595e"/>
+          <timestamp value="2022-04-04T13:18:01+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
