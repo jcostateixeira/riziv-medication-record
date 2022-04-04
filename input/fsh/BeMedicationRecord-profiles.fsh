@@ -302,7 +302,7 @@ Id: med-view-comp
 * section[MedRecordMedicationSummaryView].entry only Reference(MedRecordMedicationSummaryView)
 * section[detailsRecord].entry only Reference(MedRecordUsage or MedRecordOrder or MedRecordDispense or MedRecordAdministration or MedRecordMedicationScheduledAdministration)
 
-
+/*
 Profile: MedicationView2
 Title: "Medication View profile 2"
 Description: "The profile for how to organize the information in a medication View 2"
@@ -359,3 +359,4 @@ Id: sche-view-comp
 * section[MedRecordTreatment].section[MedRecordTreatmentLine].section contains     
     detailsRecord 0..* MS
 * section[MedRecordTreatment].section[MedRecordTreatmentLine].section[detailsRecord].entry only Reference(MedRecordMedicationScheduledAdministration)
+*/
