@@ -25,5 +25,32 @@
       "reference": "BeOrganization"
     }
   ],
-  "title": "Scheduled View for Patient X"
+  "title": "Scheduled View for Patient X",
+  "section": [
+    {
+      "title": "Treatments",
+      "entry": [
+        {
+          "reference": "CarePlan/1-treatment"
+        }
+      ]
+    },
+    {
+      "entry": [
+        {
+          "reference": "MedicationStatement/1-treatmentLine"
+        }
+      ]
+    },
+    {
+      "entry": [
+        {
+          "reference": "MedicationRequest/1-scheduledadministration1"
+        },
+        {
+          "reference": "MedicationRequest/1-scheduledadministration2"
+        }
+      ]
+    }
+  ]
 }

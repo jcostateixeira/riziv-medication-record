@@ -20,4 +20,24 @@
     <reference value="BeOrganization"/>
   </author>
   <title value="Scheduled View for Patient X"/>
+  <section>
+    <title value="Treatments"/>
+    <entry>
+      <reference value="CarePlan/1-treatment"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Treatments"/>
+    <entry>
+      <reference value="MedicationStatement/1-treatmentLine"/>
+    </entry>
+  </section>
+  <section>
+    <entry>
+      <reference value="MedicationRequest/1-prescription"/>
+    </entry>
+    <entry>
+      <reference value="MedicationDispense/1-dispense"/>
+    </entry>
+  </section>
 </Composition>
