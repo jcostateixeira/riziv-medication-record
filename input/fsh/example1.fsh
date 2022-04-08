@@ -158,10 +158,10 @@ Title:    "Example 1 - Summary view"
 * author = Reference(BeOrganization)
 * title = "Scheduled View for Patient X"
 * section[MedRecordTreatment].title = "Treatments"
-* section[MedRecordTreatment].entry[0] = Reference(1-treatment)
+* section[MedRecordTreatment].entry = Reference(1-treatment)
 * section[MedRecordTreatmentLine].title = "Treatments"
 
-* section[MedRecordTreatmentLine].entry[0] = Reference(1-treatmentLine)
+* section[MedRecordTreatmentLine].entry = Reference(1-treatmentLine)
 * section[detailsRecord].entry[0] = Reference(1-prescription)
 * section[detailsRecord].entry[1] = Reference(1-dispense)
 
