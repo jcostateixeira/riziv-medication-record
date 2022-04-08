@@ -43,6 +43,7 @@
      ]
   ], [
      fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "Treatment Lines" ];
      fhir:Composition.section.entry [
        fhir:index 0;
        fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationStatement/1-treatmentLine>;
@@ -50,6 +51,7 @@
      ]
   ], [
      fhir:index 2;
+     fhir:Composition.section.title [ fhir:value "Scheduled Takes" ];
      fhir:Composition.section.entry [
        fhir:index 0;
        fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationRequest/1-scheduledadministration1>;
