@@ -157,10 +157,9 @@ Title:    "Example 1 - Summary view"
 * date = "2021-08-15T13:00:00+02:00"
 * author = Reference(BeOrganization)
 * title = "Scheduled View for Patient X"
-* type = be-cs-medication-summary-types#Summary
 
 Instance: 1-scheduled-view
-InstanceOf: MedicationView
+InstanceOf: scheduledView
 Usage: #example
 Description: "Summary view for a Patient or Care Taker"
 Title:    "Example 1 - Scheduled Takes view"
@@ -169,4 +168,3 @@ Title:    "Example 1 - Scheduled Takes view"
 * date = "2021-08-15T13:00:00+02:00"
 * author = Reference(BeOrganization)
 * title = "Scheduled View for Patient X"
-* type = be-cs-medication-summary-types#Scheduled
