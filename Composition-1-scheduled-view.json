@@ -36,6 +36,7 @@
       ]
     },
     {
+      "title": "Treatment Lines",
       "entry": [
         {
           "reference": "MedicationStatement/1-treatmentLine"
@@ -43,6 +44,7 @@
       ]
     },
     {
+      "title": "Scheduled Takes",
       "entry": [
         {
           "reference": "MedicationRequest/1-scheduledadministration1"
