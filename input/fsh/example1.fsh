@@ -151,17 +151,19 @@ Instance: 1-summary-view
 InstanceOf: MedicationView
 Usage: #example
 Description: "Summary view for a Physician"
-Title:    "Example 1 - Summary view"
+Title: "Example 1 - Summary view"
 
 * status = #active
 * date = "2021-08-15T13:00:00+02:00"
 * author = Reference(BeOrganization)
-* title = "Scheduled View for Patient X"
+* title = "Summary View for Patient X"
+
 * section[MedRecordTreatment].title = "Treatments"
 * section[MedRecordTreatment].entry = Reference(1-treatment)
-* section[MedRecordTreatmentLine].title = "Treatments"
 
+* section[MedRecordTreatmentLine].title = "Treatment Lines"
 * section[MedRecordTreatmentLine].entry = Reference(1-treatmentLine)
+
 * section[detailsRecord].entry[0] = Reference(1-prescription)
 * section[detailsRecord].entry[1] = Reference(1-dispense)
 
@@ -177,9 +179,12 @@ Title:    "Example 1 - Scheduled Takes view"
 * author = Reference(BeOrganization)
 * title = "Scheduled View for Patient X"
 * section[MedRecordTreatment].title = "Treatments"
-* section[MedRecordTreatment].entry[0] = Reference(1-treatment)
+* section[MedRecordTreatment].entry = Reference(1-treatment)
 
-* section[MedRecordTreatmentLine].entry[0] = Reference(1-treatmentLine)
+* section[MedRecordTreatmentLine].title = "Treatment Lines"
+* section[MedRecordTreatmentLine].entry = Reference(1-treatmentLine)
+
+* section[detailsRecord].title = "Scheduled Takes"
 * section[detailsRecord].entry[0] = Reference(1-scheduledadministration1)
 * section[detailsRecord].entry[1] = Reference(1-scheduledadministration2)
 
