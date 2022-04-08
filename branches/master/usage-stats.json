@@ -41,6 +41,10 @@
       {
         "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp",
         "title": "Medication View profile"
+      },
+      {
+        "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp",
+        "title": "Medication View profile -second visualization"
       }
     ],
     "MedicationAdministration": [

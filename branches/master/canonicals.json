@@ -301,6 +301,13 @@
     "name": "RelatedTreatmentLine"
   },
   {
+    "id": "sche-view-comp",
+    "type": "StructureDefinition",
+    "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp",
+    "version": "0.1.0-test",
+    "name": "scheduledView"
+  },
+  {
     "id": "be-vs-medication-summary-types",
     "type": "ValueSet",
     "url": "http://hl7belgium.org/fhir/riziv-medicationrecord/ValueSet/be-vs-medication-summary-types",
