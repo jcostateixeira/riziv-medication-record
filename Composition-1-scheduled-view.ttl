@@ -32,7 +32,34 @@
      fhir:index 0;
      fhir:Reference.reference [ fhir:value "BeOrganization" ]
   ];
-  fhir:Composition.title [ fhir:value "Scheduled View for Patient X"] .
+  fhir:Composition.title [ fhir:value "Scheduled View for Patient X"];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "Treatments" ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/CarePlan/1-treatment>;
+       fhir:Reference.reference [ fhir:value "CarePlan/1-treatment" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationStatement/1-treatmentLine>;
+       fhir:Reference.reference [ fhir:value "MedicationStatement/1-treatmentLine" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationRequest/1-scheduledadministration1>;
+       fhir:Reference.reference [ fhir:value "MedicationRequest/1-scheduledadministration1" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://hl7belgium.org/fhir/riziv-medicationrecord/MedicationRequest/1-scheduledadministration2>;
+       fhir:Reference.reference [ fhir:value "MedicationRequest/1-scheduledadministration2" ]
+     ]
+  ] .
 
 # - ontology header ------------------------------------------------------------
 

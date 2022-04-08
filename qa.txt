@@ -1,10 +1,10 @@
 ﻿MedicationRecord : Validation Results
 =========================================
 
-err = 118, warn = 255, info = 90
+err = 136, warn = 257, info = 92
 IG Publisher Version: 1.1.114
-Generated Fri Apr 08 09:53:43 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv-medicationrecord#0.1.0-test (canonical = http://hl7belgium.org/fhir/riziv-medicationrecord)
- Build Errors : 1039 / 77 / 1
+Generated Fri Apr 08 10:22:38 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv-medicationrecord#0.1.0-test (canonical = http://hl7belgium.org/fhir/riziv-medicationrecord)
+ Build Errors : 1049 / 79 / 1
  /github/workspace/fsh-generated/resources/Bundle-EB : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-1-treatment : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-13-treatment : 0 / 0 / 1
@@ -21,8 +21,8 @@ Generated Fri Apr 08 09:53:43 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv
  /github/workspace/fsh-generated/resources/CarePlan-total-view : 2 / 0 / 3
  /github/workspace/fsh-generated/resources/CarePlan-week-view : 2 / 0 / 3
  /github/workspace/fsh-generated/resources/CodeSystem-be-cs-medication-summary-types : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Composition-1-scheduled-view : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/Composition-1-summary-view : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/Composition-1-scheduled-view : 11 / 0 / 1
+ /github/workspace/fsh-generated/resources/Composition-1-summary-view : 11 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-arthritis-condition : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-diarrhea-condition : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-headache-condition : 0 / 0 / 2
@@ -63,6 +63,8 @@ Generated Fri Apr 08 09:53:43 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.riziv
  /github/workspace/fsh-generated/resources/MedicationDispense-medication-dispense-example-2 : 2 / 2 / 5
  /github/workspace/fsh-generated/resources/MedicationDispense-medication-dispense-hospital : 2 / 0 / 3
  /github/workspace/fsh-generated/resources/MedicationRequest-1-prescription : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/MedicationRequest-1-scheduledadministration1 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/MedicationRequest-1-scheduledadministration2 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationRequest-15-prescription : 2 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationRequest-15-prescription-2 : 2 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationRequest-15-scheduleAdministration : 1 / 0 / 2
@@ -187,6 +189,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationDispense/Dafalgan500mgDispense.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/Dafalgan500mgDispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/15-prescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/1-scheduledadministration2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/7-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/5-prescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/4-1-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -194,6 +197,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/13-1-treatmentLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/10-3-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/3-2-prescription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/1-scheduledadministration1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationDispense/example-minimal-dispense.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/example-minimal-dispense.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/5-treatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -662,6 +666,16 @@ ERROR: /github/workspace/output/MedicationRequest-1-prescription.html#/html/body
 ERROR: /github/workspace/output/MedicationRequest-1-prescription.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-1-prescription.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-1-prescription.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-1-scheduledadministration1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-1-scheduledadministration1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-1-scheduledadministration1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-1-scheduledadministration1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-1-scheduledadministration1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-1-scheduledadministration2.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-1-scheduledadministration2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-1-scheduledadministration2.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-1-scheduledadministration2.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-1-scheduledadministration2.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-15-prescription-2.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-15-prescription-2.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 126, column 6: The link 'usecases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-15-prescription-2.html#/html/body/div/div/div/div/div/div/p/a at Line 250, column 495: The link 'example-15-of-medication-treatmentLine2' for "example-15-of-medication-treatmentLine2" cannot be resolved
@@ -1314,9 +1328,27 @@ INFORMATION: CarePlan/week-view: CarePlan.activity[1].detail.product.ofType(Code
 == fsh-generated/resources/CodeSystem-be-cs-medication-summary-types.json ==
 INFORMATION: CodeSystem/be-cs-medication-summary-types: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/Composition-1-scheduled-view.json ==
+ERROR: Composition/1-scheduled-view: Composition.section[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp on element Composition.section:MedRecordTreatment, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp (@char 1)
+ERROR: Composition/1-scheduled-view: Composition.section[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp on element Composition.section:MedRecordTreatment, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp (@char 1)
+ERROR: Composition/1-scheduled-view: Composition.section[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp on element Composition.section:MedRecordTreatment, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp (@char 1)
+ERROR: Composition/1-scheduled-view: Composition.section[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp on element Composition.section:MedRecordTreatmentLine, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp (@char 1)
+ERROR: Composition/1-scheduled-view: Composition.section[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp on element Composition.section:MedRecordTreatmentLine, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp (@char 1)
+ERROR: Composition/1-scheduled-view: Composition.section[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp on element Composition.section:MedRecordTreatmentLine, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp (@char 1)
+ERROR: Composition/1-scheduled-view: Composition.section[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp on element Composition.section:detailsRecord, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp (@char 1)
+ERROR: Composition/1-scheduled-view: Composition.section[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp on element Composition.section:detailsRecord, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp (@char 1)
+ERROR: Composition/1-scheduled-view: Composition.section[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp on element Composition.section:detailsRecord, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/sche-view-comp (@char 1)
 ERROR: Composition/1-scheduled-view: Composition.status: The value provided ('active') is not in the value set 'CompositionStatus' (http://hl7.org/fhir/ValueSet/composition-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)
 ERROR: Composition/1-scheduled-view: Composition.author[0]: Unable to resolve resource 'BeOrganization'
 == fsh-generated/resources/Composition-1-summary-view.json ==
+ERROR: Composition/1-summary-view: Composition.section[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp on element Composition.section:MedRecordTreatment, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp (@char 1)
+ERROR: Composition/1-summary-view: Composition.section[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp on element Composition.section:MedRecordTreatment, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp (@char 1)
+ERROR: Composition/1-summary-view: Composition.section[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp on element Composition.section:MedRecordTreatment, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp (@char 1)
+ERROR: Composition/1-summary-view: Composition.section[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp on element Composition.section:MedRecordTreatmentLine, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp (@char 1)
+ERROR: Composition/1-summary-view: Composition.section[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp on element Composition.section:MedRecordTreatmentLine, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp (@char 1)
+ERROR: Composition/1-summary-view: Composition.section[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp on element Composition.section:MedRecordTreatmentLine, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp (@char 1)
+ERROR: Composition/1-summary-view: Composition.section[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp on element Composition.section:detailsRecord, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp (@char 1)
+ERROR: Composition/1-summary-view: Composition.section[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp on element Composition.section:detailsRecord, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp (@char 1)
+ERROR: Composition/1-summary-view: Composition.section[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: type.coding.code in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp on element Composition.section:detailsRecord, looking in profile http://hl7belgium.org/fhir/riziv-medicationrecord/StructureDefinition/med-view-comp (@char 1)
 ERROR: Composition/1-summary-view: Composition.status: The value provided ('active') is not in the value set 'CompositionStatus' (http://hl7.org/fhir/ValueSet/composition-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)
 ERROR: Composition/1-summary-view: Composition.author[0]: Unable to resolve resource 'BeOrganization'
 == fsh-generated/resources/Condition-arthritis-condition.json ==
@@ -1473,6 +1505,10 @@ ERROR: MedicationDispense/medication-dispense-hospital: MedicationDispense.quant
 == fsh-generated/resources/MedicationRequest-1-prescription.json ==
 ERROR: MedicationRequest/1-prescription: MedicationRequest: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationRequest])
 INFORMATION: MedicationRequest/1-prescription: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationRequest-1-scheduledadministration1.json ==
+INFORMATION: MedicationRequest/1-scheduledadministration1: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationRequest-1-scheduledadministration2.json ==
+INFORMATION: MedicationRequest/1-scheduledadministration2: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-15-prescription.json ==
 ERROR: MedicationRequest/15-prescription: MedicationRequest: The modifier extension http://hl7.org/fhir/StructureDefinition/event-basedOn is not allowed to be used at this point (allowed = e:Condition; this element is [[MedicationRequest])
 ERROR: MedicationRequest/15-prescription: MedicationRequest.extension[1].value.ofType(Reference): Unable to resolve resource 'example-15-of-medication-treatmentLine'
